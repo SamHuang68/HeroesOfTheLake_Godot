@@ -1,0 +1,1479 @@
+{
+  "SongJiang": {
+    "HeroID": "SongJiang",
+    "DisplayName": "宋江",
+    "Nickname": "呼保義",
+    "StarType": "天魁星",
+    "Prompt": "Masterpiece character portrait of 宋江 (呼保義 / SongJiang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天魁星, Scholar. Lore: 鄆城縣押司，為人仗義疏財，江湖人稱「及時雨」，梁山泊首領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LuJunyi": {
+    "HeroID": "LuJunyi",
+    "DisplayName": "盧俊義",
+    "Nickname": "玉麒麟",
+    "StarType": "天罡星",
+    "Prompt": "Masterpiece character portrait of 盧俊義 (玉麒麟 / LuJunyi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天罡星, Warrior. Lore: 北京大名府富豪，武藝高強，棍棒天下無雙，梁山泊第二把交椅。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WuYong": {
+    "HeroID": "WuYong",
+    "DisplayName": "吳用",
+    "Nickname": "智多星",
+    "StarType": "天機星",
+    "Prompt": "Masterpiece character portrait of 吳用 (智多星 / WuYong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天機星, Scholar. Lore: 鄆城縣鄉村塾師，足智多謀，神機妙算，梁山軍師。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GongsunSheng": {
+    "HeroID": "GongsunSheng",
+    "DisplayName": "公孫勝",
+    "Nickname": "入雲龍",
+    "StarType": "天閒星",
+    "Prompt": "Masterpiece character portrait of 公孫勝 (入雲龍 / GongsunSheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天閒星, Taoist. Lore: 薊州九宮縣人，羅真人親傳弟子，精通呼風喚雨法術。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GuanSheng": {
+    "HeroID": "GuanSheng",
+    "DisplayName": "關勝",
+    "Nickname": "大刀",
+    "StarType": "天勇星",
+    "Prompt": "Masterpiece character portrait of 關勝 (大刀 / GuanSheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天勇星, Warrior. Lore: 漢末名將關羽後裔，使青龍偃月刀，有萬夫不當之勇。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LinChong": {
+    "HeroID": "LinChong",
+    "DisplayName": "林沖",
+    "Nickname": "豹子頭",
+    "StarType": "天雄星",
+    "Prompt": "Masterpiece character portrait of 林沖 (豹子頭 / LinChong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天雄星, Warrior. Lore: 東京八十萬禁軍教頭，使丈八蛇矛，武藝絕倫，歷經磨難上梁山。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "QinMing": {
+    "HeroID": "QinMing",
+    "DisplayName": "秦明",
+    "Nickname": "霹靂火",
+    "StarType": "天猛星",
+    "Prompt": "Masterpiece character portrait of 秦明 (霹靂火 / QinMing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天猛星, Warrior. Lore: 青州指揮司統制，性格如烈火，手使一條狼牙棒，勇猛無比。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuyanZhuo": {
+    "HeroID": "HuyanZhuo",
+    "DisplayName": "呼延灼",
+    "Nickname": "雙鞭",
+    "StarType": "天威星",
+    "Prompt": "Masterpiece character portrait of 呼延灼 (雙鞭 / HuyanZhuo) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天威星, Warrior. Lore: 開國名將呼延贊之後，使兩條水磨八棱鋼鞭，精通連環馬戰法。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuaRong": {
+    "HeroID": "HuaRong",
+    "DisplayName": "花榮",
+    "Nickname": "小李廣",
+    "StarType": "天英星",
+    "Prompt": "Masterpiece character portrait of 花榮 (小李廣 / HuaRong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天英星, Hunter. Lore: 清風寨知寨，百步穿楊，箭法天下第一，宋江生死之交。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ChaiJin": {
+    "HeroID": "ChaiJin",
+    "DisplayName": "柴進",
+    "Nickname": "小旋風",
+    "StarType": "天貴星",
+    "Prompt": "Masterpiece character portrait of 柴進 (小旋風 / ChaiJin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天貴星, Merchant. Lore: 後周世宗柴榮子孫，家有丹書鐵券，仗義疏財，廣納四方豪傑。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiYing": {
+    "HeroID": "LiYing",
+    "DisplayName": "李應",
+    "Nickname": "撲天雕",
+    "StarType": "天富星",
+    "Prompt": "Masterpiece character portrait of 李應 (撲天雕 / LiYing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天富星, Merchant. Lore: 獨龍岡李家莊莊主，使渾鐵點鋼槍，背藏五柄飛刀，掌管梁山錢糧。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuTong": {
+    "HeroID": "ZhuTong",
+    "DisplayName": "朱仝",
+    "Nickname": "美髯公",
+    "StarType": "天滿星",
+    "Prompt": "Masterpiece character portrait of 朱仝 (美髯公 / ZhuTong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天滿星, Warrior. Lore: 鄆城縣馬兵都頭，面如重棗，長鬚過腹，重情重義。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LuZhishen": {
+    "HeroID": "LuZhishen",
+    "DisplayName": "魯智深",
+    "Nickname": "花和尚",
+    "StarType": "天孤星",
+    "Prompt": "Masterpiece character portrait of 魯智深 (花和尚 / LuZhishen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天孤星, Warrior. Lore: 渭州經略府提轄，拳打鎮關西，倒拔垂楊柳，使六十二斤水磨禪杖。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WuSong": {
+    "HeroID": "WuSong",
+    "DisplayName": "武松",
+    "Nickname": "行者",
+    "StarType": "天傷星",
+    "Prompt": "Masterpiece character portrait of 武松 (行者 / WuSong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天傷星, Warrior. Lore: 清河縣人，景陽岡赤手空拳打死猛虎，血濺鴛鴦樓，使雪花鑌鐵戒刀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DongPing": {
+    "HeroID": "DongPing",
+    "DisplayName": "董平",
+    "Nickname": "雙槍將",
+    "StarType": "天立星",
+    "Prompt": "Masterpiece character portrait of 董平 (雙槍將 / DongPing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天立星, Warrior. Lore: 東平府兵馬都監，風流倜儻，使兩條短槍，出神入化。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhangQing": {
+    "HeroID": "ZhangQing",
+    "DisplayName": "張清",
+    "Nickname": "沒羽箭",
+    "StarType": "天捷星",
+    "Prompt": "Masterpiece character portrait of 張清 (沒羽箭 / ZhangQing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天捷星, Hunter. Lore: 東昌府兵馬都監，善使飛石打人，百發百中，號稱沒羽箭。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangZhi": {
+    "HeroID": "YangZhi",
+    "DisplayName": "楊志",
+    "Nickname": "青面獸",
+    "StarType": "天暗星",
+    "Prompt": "Masterpiece character portrait of 楊志 (青面獸 / YangZhi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天暗星, Warrior. Lore: 楊令公之孫，客籍關西，武藝超群，曾押送生辰綱與花石綱。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XuNing": {
+    "HeroID": "XuNing",
+    "DisplayName": "徐寧",
+    "Nickname": "金槍手",
+    "StarType": "天佑星",
+    "Prompt": "Masterpiece character portrait of 徐寧 (金槍手 / XuNing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天佑星, Warrior. Lore: 東京禁軍金槍班教師，祖傳鉤鐮槍法天下獨步，破呼延灼連環馬。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SuoChao": {
+    "HeroID": "SuoChao",
+    "DisplayName": "索超",
+    "Nickname": "急先鋒",
+    "StarType": "天空星",
+    "Prompt": "Masterpiece character portrait of 索超 (急先鋒 / SuoChao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天空星, Warrior. Lore: 大名府留守司正牌軍，作戰性急勇猛，手使一把金蘸斧。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DaiZong": {
+    "HeroID": "DaiZong",
+    "DisplayName": "戴宗",
+    "Nickname": "神行太保",
+    "StarType": "天速星",
+    "Prompt": "Masterpiece character portrait of 戴宗 (神行太保 / DaiZong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天速星, Taoist. Lore: 江州兩院押牢節級，身懷神行法，日行八百里，負責梁山情報傳遞。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiuTang": {
+    "HeroID": "LiuTang",
+    "DisplayName": "劉唐",
+    "Nickname": "赤髮鬼",
+    "StarType": "天異星",
+    "Prompt": "Masterpiece character portrait of 劉唐 (赤髮鬼 / LiuTang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天異星, Warrior. Lore: 東潞州人，紫黑闊臉，鬢邊硃砂紅記，生辰綱七星聚義之一。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiKui": {
+    "HeroID": "LiKui",
+    "DisplayName": "李逵",
+    "Nickname": "黑旋風",
+    "StarType": "天殺星",
+    "Prompt": "Masterpiece character portrait of 李逵 (黑旋風 / LiKui) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天殺星, Warrior. Lore: 沂州沂水縣人，步戰無敵，使兩把板斧，性格暴烈但對宋江極度忠誠。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiJin": {
+    "HeroID": "ShiJin",
+    "DisplayName": "史進",
+    "Nickname": "九紋龍",
+    "StarType": "天微星",
+    "Prompt": "Masterpiece character portrait of 史進 (九紋龍 / ShiJin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天微星, Warrior. Lore: 華陰縣史家莊少莊主，身刺九條青龍，師從王進，武藝精熟。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MuHong": {
+    "HeroID": "MuHong",
+    "DisplayName": "穆弘",
+    "Nickname": "沒遮攔",
+    "StarType": "天究星",
+    "Prompt": "Masterpiece character portrait of 穆弘 (沒遮攔 / MuHong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天究星, Warrior. Lore: 江州揭陽鎮富戶，性情剛烈，武藝高強，揭陽三霸之一。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LeiHeng": {
+    "HeroID": "LeiHeng",
+    "DisplayName": "雷橫",
+    "Nickname": "插翅虎",
+    "StarType": "天退星",
+    "Prompt": "Masterpiece character portrait of 雷橫 (插翅虎 / LeiHeng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天退星, Warrior. Lore: 鄆城縣步兵都頭，身手矯捷，能跳二三丈闊澗，使朴刀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiJun": {
+    "HeroID": "LiJun",
+    "DisplayName": "李俊",
+    "Nickname": "混江龍",
+    "StarType": "天壽星",
+    "Prompt": "Masterpiece character portrait of 李俊 (混江龍 / LiJun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天壽星, Boatman. Lore: 揚子江艄公，水性極佳，智勇雙全，梁山水軍大都督。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "RuanXiaoer": {
+    "HeroID": "RuanXiaoer",
+    "DisplayName": "阮小二",
+    "Nickname": "立地太歲",
+    "StarType": "天劍星",
+    "Prompt": "Masterpiece character portrait of 阮小二 (立地太歲 / RuanXiaoer) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天劍星, Boatman. Lore: 石碣村漁民，阮氏三雄之首，敢作敢當，水性過人。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhangHeng": {
+    "HeroID": "ZhangHeng",
+    "DisplayName": "張橫",
+    "Nickname": "船火兒",
+    "StarType": "天平星",
+    "Prompt": "Masterpiece character portrait of 張橫 (船火兒 / ZhangHeng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天平星, Boatman. Lore: 潯陽江艄公，揭陽三霸之一，水底工夫了得。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "RuanXiaowu": {
+    "HeroID": "RuanXiaowu",
+    "DisplayName": "阮小五",
+    "Nickname": "短命二郎",
+    "StarType": "天罪星",
+    "Prompt": "Masterpiece character portrait of 阮小五 (短命二郎 / RuanXiaowu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天罪星, Boatman. Lore: 石碣村漁民，阮氏三雄老二，胸前刺青豹，膽氣過人。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhangShun": {
+    "HeroID": "ZhangShun",
+    "DisplayName": "張順",
+    "Nickname": "浪裏白條",
+    "StarType": "天損星",
+    "Prompt": "Masterpiece character portrait of 張順 (浪裏白條 / ZhangShun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天損星, Boatman. Lore: 潯陽江漁牙主人，身白如銀，水底可潛七天七夜，水戰無雙。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "RuanXiaoqi": {
+    "HeroID": "RuanXiaoqi",
+    "DisplayName": "阮小七",
+    "Nickname": "活閻羅",
+    "StarType": "天敗星",
+    "Prompt": "Masterpiece character portrait of 阮小七 (活閻羅 / RuanXiaoqi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天敗星, Boatman. Lore: 石碣村漁民，阮氏三雄老么，性情直爽，殺人不眨眼。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangXiong": {
+    "HeroID": "YangXiong",
+    "DisplayName": "楊雄",
+    "Nickname": "病關索",
+    "StarType": "天牢星",
+    "Prompt": "Masterpiece character portrait of 楊雄 (病關索 / YangXiong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天牢星, Warrior. Lore: 薊州兩院押獄兼行刑劊子，面色微黃，使一口好槍棒。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiXiu": {
+    "HeroID": "ShiXiu",
+    "DisplayName": "石秀",
+    "Nickname": "拚命三郎",
+    "StarType": "天慧星",
+    "Prompt": "Masterpiece character portrait of 石秀 (拚命三郎 / ShiXiu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天慧星, Warrior. Lore: 金陵人氏，賣柴為生，為人好打不平，臨危不懼，敢作敢拚。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XieZhen": {
+    "HeroID": "XieZhen",
+    "DisplayName": "解珍",
+    "Nickname": "兩頭蛇",
+    "StarType": "天暴星",
+    "Prompt": "Masterpiece character portrait of 解珍 (兩頭蛇 / XieZhen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天暴星, Hunter. Lore: 登州第一獵戶，善使渾鐵點鋼叉，翻山越嶺如履平地。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XieBao": {
+    "HeroID": "XieBao",
+    "DisplayName": "解寶",
+    "Nickname": "雙尾蠍",
+    "StarType": "天哭星",
+    "Prompt": "Masterpiece character portrait of 解寶 (雙尾蠍 / XieBao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天哭星, Hunter. Lore: 解珍之弟，登州獵戶，性格暴烈，善使鋼叉、短刀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YanQing": {
+    "HeroID": "YanQing",
+    "DisplayName": "燕青",
+    "Nickname": "浪子",
+    "StarType": "天巧星",
+    "Prompt": "Masterpiece character portrait of 燕青 (浪子 / YanQing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 天巧星, Hunter. Lore: 大名府盧俊義家僕，吹拉彈唱相撲百藝皆通，弩箭百發百中。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuWu": {
+    "HeroID": "ZhuWu",
+    "DisplayName": "朱武",
+    "Nickname": "神機軍師",
+    "StarType": "地魁星",
+    "Prompt": "Masterpiece character portrait of 朱武 (神機軍師 / ZhuWu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地魁星, Scholar. Lore: 定遠人氏，精通陣法兵書，足智多謀，少華山首領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuangXin": {
+    "HeroID": "HuangXin",
+    "DisplayName": "黃信",
+    "Nickname": "鎮三山",
+    "StarType": "地煞星",
+    "Prompt": "Masterpiece character portrait of 黃信 (鎮三山 / HuangXin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地煞星, Warrior. Lore: 青州府兵馬都監，秦明徒弟，手使喪門劍，號鎮三山。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SunLi": {
+    "HeroID": "SunLi",
+    "DisplayName": "孫立",
+    "Nickname": "病尉遲",
+    "StarType": "地勇星",
+    "Prompt": "Masterpiece character portrait of 孫立 (病尉遲 / SunLi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地勇星, Warrior. Lore: 登州兵馬提轄，使一條竹節鋼鞭，弓馬嫻熟，策劃破祝家莊。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XuanZan": {
+    "HeroID": "XuanZan",
+    "DisplayName": "宣贊",
+    "Nickname": "醜郡馬",
+    "StarType": "地傑星",
+    "Prompt": "Masterpiece character portrait of 宣贊 (醜郡馬 / XuanZan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地傑星, Warrior. Lore: 衙門防禦使，面如鍋底，鼻孔朝天，武藝過人。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HaoSiwen": {
+    "HeroID": "HaoSiwen",
+    "DisplayName": "郝思文",
+    "Nickname": "井木犴",
+    "StarType": "地雄星",
+    "Prompt": "Masterpiece character portrait of 郝思文 (井木犴 / HaoSiwen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地雄星, Warrior. Lore: 關勝結義兄弟，精通十八般武藝。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HanTao": {
+    "HeroID": "HanTao",
+    "DisplayName": "韓滔",
+    "Nickname": "百勝將",
+    "StarType": "地威星",
+    "Prompt": "Masterpiece character portrait of 韓滔 (百勝將 / HanTao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地威星, Warrior. Lore: 陳州團練使，使一口棗木槊，弓馬純熟。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "PengQi": {
+    "HeroID": "PengQi",
+    "DisplayName": "彭玘",
+    "Nickname": "天目將",
+    "StarType": "地英星",
+    "Prompt": "Masterpiece character portrait of 彭玘 (天目將 / PengQi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地英星, Warrior. Lore: 潁州團練使，使三尖兩刃刀，呼延灼副將。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShanTinggui": {
+    "HeroID": "ShanTinggui",
+    "DisplayName": "單廷珪",
+    "Nickname": "聖水將",
+    "StarType": "地奇星",
+    "Prompt": "Masterpiece character portrait of 單廷珪 (聖水將 / ShanTinggui) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地奇星, Warrior. Lore: 凌州團練使，善用水攻戰法。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WeiDingguo": {
+    "HeroID": "WeiDingguo",
+    "DisplayName": "魏定國",
+    "Nickname": "神火將",
+    "StarType": "地猛星",
+    "Prompt": "Masterpiece character portrait of 魏定國 (神火將 / WeiDingguo) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地猛星, Warrior. Lore: 凌州團練使，精通火攻火器戰法。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XiaoRang": {
+    "HeroID": "XiaoRang",
+    "DisplayName": "蕭讓",
+    "Nickname": "聖手書生",
+    "StarType": "地文星",
+    "Prompt": "Masterpiece character portrait of 蕭讓 (聖手書生 / XiaoRang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地文星, Scholar. Lore: 濟州文人，精通各家書法，善仿名家筆跡。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "PeiXuan": {
+    "HeroID": "PeiXuan",
+    "DisplayName": "裴宣",
+    "Nickname": "鐵面孔目",
+    "StarType": "地正星",
+    "Prompt": "Masterpiece character portrait of 裴宣 (鐵面孔目 / PeiXuan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地正星, Scholar. Lore: 京兆府六案孔目，執法嚴明，鐵面無私，梁山軍政司。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "OuPeng": {
+    "HeroID": "OuPeng",
+    "DisplayName": "歐鵬",
+    "Nickname": "摩雲金翅",
+    "StarType": "地闊星",
+    "Prompt": "Masterpiece character portrait of 歐鵬 (摩雲金翅 / OuPeng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地闊星, Warrior. Lore: 黃州人，軍班出身，身手敏捷，行走如飛。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DengFei": {
+    "HeroID": "DengFei",
+    "DisplayName": "鄧飛",
+    "Nickname": "火眼狻猊",
+    "StarType": "地闔星",
+    "Prompt": "Masterpiece character portrait of 鄧飛 (火眼狻猊 / DengFei) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地闔星, Warrior. Lore: 襄陽人，雙眼赤紅，使一口鐵鏈夾棒。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YanShun": {
+    "HeroID": "YanShun",
+    "DisplayName": "燕順",
+    "Nickname": "錦毛虎",
+    "StarType": "地強星",
+    "Prompt": "Masterpiece character portrait of 燕順 (錦毛虎 / YanShun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地強星, Warrior. Lore: 清風山首領，使一口朴刀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangLin": {
+    "HeroID": "YangLin",
+    "DisplayName": "楊林",
+    "Nickname": "錦豹子",
+    "StarType": "地暗星",
+    "Prompt": "Masterpiece character portrait of 楊林 (錦豹子 / YangLin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地暗星, Hunter. Lore: 彰德府人，江湖遊俠，機警過人。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LingZhen": {
+    "HeroID": "LingZhen",
+    "DisplayName": "凌振",
+    "Nickname": "轟天雷",
+    "StarType": "地軸星",
+    "Prompt": "Masterpiece character portrait of 凌振 (轟天雷 / LingZhen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地軸星, Artisan. Lore: 東京甲仗庫副使，宋朝第一火炮專家。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "JiangJing": {
+    "HeroID": "JiangJing",
+    "DisplayName": "蔣敬",
+    "Nickname": "神算子",
+    "StarType": "地會星",
+    "Prompt": "Masterpiece character portrait of 蔣敬 (神算子 / JiangJing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地會星, Merchant. Lore: 潭州落第秀才，精通算術帳目，掌梁山庫藏收支。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LuFang": {
+    "HeroID": "LuFang",
+    "DisplayName": "呂方",
+    "Nickname": "小溫侯",
+    "StarType": "地佐星",
+    "Prompt": "Masterpiece character portrait of 呂方 (小溫侯 / LuFang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地佐星, Warrior. Lore: 對影山首領，學呂布使方天畫戟。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GuoSheng": {
+    "HeroID": "GuoSheng",
+    "DisplayName": "郭盛",
+    "Nickname": "賽仁貴",
+    "StarType": "地佑星",
+    "Prompt": "Masterpiece character portrait of 郭盛 (賽仁貴 / GuoSheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地佑星, Warrior. Lore: 嘉陵人氏，學薛仁貴使方天畫戟。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "AnDaoquan": {
+    "HeroID": "AnDaoquan",
+    "DisplayName": "安道全",
+    "Nickname": "神醫",
+    "StarType": "地靈星",
+    "Prompt": "Masterpiece character portrait of 安道全 (神醫 / AnDaoquan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地靈星, Doctor. Lore: 建康府名醫，醫術通神，起死回生，梁山隨軍首席醫師。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuangfuDuan": {
+    "HeroID": "HuangfuDuan",
+    "DisplayName": "皇甫端",
+    "Nickname": "紫髯伯",
+    "StarType": "地獸星",
+    "Prompt": "Masterpiece character portrait of 皇甫端 (紫髯伯 / HuangfuDuan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地獸星, Doctor. Lore: 東昌府名獸醫，善相馬治馬，梁山掌管戰馬醫療。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangYing": {
+    "HeroID": "WangYing",
+    "DisplayName": "王英",
+    "Nickname": "矮腳虎",
+    "StarType": "地微星",
+    "Prompt": "Masterpiece character portrait of 王英 (矮腳虎 / WangYing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地微星, Warrior. Lore: 清風山頭領，身材矮小好色，使滾刀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuSanniang": {
+    "HeroID": "HuSanniang",
+    "DisplayName": "扈三娘",
+    "Nickname": "一丈青",
+    "StarType": "地慧星",
+    "Prompt": "Masterpiece character portrait of 扈三娘 (一丈青 / HuSanniang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地慧星, Warrior. Lore: 獨龍岡扈家莊女將，雙刀嫻熟，套索百發百中。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "BaoXu": {
+    "HeroID": "BaoXu",
+    "DisplayName": "鮑旭",
+    "Nickname": "喪門神",
+    "StarType": "地暴星",
+    "Prompt": "Masterpiece character portrait of 鮑旭 (喪門神 / BaoXu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地暴星, Warrior. Lore: 枯樹山頭領，嗜殺成性，使一口闊劍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "FanRui": {
+    "HeroID": "FanRui",
+    "DisplayName": "樊瑞",
+    "Nickname": "混世魔王",
+    "StarType": "地默星",
+    "Prompt": "Masterpiece character portrait of 樊瑞 (混世魔王 / FanRui) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地默星, Taoist. Lore: 芒碭山首領，善使流星錘與法術。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "KongLiang": {
+    "HeroID": "KongLiang",
+    "DisplayName": "孔亮",
+    "Nickname": "獨火星",
+    "StarType": "地猖星",
+    "Prompt": "Masterpiece character portrait of 孔亮 (獨火星 / KongLiang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地猖星, Warrior. Lore: 白虎山頭領，宋江之徒。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "KongMing": {
+    "HeroID": "KongMing",
+    "DisplayName": "孔明",
+    "Nickname": "毛頭星",
+    "StarType": "地狂星",
+    "Prompt": "Masterpiece character portrait of 孔明 (毛頭星 / KongMing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地狂星, Warrior. Lore: 孔亮之兄，白虎山頭領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XiangChong": {
+    "HeroID": "XiangChong",
+    "DisplayName": "項充",
+    "Nickname": "八臂哪吒",
+    "StarType": "地飛星",
+    "Prompt": "Masterpiece character portrait of 項充 (八臂哪吒 / XiangChong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地飛星, Warrior. Lore: 芒碭山頭領，使團牌飛刀二十四把。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiGun": {
+    "HeroID": "LiGun",
+    "DisplayName": "李袞",
+    "Nickname": "飛天大聖",
+    "StarType": "地走星",
+    "Prompt": "Masterpiece character portrait of 李袞 (飛天大聖 / LiGun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地走星, Warrior. Lore: 芒碭山頭領，使團牌飛標槍二十四枝。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "JinDajian": {
+    "HeroID": "JinDajian",
+    "DisplayName": "金大堅",
+    "Nickname": "玉臂匠",
+    "StarType": "地巧星",
+    "Prompt": "Masterpiece character portrait of 金大堅 (玉臂匠 / JinDajian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地巧星, Artisan. Lore: 濟州雕刻名匠，精通刻印制符。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MaLin": {
+    "HeroID": "MaLin",
+    "DisplayName": "馬麟",
+    "Nickname": "鐵笛仙",
+    "StarType": "地明星",
+    "Prompt": "Masterpiece character portrait of 馬麟 (鐵笛仙 / MaLin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地明星, Entertainer. Lore: 黃門山頭領，吹得一口好鐵笛，雙刀純熟。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TongWei": {
+    "HeroID": "TongWei",
+    "DisplayName": "童威",
+    "Nickname": "出洞蛟",
+    "StarType": "地進星",
+    "Prompt": "Masterpiece character portrait of 童威 (出洞蛟 / TongWei) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地進星, Boatman. Lore: 潯陽江艄公，李俊結義兄弟。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TongMeng": {
+    "HeroID": "TongMeng",
+    "DisplayName": "童猛",
+    "Nickname": "翻江蜃",
+    "StarType": "地退星",
+    "Prompt": "Masterpiece character portrait of 童猛 (翻江蜃 / TongMeng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地退星, Boatman. Lore: 童威之弟，水性極精。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MengKang": {
+    "HeroID": "MengKang",
+    "DisplayName": "孟康",
+    "Nickname": "玉幡竿",
+    "StarType": "地滿星",
+    "Prompt": "Masterpiece character portrait of 孟康 (玉幡竿 / MengKang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地滿星, Artisan. Lore: 真定府名匠，精通造大船，梁山造船總管。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HouJian": {
+    "HeroID": "HouJian",
+    "DisplayName": "侯健",
+    "Nickname": "通臂猿",
+    "StarType": "地遂星",
+    "Prompt": "Masterpiece character portrait of 侯健 (通臂猿 / HouJian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地遂星, Artisan. Lore: 裁縫出身，身手敏捷，掌管梁山旗幟衣甲製作。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ChenDa": {
+    "HeroID": "ChenDa",
+    "DisplayName": "陳達",
+    "Nickname": "跳澗虎",
+    "StarType": "地周星",
+    "Prompt": "Masterpiece character portrait of 陳達 (跳澗虎 / ChenDa) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地周星, Warrior. Lore: 少華山頭領，使一條丈八點鋼槍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangChun": {
+    "HeroID": "YangChun",
+    "DisplayName": "楊春",
+    "Nickname": "白花蛇",
+    "StarType": "地隱星",
+    "Prompt": "Masterpiece character portrait of 楊春 (白花蛇 / YangChun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地隱星, Warrior. Lore: 少華山頭領，使口大桿刀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhengTianshou": {
+    "HeroID": "ZhengTianshou",
+    "DisplayName": "鄭天壽",
+    "Nickname": "白面郎君",
+    "StarType": "地異星",
+    "Prompt": "Masterpiece character portrait of 鄭天壽 (白面郎君 / ZhengTianshou) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地異星, Warrior. Lore: 銀匠出身，清風山頭領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TaoZongwang": {
+    "HeroID": "TaoZongwang",
+    "DisplayName": "陶宗旺",
+    "Nickname": "九尾龜",
+    "StarType": "地理星",
+    "Prompt": "Masterpiece character portrait of 陶宗旺 (九尾龜 / TaoZongwang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地理星, Farmer. Lore: 莊稼漢出身，力大無窮，使鐵鍬，梁山修築工程總管。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SongQing": {
+    "HeroID": "SongQing",
+    "DisplayName": "宋清",
+    "Nickname": "鐵扇子",
+    "StarType": "地俊星",
+    "Prompt": "Masterpiece character portrait of 宋清 (鐵扇子 / SongQing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地俊星, Merchant. Lore: 宋江之弟，掌管梁山宴席款待事宜。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LeHe": {
+    "HeroID": "LeHe",
+    "DisplayName": "樂和",
+    "Nickname": "鐵叫子",
+    "StarType": "地樂星",
+    "Prompt": "Masterpiece character portrait of 樂和 (鐵叫子 / LeHe) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地樂星, Entertainer. Lore: 登州牢子，聰慧善樂，能歌善舞。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GongWang": {
+    "HeroID": "GongWang",
+    "DisplayName": "龔旺",
+    "Nickname": "花項虎",
+    "StarType": "地捷星",
+    "Prompt": "Masterpiece character portrait of 龔旺 (花項虎 / GongWang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地捷星, Warrior. Lore: 東昌府副將，身刺虎斑，使飛槍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DingDeSun": {
+    "HeroID": "DingDeSun",
+    "DisplayName": "丁得孫",
+    "Nickname": "中箭虎",
+    "StarType": "地速星",
+    "Prompt": "Masterpiece character portrait of 丁得孫 (中箭虎 / DingDeSun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地速星, Warrior. Lore: 東昌府副將，使飛叉。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MuChun": {
+    "HeroID": "MuChun",
+    "DisplayName": "穆春",
+    "Nickname": "小遮攔",
+    "StarType": "地鎮星",
+    "Prompt": "Masterpiece character portrait of 穆春 (小遮攔 / MuChun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地鎮星, Warrior. Lore: 穆弘之弟，揭陽鎮豪強。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "CaoZheng": {
+    "HeroID": "CaoZheng",
+    "DisplayName": "曹正",
+    "Nickname": "操刀鬼",
+    "StarType": "地嵇星",
+    "Prompt": "Masterpiece character portrait of 曹正 (操刀鬼 / CaoZheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地嵇星, Merchant. Lore: 東京屠戶，林沖之徒，二龍山好漢。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SongWan": {
+    "HeroID": "SongWan",
+    "DisplayName": "宋萬",
+    "Nickname": "摸著天",
+    "StarType": "地魔星",
+    "Prompt": "Masterpiece character portrait of 宋萬 (摸著天 / SongWan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地魔星, Warrior. Lore: 梁山泊開山元老之一，身材極高。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DuQian": {
+    "HeroID": "DuQian",
+    "DisplayName": "杜遷",
+    "Nickname": "摸著天",
+    "StarType": "地妖星",
+    "Prompt": "Masterpiece character portrait of 杜遷 (摸著天 / DuQian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地妖星, Warrior. Lore: 梁山泊開山元老之一。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XueYong": {
+    "HeroID": "XueYong",
+    "DisplayName": "薛永",
+    "Nickname": "病大蟲",
+    "StarType": "地幽星",
+    "Prompt": "Masterpiece character portrait of 薛永 (病大蟲 / XueYong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地幽星, Warrior. Lore: 河南洛陽人，賣藥使棒出身。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiEn": {
+    "HeroID": "ShiEn",
+    "DisplayName": "施恩",
+    "Nickname": "金眼彪",
+    "StarType": "地伏星",
+    "Prompt": "Masterpiece character portrait of 施恩 (金眼彪 / ShiEn) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地伏星, Merchant. Lore: 孟州牢城管營之子，快活林酒肉莊主。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiZhong": {
+    "HeroID": "LiZhong",
+    "DisplayName": "李忠",
+    "Nickname": "打虎將",
+    "StarType": "地僻星",
+    "Prompt": "Masterpiece character portrait of 李忠 (打虎將 / LiZhong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地僻星, Warrior. Lore: 江湖使棒賣藥人，桃花山首領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhouTong": {
+    "HeroID": "ZhouTong",
+    "DisplayName": "周通",
+    "Nickname": "小霸王",
+    "StarType": "地空星",
+    "Prompt": "Masterpiece character portrait of 周通 (小霸王 / ZhouTong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地空星, Warrior. Lore: 桃花山二頭領，使走水綠沉槍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TangLong": {
+    "HeroID": "TangLong",
+    "DisplayName": "湯隆",
+    "Nickname": "金錢豹子",
+    "StarType": "地孤星",
+    "Prompt": "Masterpiece character portrait of 湯隆 (金錢豹子 / TangLong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地孤星, Blacksmith. Lore: 延安府鐵匠，打造軍器無雙，梁山軍器造作總管。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DuXing": {
+    "HeroID": "DuXing",
+    "DisplayName": "杜興",
+    "Nickname": "鬼臉兒",
+    "StarType": "地全星",
+    "Prompt": "Masterpiece character portrait of 杜興 (鬼臉兒 / DuXing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地全星, Merchant. Lore: 中山府人，李家莊管家。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZouYuan": {
+    "HeroID": "ZouYuan",
+    "DisplayName": "鄒淵",
+    "Nickname": "出林龍",
+    "StarType": "地短星",
+    "Prompt": "Masterpiece character portrait of 鄒淵 (出林龍 / ZouYuan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地短星, Warrior. Lore: 登雲山首領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZouRun": {
+    "HeroID": "ZouRun",
+    "DisplayName": "鄒潤",
+    "Nickname": "獨角龍",
+    "StarType": "地角星",
+    "Prompt": "Masterpiece character portrait of 鄒潤 (獨角龍 / ZouRun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地角星, Warrior. Lore: 鄒淵之侄，頭生肉瘤，曾撞折松樹。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuGui": {
+    "HeroID": "ZhuGui",
+    "DisplayName": "朱貴",
+    "Nickname": "旱地忽律",
+    "StarType": "地囚星",
+    "Prompt": "Masterpiece character portrait of 朱貴 (旱地忽律 / ZhuGui) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地囚星, Merchant. Lore: 沂州人，梁山南山酒店探聽情報頭領。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuFu": {
+    "HeroID": "ZhuFu",
+    "DisplayName": "朱富",
+    "Nickname": "笑面虎",
+    "StarType": "地藏星",
+    "Prompt": "Masterpiece character portrait of 朱富 (笑面虎 / ZhuFu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地藏星, Merchant. Lore: 朱貴之弟，沂水縣開酒店，精於釀酒管帳。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "CaiFu": {
+    "HeroID": "CaiFu",
+    "DisplayName": "蔡福",
+    "Nickname": "鐵臂膊",
+    "StarType": "地平星",
+    "Prompt": "Masterpiece character portrait of 蔡福 (鐵臂膊 / CaiFu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地平星, Warrior. Lore: 大名府兩院押獄兼行刑劊子。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "CaiQing": {
+    "HeroID": "CaiQing",
+    "DisplayName": "蔡慶",
+    "Nickname": "一枝花",
+    "StarType": "地損星",
+    "Prompt": "Masterpiece character portrait of 蔡慶 (一枝花 / CaiQing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地損星, Warrior. Lore: 蔡福之弟，鬢邊常插一朵花。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiLi": {
+    "HeroID": "LiLi",
+    "DisplayName": "李立",
+    "Nickname": "催命判官",
+    "StarType": "地奴星",
+    "Prompt": "Masterpiece character portrait of 李立 (催命判官 / LiLi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地奴星, Merchant. Lore: 揭陽嶺開黑店酒店。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiYun": {
+    "HeroID": "LiYun",
+    "DisplayName": "李雲",
+    "Nickname": "青眼虎",
+    "StarType": "地察星",
+    "Prompt": "Masterpiece character portrait of 李雲 (青眼虎 / LiYun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地察星, Warrior. Lore: 沂水縣都頭，武藝過人，掌管梁山營造房屋。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "JiaoTing": {
+    "HeroID": "JiaoTing",
+    "DisplayName": "焦挺",
+    "Nickname": "沒面目",
+    "StarType": "地惡星",
+    "Prompt": "Masterpiece character portrait of 焦挺 (沒面目 / JiaoTing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地惡星, Warrior. Lore: 中山府人，祖傳相撲絕技，曾摔倒李逵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiYong": {
+    "HeroID": "ShiYong",
+    "DisplayName": "石勇",
+    "Nickname": "石將軍",
+    "StarType": "地醜星",
+    "Prompt": "Masterpiece character portrait of 石勇 (石將軍 / ShiYong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地醜星, Warrior. Lore: 大名府賭徒出身，使短棒。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SunXin": {
+    "HeroID": "SunXin",
+    "DisplayName": "孫新",
+    "Nickname": "小尉遲",
+    "StarType": "地數星",
+    "Prompt": "Masterpiece character portrait of 孫新 (小尉遲 / SunXin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地數星, Warrior. Lore: 孫立之弟，登州開店，使幾路好鞭槍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GuDasao": {
+    "HeroID": "GuDasao",
+    "DisplayName": "顧大嫂",
+    "Nickname": "母大蟲",
+    "StarType": "地陰星",
+    "Prompt": "Masterpiece character portrait of 顧大嫂 (母大蟲 / GuDasao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地陰星, Warrior. Lore: 孫新之妻，登州東門外開酒店，性格悍勇。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhangQing_Gardener": {
+    "HeroID": "ZhangQing_Gardener",
+    "DisplayName": "張青",
+    "Nickname": "菜園子",
+    "StarType": "地刑星",
+    "Prompt": "Masterpiece character portrait of 張青 (菜園子 / ZhangQing_Gardener) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地刑星, Farmer. Lore: 孟州十字坡開酒店，種菜好手。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SunErniang": {
+    "HeroID": "SunErniang",
+    "DisplayName": "孫二娘",
+    "Nickname": "母夜叉",
+    "StarType": "地壯星",
+    "Prompt": "Masterpiece character portrait of 孫二娘 (母夜叉 / SunErniang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地壯星, Warrior. Lore: 張青之妻，十字坡開黑店，武藝高強。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangDingliu": {
+    "HeroID": "WangDingliu",
+    "DisplayName": "王定六",
+    "Nickname": "活閃婆",
+    "StarType": "地劣星",
+    "Prompt": "Masterpiece character portrait of 王定六 (活閃婆 / WangDingliu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地劣星, Boatman. Lore: 建康府江邊開酒店，身輕如燕。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YuBaoSi": {
+    "HeroID": "YuBaoSi",
+    "DisplayName": "郁保四",
+    "Nickname": "險道神",
+    "StarType": "地健星",
+    "Prompt": "Masterpiece character portrait of 郁保四 (險道神 / YuBaoSi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地健星, Warrior. Lore: 青州強盜，身長一丈，梁山執掌帥旗巨漢。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "BaiSheng": {
+    "HeroID": "BaiSheng",
+    "DisplayName": "白勝",
+    "Nickname": "白日鼠",
+    "StarType": "地耗星",
+    "Prompt": "Masterpiece character portrait of 白勝 (白日鼠 / BaiSheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地耗星, Merchant. Lore: 黃泥岡智取生辰綱，扮賣酒漢。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiQian": {
+    "HeroID": "ShiQian",
+    "DisplayName": "時遷",
+    "Nickname": "鼓上蚤",
+    "StarType": "地賊星",
+    "Prompt": "Masterpiece character portrait of 時遷 (鼓上蚤 / ShiQian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地賊星, Hunter. Lore: 高唐州飛賊，飛簷走壁天下無雙，盜雁翎金圈甲。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DuanJingzhu": {
+    "HeroID": "DuanJingzhu",
+    "DisplayName": "段景住",
+    "Nickname": "金毛犬",
+    "StarType": "地狗星",
+    "Prompt": "Masterpiece character portrait of 段景住 (金毛犬 / DuanJingzhu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: 地狗星, Hunter. Lore: 涿州盜馬好手，赤髮黃鬚，曾盜照夜玉獅子馬獻宋江。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GaoQiu": {
+    "HeroID": "GaoQiu",
+    "DisplayName": "高俅",
+    "Nickname": "殿帥府太尉",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 高俅 (殿帥府太尉 / GaoQiu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Entertainer. Lore: 東京殿帥府太尉，蹴鞠起家，深得徽宗寵信。心胸狹隘，陰險狡詐，因私怨逼走王進、陷害林沖，是梁山泊好漢之死敵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "CaiJing": {
+    "HeroID": "CaiJing",
+    "DisplayName": "蔡京",
+    "Nickname": "太師當朝",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 蔡京 (太師當朝 / CaiJing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 北宋六賊之首，四度拜相，把持朝政，書法自成一家。大肆搜括民脂民膏，推行花石綱，致使天下動盪、民不聊生。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TongGuan": {
+    "HeroID": "TongGuan",
+    "DisplayName": "童貫",
+    "Nickname": "樞密使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 童貫 (樞密使 / TongGuan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 掌管樞密院軍權之宦官，號稱「媼相」。曾統率十萬禁軍征討梁山泊，卻在水泊連遭慘敗，狼狽逃回東京。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangJian": {
+    "HeroID": "YangJian",
+    "DisplayName": "楊戩",
+    "Nickname": "彰化軍節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 楊戩 (彰化軍節度使 / YangJian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 四大奸臣之一，巧立「公田法」盤剝百姓土地與租稅，與蔡京、高俅相互勾結，禍國殃民。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiangZhongshu": {
+    "HeroID": "LiangZhongshu",
+    "DisplayName": "梁中書",
+    "Nickname": "大名府留守司",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 梁中書 (大名府留守司 / LiangZhongshu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 蔡京女婿，官拜北京大名府留守司。每年搜刮十萬貫金珠「生辰綱」為岳丈祝壽，引發晁蓋等七星智取生辰綱。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "GaoYanei": {
+    "HeroID": "GaoYanei",
+    "DisplayName": "高衙內",
+    "Nickname": "花花太歲",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 高衙內 (花花太歲 / GaoYanei) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Entertainer. Lore: 高俅之螟蛉義子，倚仗權勢在東京橫行霸道。於岳廟調戲林沖妻子，並設下毒計欲強佔之，迫使林沖家破人亡。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LuQian": {
+    "HeroID": "LuQian",
+    "DisplayName": "陸謙",
+    "Nickname": "陸虞候",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 陸謙 (陸虞候 / LuQian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 東京虞候，原為林沖自幼好友。為攀附高俅父子賣友求榮，設白虎堂與火燒草料場之毒計，終在山神廟被林沖手刃。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "FuAn": {
+    "HeroID": "FuAn",
+    "DisplayName": "富安",
+    "Nickname": "干辦",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 富安 (干辦 / FuAn) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Merchant. Lore: 高衙內手下清客幫閒，為虎作倀，多次策劃陷害林沖，終在草料場山神廟前伏誅。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangJin": {
+    "HeroID": "WangJin",
+    "DisplayName": "王進",
+    "Nickname": "八十萬禁軍教頭",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 王進 (八十萬禁軍教頭 / WangJin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 東京八十萬禁軍教頭，十八般武藝無一不精。因父曾棒打高俅而攜母逃避，指點九紋龍史進武藝，後投老種經略相公。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZongZe": {
+    "HeroID": "ZongZe",
+    "DisplayName": "宗澤",
+    "Nickname": "宗老將軍",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 宗澤 (宗老將軍 / ZongZe) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 宋代抗金名臣與名將，剛直不阿，忠貫日月。臨終前連呼三聲「過河」，深具民族氣節與統帥才能。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhongShidao": {
+    "HeroID": "ZhongShidao",
+    "DisplayName": "種師道",
+    "Nickname": "老種經略相公",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 種師道 (老種經略相公 / ZhongShidao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 西北名將，名震西陲。愛惜人才，曾任魯達頂頭上司，鎮守延安府抗擊西夏與金兵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SuYuanjing": {
+    "HeroID": "SuYuanjing",
+    "DisplayName": "宿元景",
+    "Nickname": "宿太尉",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 宿元景 (宿太尉 / SuYuanjing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 朝中正派忠臣，官拜殿前太尉。同情梁山泊好漢之忠義，多次在徽宗面前力薦招安，並親自前往水泊宣讀御詔。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WenHuanzhang": {
+    "HeroID": "WenHuanzhang",
+    "DisplayName": "聞煥章",
+    "Nickname": "安民先生",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 聞煥章 (安民先生 / WenHuanzhang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Scholar. Lore: 東京著名隱士與經世大儒，深通孫吳兵法與經國大略。高俅征梁山時奉詔入幕為軍師，明察秋毫，多次洞悉梁山戰略。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangHuan": {
+    "HeroID": "WangHuan",
+    "DisplayName": "王煥",
+    "Nickname": "河南河北節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 王煥 (河南河北節度使 / WangHuan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 朝廷十節度使之首，使一條丈八點鋼槍，槍法精湛。隨高俅征討梁山，曾與八十萬禁軍教頭林沖大戰八十餘合不分勝負。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XuJing": {
+    "HeroID": "XuJing",
+    "DisplayName": "徐京",
+    "Nickname": "江夏零陵節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 徐京 (江夏零陵節度使 / XuJing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，使一口開山大斧，弓馬嫻熟，武藝過人。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangWende": {
+    "HeroID": "WangWende",
+    "DisplayName": "王文德",
+    "Nickname": "清溪雲中節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 王文德 (清溪雲中節度使 / WangWende) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，使一柄渾鐵點鋼槍，曾於陣前與美髯公朱仝大戰三十餘合。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MeiZhan": {
+    "HeroID": "MeiZhan",
+    "DisplayName": "梅展",
+    "Nickname": "潁州汝南節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 梅展 (潁州汝南節度使 / MeiZhan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，善使三尖兩刃刀，驍勇善戰。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhangKai": {
+    "HeroID": "ZhangKai",
+    "DisplayName": "張開",
+    "Nickname": "中山節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 張開 (中山節度使 / ZhangKai) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Hunter. Lore: 十節度使之一，精熟弓馬，神箭無雙，曾於萬軍之中百步穿楊射退梁山追兵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangWen": {
+    "HeroID": "YangWen",
+    "DisplayName": "楊溫",
+    "Nickname": "東平路節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 楊溫 (東平路節度使 / YangWen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，楊家將族裔，善使長槍，治軍嚴明。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HanCunbao": {
+    "HeroID": "HanCunbao",
+    "DisplayName": "韓存保",
+    "Nickname": "雲中雁門節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 韓存保 (雲中雁門節度使 / HanCunbao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，太師韓忠彥姪兒。手使方天畫戟，武藝超凡，曾與雙鞭呼延灼於水中馬背惡鬥百餘回合，難解難分。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiCongji": {
+    "HeroID": "LiCongji",
+    "DisplayName": "李從吉",
+    "Nickname": "隴西漢陽節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 李從吉 (隴西漢陽節度使 / LiCongji) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，名將之後，使金蘸大斧，驍勇果決。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XiangYuanzhen": {
+    "HeroID": "XiangYuanzhen",
+    "DisplayName": "項元鎮",
+    "Nickname": "瑯琊彭城節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 項元鎮 (瑯琊彭城節度使 / XiangYuanzhen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Hunter. Lore: 十節度使之一，神箭名將，曾箭射雙槍將董平左臂。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "JingZhong": {
+    "HeroID": "JingZhong",
+    "DisplayName": "荊忠",
+    "Nickname": "密州琅琊節度使",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 荊忠 (密州琅琊節度使 / JingZhong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 十節度使之一，使一柄方天畫戟，隨高俅出征梁山。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "QiuYue": {
+    "HeroID": "QiuYue",
+    "DisplayName": "丘岳",
+    "Nickname": "左八都督",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 丘岳 (左八都督 / QiuYue) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 東京殿帥府左八箇都監之一，使三尖兩刃刀，號稱禁軍頂尖名將。隨高俅征梁山，後中伏死於錦八爺張清飛石之下。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhouAng": {
+    "HeroID": "ZhouAng",
+    "DisplayName": "周昂",
+    "Nickname": "右八都督",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 周昂 (右八都督 / ZhouAng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Warrior. Lore: 殿帥府右八箇都監之首，使車輪大斧，勇力過人。於高俅兵敗時奮勇斷後，力拒梁山諸將圍攻。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiuMenglong": {
+    "HeroID": "LiuMenglong",
+    "DisplayName": "劉夢龍",
+    "Nickname": "水軍都統制",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 劉夢龍 (水軍都統制 / LiuMenglong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Boatman. Lore: 朝廷水軍都統制，統領戰船數百艘進剿梁山泊水寨，反被混江龍李俊等設伏全殲。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhaoJi": {
+    "HeroID": "ZhaoJi",
+    "DisplayName": "趙佶",
+    "Nickname": "宋徽宗",
+    "StarType": "FACTION_Court",
+    "Prompt": "Masterpiece character portrait of 趙佶 (宋徽宗 / ZhaoJi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Court, Entertainer. Lore: 大宋天子，文采風流，工書擅畫，創瘦金體。重用蔡京、高俅等奸相，終致靖康之禍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiWengong": {
+    "HeroID": "ShiWengong",
+    "DisplayName": "史文恭",
+    "Nickname": "曾頭市都教師",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 史文恭 (曾頭市都教師 / ShiWengong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾頭市教頭，弓馬騎射天下無雙，善使方天畫戟與毒箭。曾於夜戰中以藥箭射殺梁山第二代魁首晁蓋，二十合刺傷秦明。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SuDing": {
+    "HeroID": "SuDing",
+    "DisplayName": "蘇定",
+    "Nickname": "曾頭市副教師",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 蘇定 (曾頭市副教師 / SuDing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾頭市副教頭，精通陣法兵略，與史文恭共同統理曾頭市防務與萬人莊兵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZengNong": {
+    "HeroID": "ZengNong",
+    "DisplayName": "曾弄",
+    "Nickname": "曾長官",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 曾弄 (曾長官 / ZengNong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Merchant. Lore: 曾頭市莊主，大金女真族人，稱霸凌州，蓄兵數萬，建五虎寨與梁山泊公然抗衡。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZengTu": {
+    "HeroID": "ZengTu",
+    "DisplayName": "曾塗",
+    "Nickname": "曾頭市大郎",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 曾塗 (曾頭市大郎 / ZengTu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾家五虎之長，武藝為五虎之冠，善使點鋼槍，曾於陣前三十合壓制小溫侯呂方與賽仁貴郭盛聯手。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZengMi": {
+    "HeroID": "ZengMi",
+    "DisplayName": "曾密",
+    "Nickname": "曾頭市二郎",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 曾密 (曾頭市二郎 / ZengMi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾家五虎次子，使一口大刀，守衛曾頭市西寨。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZengSuo": {
+    "HeroID": "ZengSuo",
+    "DisplayName": "曾索",
+    "Nickname": "曾頭市三郎",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 曾索 (曾頭市三郎 / ZengSuo) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾家五虎三子，守衛曾頭市南寨。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZengKui": {
+    "HeroID": "ZengKui",
+    "DisplayName": "曾魁",
+    "Nickname": "曾頭市四郎",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 曾魁 (曾頭市四郎 / ZengKui) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾家五虎四子，使一條點鋼槍，曾與豹子頭林沖副將交手。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZengSheng": {
+    "HeroID": "ZengSheng",
+    "DisplayName": "曾昇",
+    "Nickname": "曾頭市五郎",
+    "StarType": "FACTION_Zengtou",
+    "Prompt": "Masterpiece character portrait of 曾昇 (曾頭市五郎 / ZengSheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Zengtou, Warrior. Lore: 曾家幼子，年少勇悍，使兩口飛刀，神出鬼沒，曾箭射李逵奪回照夜玉獅子馬。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LuanTingyu": {
+    "HeroID": "LuanTingyu",
+    "DisplayName": "欒廷玉",
+    "Nickname": "鐵棒無敵",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 欒廷玉 (鐵棒無敵 / LuanTingyu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Warrior. Lore: 獨龍岡祝家莊教頭，病尉遲孫立之同門師兄。使一條沉鐵棍，有萬夫不當之勇，曾設伏生擒摩雲金翅歐鵬與火眼狻猊鄧飛。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuChaofeng": {
+    "HeroID": "ZhuChaofeng",
+    "DisplayName": "祝朝奉",
+    "Nickname": "祝家莊莊主",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 祝朝奉 (祝家莊莊主 / ZhuChaofeng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Farmer. Lore: 獨龍岡祝家莊大莊主，築堅固盤陀路石寨，與扈家莊、李家莊立誓結盟，誓要踏平梁山泊。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuLong": {
+    "HeroID": "ZhuLong",
+    "DisplayName": "祝龍",
+    "Nickname": "祝氏大郎",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 祝龍 (祝氏大郎 / ZhuLong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Warrior. Lore: 祝氏三傑之首，善使長槍，武藝剛猛，曾與霹靂火秦明鏖戰三十餘合不落下風。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuHu": {
+    "HeroID": "ZhuHu",
+    "DisplayName": "祝虎",
+    "Nickname": "祝氏二郎",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 祝虎 (祝氏二郎 / ZhuHu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Warrior. Lore: 祝氏三傑次子，勇力過人，於祝家莊外力戰穆弘、李逵諸將。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhuBiao": {
+    "HeroID": "ZhuBiao",
+    "DisplayName": "祝彪",
+    "Nickname": "祝氏三郎",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 祝彪 (祝氏三郎 / ZhuBiao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Hunter. Lore: 祝朝奉三子，扈三娘未婚夫，弓馬嫻熟，使一口點鋼槍，性格極其桀驁狂妄。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuTaigong": {
+    "HeroID": "HuTaigong",
+    "DisplayName": "扈太公",
+    "Nickname": "扈家莊莊主",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 扈太公 (扈家莊莊主 / HuTaigong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Farmer. Lore: 獨龍岡扈家莊老莊主，扈成與扈三娘之父。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HuCheng": {
+    "HeroID": "HuCheng",
+    "DisplayName": "扈成",
+    "Nickname": "飛天虎",
+    "StarType": "FACTION_ZhuManor",
+    "Prompt": "Masterpiece character portrait of 扈成 (飛天虎 / HuCheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ZhuManor, Warrior. Lore: 獨龍岡扈家莊少莊主，扈三娘之兄。祝家莊破後隻身投奔延安府，後渡江投南宋抗金為將。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ChaoGai": {
+    "HeroID": "ChaoGai",
+    "DisplayName": "晁蓋",
+    "Nickname": "托塔天王",
+    "StarType": "FACTION_ChaoGai",
+    "Prompt": "Masterpiece character portrait of 晁蓋 (托塔天王 / ChaoGai) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_ChaoGai, Warrior. Lore: 鄆城東溪村保正，武藝超群，勇奪青石塔震懾西溪村鬼怪。七星聚義智取生辰綱，上梁山推翻王倫成為二代寨主，攻曾頭市中箭捐軀。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangLun": {
+    "HeroID": "WangLun",
+    "DisplayName": "王倫",
+    "Nickname": "白衣秀士",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 王倫 (白衣秀士 / WangLun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Scholar. Lore: 梁山泊開山寨主，落第秀才出身。心胸狹隘，妒賢嫉能，屢次排擠前來投奔的林沖與晁蓋等人，終被林沖火併處決。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LuoZhenren": {
+    "HeroID": "LuoZhenren",
+    "DisplayName": "羅真人",
+    "Nickname": "二仙山仙長",
+    "StarType": "FACTION_Hermit",
+    "Prompt": "Masterpiece character portrait of 羅真人 (二仙山仙長 / LuoZhenren) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Hermit, Taoist. Lore: 薊州二仙山紫虛觀得道神仙，公孫勝之師。通曉天機，精通五雷天罡正法，曾授公孫勝神行破法天書破高唐州法術。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhiZhen": {
+    "HeroID": "ZhiZhen",
+    "DisplayName": "智真長老",
+    "Nickname": "五台山方丈",
+    "StarType": "FACTION_Hermit",
+    "Prompt": "Masterpiece character portrait of 智真長老 (五台山方丈 / ZhiZhen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Hermit, Taoist. Lore: 五台山文殊院住持大和尚，得道高僧。早知魯智深乃上界星宿下凡，賜其名智深與四句偈言，指引其一生歸宿。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiShishi": {
+    "HeroID": "LiShishi",
+    "DisplayName": "李師師",
+    "Nickname": "東京第一名伎",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 李師師 (東京第一名伎 / LiShishi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Entertainer. Lore: 汴京名動天下之絕代才女與藝伎，宋徽宗與燕青皆為其座上賓。色藝雙絕，深明大義，為梁山泊招安搭起通天之橋梁。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "XiMenQing": {
+    "HeroID": "XiMenQing",
+    "DisplayName": "西門慶",
+    "Nickname": "陽谷生藥鋪東家",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 西門慶 (陽谷生藥鋪東家 / XiMenQing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Merchant. Lore: 清河縣破落戶，陽谷縣開生藥鋪暴發戶。為人奸詐好色，擅使拳棒，勾結潘金蓮毒殺武大郎，終在獅子樓被武松斬殺。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "PanJinlian": {
+    "HeroID": "PanJinlian",
+    "DisplayName": "潘金蓮",
+    "Nickname": "三寸金蓮",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 潘金蓮 (三寸金蓮 / PanJinlian) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Entertainer. Lore: 武大郎之妻，姿色過人。因不甘貧寒受王婆唆使偷情西門慶，並鳩殺親夫，最終伏誅於武松之手。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "JiangMenshen": {
+    "HeroID": "JiangMenshen",
+    "DisplayName": "蔣門神",
+    "Nickname": "快活林霸王",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 蔣門神 (快活林霸王 / JiangMenshen) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Warrior. Lore: 本名蔣忠，生得九尺長軀，臂力千斤。倚仗張都監勢力強佔孟州快活林酒肉莊，被醉打快活林的武松以玉環步鴛鴦腳重創擊敗。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YanPoxi": {
+    "HeroID": "YanPoxi",
+    "DisplayName": "閻婆惜",
+    "Nickname": "閻惜嬌",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 閻婆惜 (閻惜嬌 / YanPoxi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Entertainer. Lore: 東京歌女，宋江之妾。因與張文遠通姦並以晁蓋書信要挾宋江，終在鄆城烏龍院被宋江怒殺。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhengTu": {
+    "HeroID": "ZhengTu",
+    "DisplayName": "鄭屠",
+    "Nickname": "鎮關西",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 鄭屠 (鎮關西 / ZhengTu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, Merchant. Lore: 渭州肉鋪屠戶，強佔金翠蓮為妾。魯智深為伸張正義三拳將其打死，開展花和尚傳奇生涯。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "NiuEr": {
+    "HeroID": "NiuEr",
+    "DisplayName": "牛二",
+    "Nickname": "沒毛大蟲",
+    "StarType": "FACTION_Neutral",
+    "Prompt": "Masterpiece character portrait of 牛二 (沒毛大蟲 / NiuEr) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Neutral, None. Lore: 東京大潑皮無賴，於天漢州橋糾纏逼迫楊志寶刀殺人，終被青面獸楊志手刃。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TianHu": {
+    "HeroID": "TianHu",
+    "DisplayName": "田虎",
+    "Nickname": "晉王",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 田虎 (晉王 / TianHu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Warrior. Lore: 四大寇之一，威勝州獵戶出身，力大勇猛。趁水旱民變聚眾割據河北五州五十六縣，自立為晉王，建宮殿設官分職。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "QiaoDaoqing": {
+    "HeroID": "QiaoDaoqing",
+    "DisplayName": "喬道清",
+    "Nickname": "幻魔君",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 喬道清 (幻魔君 / QiaoDaoqing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Taoist. Lore: 田虎國師兼護國靈感真人，精通三昧神水幻術，呼風喚雨、驅沙走石。曾連挫梁山數十名將，後歸順梁山並拜羅真人為師。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "QiongYing": {
+    "HeroID": "QiongYing",
+    "DisplayName": "瓊英",
+    "Nickname": "瓊矢鏃",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 瓊英 (瓊矢鏃 / QiongYing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Hunter. Lore: 田虎郡主兼女將軍，仇申之女。於夢中得神人傳授飛石神技，百發百中。後與張清結為連理，做內應手刃鄔梨、生擒田虎為父母報仇。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SunAn": {
+    "HeroID": "SunAn",
+    "DisplayName": "孫安",
+    "Nickname": "殿前元帥",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 孫安 (殿前元帥 / SunAn) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Warrior. Lore: 田虎麾下頭號大將，身長九尺，手使兩口鑌鐵重劍，劍法神化。與大刀關勝大戰百餘合不分勝負，投降梁山後為征王慶立下不世奇功。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "BianXiang": {
+    "HeroID": "BianXiang",
+    "DisplayName": "卞祥",
+    "Nickname": "右丞相兼太尉",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 卞祥 (右丞相兼太尉 / BianXiang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Warrior. Lore: 田虎右丞相，河北名將，使一柄開山大斧。曾以一敵二獨鬥九紋龍史進與花項虎龔旺，三十餘合斬殺淮西名將酆泰。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShanShiqi": {
+    "HeroID": "ShanShiqi",
+    "DisplayName": "山士奇",
+    "Nickname": "樞密使",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 山士奇 (樞密使 / ShanShiqi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Warrior. Lore: 田虎手下虎將，沁源人氏，使一條四十斤重渾鐵棍。曾於陣前與豹子頭林沖大戰五十餘合不分勝敗。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MaLing": {
+    "HeroID": "MaLing",
+    "DisplayName": "馬靈",
+    "Nickname": "神捷將軍",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 馬靈 (神捷將軍 / MaLing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Taoist. Lore: 涿州道士，號「聖水將軍」，額生第三隻神目。足踏風火輪日行千里，善使金磚神法，後被戴宗公孫勝破法生擒。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WuLi": {
+    "HeroID": "WuLi",
+    "DisplayName": "鄔梨",
+    "Nickname": "國舅威勝大將",
+    "StarType": "FACTION_TianHu",
+    "Prompt": "Masterpiece character portrait of 鄔梨 (國舅威勝大將 / WuLi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_TianHu, Warrior. Lore: 田虎國舅，瓊英義父。身材魁梧，使一口潑風大刀，鎮守威勝要塞，後中瓊英與張清毒計身亡。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangQing": {
+    "HeroID": "WangQing",
+    "DisplayName": "王慶",
+    "Nickname": "楚王",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 王慶 (楚王 / WangQing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 四大寇之一，東京副排軍出身，因與童貫義女私通獲罪發配。後聚眾起義割據淮南八州八十六縣，自稱楚王。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DuanSanniang": {
+    "HeroID": "DuanSanniang",
+    "DisplayName": "段三娘",
+    "Nickname": "淮西大娘",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 段三娘 (淮西大娘 / DuanSanniang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 王慶之妻，淮西皇后。生得身材高大，面如夜叉，武藝過人，手使兩口短刀，性格剽悍暴烈。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DuXue": {
+    "HeroID": "DuXue",
+    "DisplayName": "杜壆",
+    "Nickname": "淮西大都督",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 杜壆 (淮西大都督 / DuXue) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 淮西軍第一猛將，使一條丈八蛇矛，神勇冠絕水滸。曾於陣前與玉麒麟盧俊義大戰五十餘合佔據上風，迫使孫安策馬夾攻方能破之。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiZhu": {
+    "HeroID": "LiZhu",
+    "DisplayName": "李助",
+    "Nickname": "金劍先生",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 李助 (金劍先生 / LiZhu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Taoist. Lore: 王慶軍師兼丞相，得異人傳授神劍之術。使一柄金劍如電光飛舞，劍法通神，連盧俊義遇之亦難招架，終由公孫勝作五雷法所破。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YuanLang": {
+    "HeroID": "YuanLang",
+    "DisplayName": "袁朗",
+    "Nickname": "赤面虎",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 袁朗 (赤面虎 / YuanLang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 淮西猛將，手使一對各重五十斤的水磨鋼撾。曾與豹子頭林沖及霹靂火秦明鏖戰百餘合不分高下。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "MiSheng": {
+    "HeroID": "MiSheng",
+    "DisplayName": "縻胜",
+    "Nickname": "開山大將",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 縻胜 (開山大將 / MiSheng) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 王慶帳下先鋒驍將，使一柄開山大斧，驍勇異常，曾陣斬梁山水軍猛將文仲容與崔埜。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TengKui": {
+    "HeroID": "TengKui",
+    "DisplayName": "滕戣",
+    "Nickname": "紀山雙雄兄",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 滕戣 (紀山雙雄兄 / TengKui) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 紀山軍統制，使一柄重三尖兩刃刀，作戰勇冠三軍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "TengKan": {
+    "HeroID": "TengKan",
+    "DisplayName": "滕戡",
+    "Nickname": "紀山雙雄弟",
+    "StarType": "FACTION_WangQing",
+    "Prompt": "Masterpiece character portrait of 滕戡 (紀山雙雄弟 / TengKan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_WangQing, Warrior. Lore: 滕戣之弟，使一條虎頭竹節鋼鞭，曾與呼延灼於陣前對鞭五十餘合，棋逢敵手。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "FangLa": {
+    "HeroID": "FangLa",
+    "DisplayName": "方臘",
+    "Nickname": "聖公",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 方臘 (聖公 / FangLa) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Warrior. Lore: 睦州歙縣漆園主，利用摩尼教起義，割據江南八州五十二縣，建國號「永樂」，自立為聖公，讓宋廷與梁山付出極慘烈代價。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "FangTianding": {
+    "HeroID": "FangTianding",
+    "DisplayName": "方天定",
+    "Nickname": "南國太子",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 方天定 (南國太子 / FangTianding) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Scholar. Lore: 方臘之子，封南國太子，坐鎮杭州重鎮。麾下有南離大將軍石寶等四大元帥與二十四將，重創梁山征南大軍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DengYuanjue": {
+    "HeroID": "DengYuanjue",
+    "DisplayName": "鄧元覺",
+    "Nickname": "寶光如來",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 鄧元覺 (寶光如來 / DengYuanjue) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Warrior. Lore: 方臘國師，法號寶光如來，使一條五十斤重渾鐵禪杖。曾於杭州城下與花和尚魯智深大戰五十餘合不分勝負，神力驚世。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShiBao": {
+    "HeroID": "ShiBao",
+    "DisplayName": "石寶",
+    "Nickname": "南離大將軍",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 石寶 (南離大將軍 / ShiBao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Warrior. Lore: 方臘麾下第一戰將，使一口劈風刀與流星錘。智勇兼備，在烏龍嶺與杭州連斬急先鋒索超、鄧飛、燕順、鮑旭、馬麟梁山五虎八驃大將。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiTianrun": {
+    "HeroID": "LiTianrun",
+    "DisplayName": "厲天閏",
+    "Nickname": "鎮國大將軍",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 厲天閏 (鎮國大將軍 / LiTianrun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Warrior. Lore: 鎮守獨松關大將，武藝絕倫。曾陣斬小霸王周通、沒羽箭張清，重創雙槍將董平，後與盧俊義大戰三十合力竭陣亡。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "SiXingfang": {
+    "HeroID": "SiXingfang",
+    "DisplayName": "司行方",
+    "Nickname": "護國大將軍",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 司行方 (護國大將軍 / SiXingfang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Warrior. Lore: 德清守將，方臘四大元帥之一。武勇過人，於宣州三十合斬殺梁山水泊步兵統領插翅虎雷橫。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "PangWanchun": {
+    "HeroID": "PangWanchun",
+    "DisplayName": "龐萬春",
+    "Nickname": "小養由基",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 龐萬春 (小養由基 / PangWanchun) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Hunter. Lore: 昱嶺關守將，水滸第一神射手。於關前連珠箭射殺九紋龍史進、拚命三郎石秀、陳達、楊春、李忠、薛永六員梁山好漢。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WangYin": {
+    "HeroID": "WangYin",
+    "DisplayName": "王寅",
+    "Nickname": "兵部尚書",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 王寅 (兵部尚書 / WangYin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Warrior. Lore: 方臘兵部尚書，歙縣名將，文武全才。坐騎「轉山飛」，使一條鋼槍與轉尺撾，連殺李雲、石勇，力抗孫立、黃信等四將毫無懼色。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "BaoDaoyi": {
+    "HeroID": "BaoDaoyi",
+    "DisplayName": "包道乙",
+    "Nickname": "靈應天師",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 包道乙 (靈應天師 / BaoDaoyi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Taoist. Lore: 金華山妖道，方臘國師。身懷「玄天上帝混元飛劍」，能於百步外取人首級，於烏龍嶺作法飛劍斬斷行者武松左臂。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ZhengBiao": {
+    "HeroID": "ZhengBiao",
+    "DisplayName": "鄭彪",
+    "Nickname": "鄭魔君",
+    "StarType": "FACTION_FangLa",
+    "Prompt": "Masterpiece character portrait of 鄭彪 (鄭魔君 / ZhengBiao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_FangLa, Taoist. Lore: 包道乙高徒，婺州都督。精通妖法與槍法，頭頂黑氣現神將，陣斬矮腳虎王英與一丈青扈三娘夫婦。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YeluYanxi": {
+    "HeroID": "YeluYanxi",
+    "DisplayName": "耶律延禧",
+    "Nickname": "遼天祚帝",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 耶律延禧 (遼天祚帝 / YeluYanxi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Hunter. Lore: 大遼帝國末代皇帝，喜好遊獵。因契丹國政日非、金兵南下而面臨內外夾攻，曾調集傾國兵力迎戰宋朝與梁山軍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WuYanguang": {
+    "HeroID": "WuYanguang",
+    "DisplayName": "兀顏光",
+    "Nickname": "大遼第一都統軍",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 兀顏光 (大遼第一都統軍 / WuYanguang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Warrior. Lore: 大遼軍中第一統軍太師，幽州第一勇士。熟讀兵書，精通「太乙混天象陣」，身披三重連環重鎧，手使鐵力槊與方天戟，勇冠三軍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WuYanYanshou": {
+    "HeroID": "WuYanYanshou",
+    "DisplayName": "兀顏延壽",
+    "Nickname": "小統軍",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 兀顏延壽 (小統軍 / WuYanYanshou) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Warrior. Lore: 兀顏光之子，精熟陣法，勇武剛烈，掌管太乙混天象陣左翼，曾於陣前與九紋龍史進激戰。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HeZhongbao": {
+    "HeroID": "HeZhongbao",
+    "DisplayName": "賀重寶",
+    "Nickname": "薊州副統軍",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 賀重寶 (薊州副統軍 / HeZhongbao) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Taoist. Lore: 薊州守將兼大遼副都統軍，身長八尺，通曉妖法神兵，曾設三關陷阱誘伏梁山軍，逼得關勝等眾將苦戰。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "DaLibo": {
+    "HeroID": "DaLibo",
+    "DisplayName": "答里孛",
+    "Nickname": "瓊妖納延之主·大遼郡主",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 答里孛 (瓊妖納延之主·大遼郡主 / DaLibo) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Warrior. Lore: 大遼幽王之女，太乙混天象陣太陰星女將。使一口繡鸞刀與梨花槍，統率女真契丹騎兵馳騁沙場。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ALiqi": {
+    "HeroID": "ALiqi",
+    "DisplayName": "阿里奇",
+    "Nickname": "遼國先鋒大將",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 阿里奇 (遼國先鋒大將 / ALiqi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Warrior. Lore: 大遼先鋒名將，身長九尺，梨花開山斧威震邊陲。三十合內打敗金槍手徐寧，後中張清飛石暗器落馬。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "QiongYaoNayan": {
+    "HeroID": "QiongYaoNayan",
+    "DisplayName": "瓊妖納延",
+    "Nickname": "大遼先鋒元帥",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 瓊妖納延 (大遼先鋒元帥 / QiongYaoNayan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Warrior. Lore: 大遼年輕勇將，使一桿畫桿描金戟，二十合殺敗九紋龍史進，驍勇善戰。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "KouZhenyuan": {
+    "HeroID": "KouZhenyuan",
+    "DisplayName": "寇鎮遠",
+    "Nickname": "大遼左丞相將軍",
+    "StarType": "FACTION_Liao",
+    "Prompt": "Masterpiece character portrait of 寇鎮遠 (大遼左丞相將軍 / KouZhenyuan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Liao, Hunter. Lore: 大遼名將，神箭百步穿楊，曾於馬上回身箭射孫新，後被小李廣花榮箭術對決所射殺。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WanyanAguda": {
+    "HeroID": "WanyanAguda",
+    "DisplayName": "完顏阿骨打",
+    "Nickname": "金太祖",
+    "StarType": "FACTION_Jin",
+    "Prompt": "Masterpiece character portrait of 完顏阿骨打 (金太祖 / WanyanAguda) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Jin, Hunter. Lore: 金朝開國皇帝，女真族傳奇英雄。統一女真各部，創金國文字與猛安謀克制，以少勝多滅大遼、撼大宋，雄才大略。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WanyanZongbi": {
+    "HeroID": "WanyanZongbi",
+    "DisplayName": "完顏宗弼",
+    "Nickname": "金兀朮·四太子",
+    "StarType": "FACTION_Jin",
+    "Prompt": "Masterpiece character portrait of 完顏宗弼 (金兀朮·四太子 / WanyanZongbi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Jin, Warrior. Lore: 金太祖第四子，金國都元帥兼越國王。手使開山大斧與提盧槍，創立鐵浮屠與拐子馬精騎橫掃中原，為宋金戰場之頭號勁敵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WanyanZongwang": {
+    "HeroID": "WanyanZongwang",
+    "DisplayName": "完顏宗望",
+    "Nickname": "二太子·斡離不",
+    "StarType": "FACTION_Jin",
+    "Prompt": "Masterpiece character portrait of 完顏宗望 (二太子·斡離不 / WanyanZongwang) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Jin, Scholar. Lore: 金太祖次子，統帥東路金軍南下包圍東京汴梁，善於用兵與謀略，人稱菩薩太子。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "WanyanZonghan": {
+    "HeroID": "WanyanZonghan",
+    "DisplayName": "完顏宗翰",
+    "Nickname": "國相·黏罕",
+    "StarType": "FACTION_Jin",
+    "Prompt": "Masterpiece character portrait of 完顏宗翰 (國相·黏罕 / WanyanZonghan) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Jin, Warrior. Lore: 金國名將兼國相，率西路軍破太原、陷汴京，俘獲徽欽二帝，為金國定鼎中原第一功臣。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HaMichi": {
+    "HeroID": "HaMichi",
+    "DisplayName": "哈迷蚩",
+    "Nickname": "金國軍師",
+    "StarType": "FACTION_Jin",
+    "Prompt": "Masterpiece character portrait of 哈迷蚩 (金國軍師 / HaMichi) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Jin, Scholar. Lore: 金兀朮隨軍首席軍師，深通中原地理與兵法，足智多謀，屢次為金國騎兵出謀劃策破城略地。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "ShanShituo": {
+    "HeroID": "ShanShituo",
+    "DisplayName": "山獅駝",
+    "Nickname": "金國第一勇士",
+    "StarType": "FACTION_Jin",
+    "Prompt": "Masterpiece character portrait of 山獅駝 (金國第一勇士 / ShanShituo) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Jin, Warrior. Lore: 金國帳下力大無窮之無敵戰將，手使一柄一百二十斤重鎏金鏜，勇力蓋世，萬人難敵。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "Temujin": {
+    "HeroID": "Temujin",
+    "DisplayName": "鐵木真",
+    "Nickname": "成吉思汗",
+    "StarType": "FACTION_Mongol",
+    "Prompt": "Masterpiece character portrait of 鐵木真 (成吉思汗 / Temujin) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Mongol, Hunter. Lore: 大蒙古國開國可汗，統一北方草原各部，被尊為成吉思汗。建立橫跨歐亞的蒙古帝國，軍事戰術與騎射指揮堪稱古今之巔峰。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "Jebe": {
+    "HeroID": "Jebe",
+    "DisplayName": "哲別",
+    "Nickname": "神箭手·四狗之一",
+    "StarType": "FACTION_Mongol",
+    "Prompt": "Masterpiece character portrait of 哲別 (神箭手·四狗之一 / Jebe) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Mongol, Hunter. Lore: 蒙古四狗之一，草原傳奇神箭手，箭無虛發。長途奔襲、大迂迴戰術大師，曾率輕騎橫掃中亞、高加索與東歐。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "Subutai": {
+    "HeroID": "Subutai",
+    "DisplayName": "速不臺",
+    "Nickname": "勇將·四狗之一",
+    "StarType": "FACTION_Mongol",
+    "Prompt": "Masterpiece character portrait of 速不臺 (勇將·四狗之一 / Subutai) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Mongol, Warrior. Lore: 蒙古四狗之一，一生征戰三十餘國、指揮六十五場會戰未嘗一敗，長距離大兵團協同作戰之天才統帥。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "Muqali": {
+    "HeroID": "Muqali",
+    "DisplayName": "木華黎",
+    "Nickname": "國王·四傑之一",
+    "StarType": "FACTION_Mongol",
+    "Prompt": "Masterpiece character portrait of 木華黎 (國王·四傑之一 / Muqali) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Mongol, Scholar. Lore: 蒙古開國四傑之一，封太師國王，代成吉思汗全權經略中原征金，沉毅多智，深得漢地士民擁戴。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "Boorchu": {
+    "HeroID": "Boorchu",
+    "DisplayName": "博爾術",
+    "Nickname": "阿兒剌拔都·四傑之一",
+    "StarType": "FACTION_Mongol",
+    "Prompt": "Masterpiece character portrait of 博爾術 (阿兒剌拔都·四傑之一 / Boorchu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Mongol, Hunter. Lore: 蒙古開國四傑之首，少年時即追隨鐵木真奪回被盜八匹愛馬，終生赤膽忠心，掌管右翼大軍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "Jamukha": {
+    "HeroID": "Jamukha",
+    "DisplayName": "札木合",
+    "Nickname": "古兒汗",
+    "StarType": "FACTION_Mongol",
+    "Prompt": "Masterpiece character portrait of 札木合 (古兒汗 / Jamukha) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_Mongol, Warrior. Lore: 札達蘭部首領，鐵木真結拜安答，亦為其爭霸草原最強勁敵。十三翼之戰大敗鐵木真，兵法謀略超群，一代草原霸主。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YueFei": {
+    "HeroID": "YueFei",
+    "DisplayName": "岳飛",
+    "Nickname": "岳武穆",
+    "StarType": "FACTION_SongLoyal",
+    "Prompt": "Masterpiece character portrait of 岳飛 (岳武穆 / YueFei) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_SongLoyal, Warrior. Lore: 精忠報國，抗金名將，岳家軍統帥，連破金兀朮鐵浮屠拐子馬，撼山易撼岳家軍難。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "HanShizhong": {
+    "HeroID": "HanShizhong",
+    "DisplayName": "韓世忠",
+    "Nickname": "蘄王",
+    "StarType": "FACTION_SongLoyal",
+    "Prompt": "Masterpiece character portrait of 韓世忠 (蘄王 / HanShizhong) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_SongLoyal, Warrior. Lore: 中興四將之一，使長槍大槊，黃天蕩之戰以八千水軍圍困金兀朮十萬大軍。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "LiangHongyu": {
+    "HeroID": "LiangHongyu",
+    "DisplayName": "梁紅玉",
+    "Nickname": "安國夫人",
+    "StarType": "FACTION_SongLoyal",
+    "Prompt": "Masterpiece character portrait of 梁紅玉 (安國夫人 / LiangHongyu) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_SongLoyal, Entertainer. Lore: 韓世忠之妻，黃天蕩戰役親自擂鼓助戰，英姿颯爽，名垂青史。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  },
+  "YangZaixing": {
+    "HeroID": "YangZaixing",
+    "DisplayName": "楊再興",
+    "Nickname": "楊家槍名將",
+    "StarType": "FACTION_SongLoyal",
+    "Prompt": "Masterpiece character portrait of 楊再興 (楊家槍名將 / YangZaixing) from Water Margin. Dynamic East Asian epic ink-wash digital painting style, painterly heroic realism. Role: FACTION_SongLoyal, Warrior. Lore: 楊家將後裔，小商橋血戰一人斬殺數百金兵，中箭如蝟，壯烈殉國。. Authentic Song Dynasty warrior armor or traditional attire, ornate detailed craftsmanship, dramatic cinematic lighting, atmospheric rim light, ink splatter and brushwork textures, 8k resolution. STRICT NEGATIVE CONSTRAINTS: NO text, NO signatures, NO artist names, NO stamps, NO watermarks, clean background."
+  }
+}

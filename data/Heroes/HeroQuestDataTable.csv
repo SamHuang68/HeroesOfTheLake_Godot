@@ -1,0 +1,13 @@
+﻿---,QuestID,HeroID,QuestTitle,TriggerCondition,TargetNodeID,RewardExp,RewardItemID,RewardFame,QuestDescription
+Quest_LinChong_WindSnow,Quest_LinChong_WindSnow,LinChong,風雪山神廟·快意恩仇,好漢等級達5級且忠誠度高於80,Cangzhou,1000,Item_SnakeSpear,100,前往滄州草料場手刃仇敵陸謙與富安，解開林沖心結，武力永久提升10點並獲得神兵丈八蛇矛。
+Quest_WuSong_DrunkenTiger,Quest_WuSong_DrunkenTiger,WuSong,景陽岡醉打吊額猛虎,好漢在陽谷縣酒館飲透瓶香三碗,Yuncheng,800,Item_TwinBlades,80,在景陽岡赤手空拳擊斃食人吊額白額虎，威震天下，獲得「打虎英雄」封號，力量永久提升10點。
+Quest_LuZhishen_WillowTree,Quest_LuZhishen_WillowTree,LuZhishen,大相國寺倒拔垂楊柳,好漢在東京相國寺菜園工作滿3個月,Kaifeng,800,Item_ZenStaff,80,在大相國寺菜園力拔深根垂楊柳，震懾群寇，獲得「拔山蓋世」特權，體力上限永久提升20點。
+Quest_YangZhi_SellSaber,Quest_YangZhi_SellSaber,YangZhi,汴京天街怒斬沒毛大蟲,好漢落魄且持有祖傳寶刀,Kaifeng,600,Item_TwinWhips,60,在汴京天街怒斬地痞牛二為民除害，名揚四海，山寨民心聲望大幅提升。
+Quest_SongJiang_MysticTome,Quest_SongJiang_MysticTome,SongJiang,還道村九天玄女受天書,宋江任大寨主且聲望達200,Yuncheng,1500,Book_NineHeaven,150,在還道村古廟受九天玄女娘娘賜予三卷天書，領悟神機軍略，全軍士氣與智力永久提升。
+Quest_LuJunyi_Rescue,Quest_LuJunyi_Rescue,LuJunyi,北京大名府大破鐵牢籠,盧俊義被陷害入獄,Daming,1200,Steed_JadeLion,120,梁山好漢兵發北京大名府，劫法場救出玉麒麟，解鎖盧俊義統帥河北精銳鐵騎。
+Quest_DaiZong_RescueSong,Quest_DaiZong_RescueSong,DaiZong,江州神行急遞偽造信,宋江在潯陽樓題反詩被捕,Jiangzhou,800,Charm_DivineSpeed,80,戴宗綁縛神行甲馬千里奔襲傳遞書信，劫法場救出及時雨，獲得神行天符。
+Quest_HuaRong_ShootWildGoose,Quest_HuaRong_ShootWildGoose,HuaRong,對影山神箭射雙雕,花榮率部行軍至對影山,Liangshan,600,Item_HookSpear,60,花榮陣前挽雕弓箭射雙戟飄帶與飛雁，威震三軍，麾下弓弩部隊射程永久提升。
+Quest_ChaiJin_IronCertificate,Quest_ChaiJin_IronCertificate,ChaiJin,柴家莊庇護天下英豪,柴進在莊園接待超過10位在野好漢,Cangzhou,1000,Book_DanShu,100,柴進動用丹書鐵券庇護天下被通緝義士，解鎖柴家莊天下客棧特權，每月英雄投奔率翻倍。
+Quest_LiJun_OverseasKing,Quest_LiJun_OverseasKing,LiJun,太湖聚義遠征海外國,李俊平定江南水寨且水軍規模破萬,Hangzhou,2000,Steed_MountainFlyer,200,混江龍李俊率童氏兄弟遠渡重洋開拓海外群島，建立暹羅水軍王國，解鎖海上貿易霸權。
+Quest_YueFei_ZhuxianZhen,Quest_YueFei_ZhuxianZhen,YueFei,朱仙鎮大捷破鐵浮屠,岳飛率岳家軍擊潰金兀朮先鋒部隊,Kaifeng,2500,Armor_GoldenRing,250,朱仙鎮大戰以麻紮刀大破金兵拐子馬與鐵浮屠，威震華夏，解鎖天下第一精忠名將稱號。
+Quest_GuanSheng_SingleBlade,Quest_GuanSheng_SingleBlade,GuanSheng,蒲東大刀單騎降雙虎,關勝陣前迎戰宣贊與郝思文,Kaifeng,900,Item_GuanBlade,90,關勝以純熟青龍偃月刀法降伏將門雙雄，金蘭結義，解鎖馬軍五虎將之首專屬陣容。

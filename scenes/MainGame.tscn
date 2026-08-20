@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6f2a7x8y9z01"]
+
+[ext_resource type="Script" path="res://scripts/MainGame.gd" id="1_maingame"]
+[ext_resource type="Script" path="res://scripts/IsometricMap.gd" id="2_isomap"]
+[ext_resource type="Script" path="res://scripts/TopMenuBar.gd" id="3_topmenu"]
+[ext_resource type="Script" path="res://scripts/HeroDetailModal.gd" id="4_heromodal"]
+[ext_resource type="Script" path="res://scripts/FortressOverviewModal.gd" id="5_fortressmodal"]
+[ext_resource type="Script" path="res://scripts/MinimapWindow.gd" id="6_minimap"]
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_maingame")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 500)
+position_smoothing_enabled = true
+
+[node name="World2D" type="Node2D" parent="."]
+
+[node name="IsometricMap" type="Node2D" parent="World2D"]
+script = ExtResource("2_isomap")
+
+[node name="Characters" type="Node2D" parent="World2D/IsometricMap"]
+y_sort_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TopMenuBar" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 72.0
+grow_horizontal = 2
+script = ExtResource("3_topmenu")
+
+[node name="HeroDetailModal" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 80.0
+offset_right = 450.0
+offset_bottom = 600.0
+script = ExtResource("4_heromodal")
+
+[node name="FortressOverviewModal" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 720.0
+offset_top = 160.0
+offset_right = 1250.0
+offset_bottom = 550.0
+script = ExtResource("5_fortressmodal")
+
+[node name="MinimapWindow" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 480.0
+offset_right = 200.0
+offset_bottom = 690.0
+script = ExtResource("6_minimap")

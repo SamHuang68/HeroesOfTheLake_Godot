@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; but since it is pure text, you can also modify it.
+
+config_version=5
+
+[application]
+
+config/name="水滸英雄錄：天導108星"
+config/description="純 2D 等角 (Isometric 2.5D) 復古 SLG 戰略遊戲 — 1:1 還原 KOEI《水滸傳·天導一〇八星》"
+config/version="1.0.0"
+run/main_scene="res://scenes/MainGame.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true

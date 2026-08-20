@@ -1,0 +1,13 @@
+﻿---,FacilityType,DisplayName,Description,BuildCostGold,BuildCostFood,BuildTurns,PreferredAptitude,BaseProductionAmount
+Farm,Farm,耕地,生產糧食之農耕設施，指派農民適性英雄可大幅提高收成。,100,50,1,Farmer,20
+FishingPond,FishingPond,漁場,水泊捕撈設施，提供穩定魚糧產出，水手適性英雄可提升效率。,120,40,1,Boatman,18
+Market,Market,市場,繁榮商業之集市，產出金錢與流通物資，商人適性英雄最佳。,150,50,1,Merchant,25
+Tavern,Tavern,酒館,江湖好漢聚會之處，可招募在野英雄並提高士氣與傳播情報。,200,100,2,Entertainer,15
+Smithy,Smithy,鐵匠鋪,鍛造刀槍劍戟等軍備兵器，工匠適性英雄可加速生產優良兵器。,250,80,2,Blacksmith,12
+Stable,Stable,牧場,繁育戰馬與調教坐騎，獵戶與獸醫適性英雄可提升戰馬品質。,300,120,2,Doctor,10
+Shipyard,Shipyard,造船場,水泊要塞專屬船塢，建造蒙衝、鬥艦等戰船，水手適性英雄專精。,350,100,2,Boatman,8
+Temple,Temple,道觀,祈禳齋醮之所，產出天師符咒並淨化疾病，道士適性英雄最佳。,250,60,2,Taoist,10
+Clinic,Clinic,藥鋪,研製金創傷藥與療愈傷病英雄，醫師適性英雄可加速康復。,200,80,1,Doctor,15
+Barracks,Barracks,軍營,訓練精銳步弓兵與騎兵，武將適性英雄可提升兵源招募速度與初始等級。,300,150,2,Warrior,30
+TrainingGround,TrainingGround,練兵場,好漢切磋武藝、提升經驗與等級之場所，由武將或獵戶指導。,200,80,1,Warrior,10
+Entertainment,Entertainment,鬧市,百戲雜耍繁華街道，極大提升民忠與要塞繁榮度，伶人適性英雄最佳。,250,100,2,Entertainer,20
