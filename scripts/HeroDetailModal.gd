@@ -83,10 +83,13 @@ func build_hero_ui() -> void:
 
 	var p_file: String = current_hero.get("portrait", "")
 	var p_path := "res://assets/portraits/%s" % p_file
+	var p_cap := "res://assets/portraits/Portrait_%s" % current_hero.get("id", "LinChong") + ".jpg"
 	if ResourceLoader.exists(p_path):
 		portrait_rect.texture = load(p_path)
-	elif ResourceLoader.exists("res://assets/portraits/portrait_linchong.jpg"):
-		portrait_rect.texture = load("res://assets/portraits/portrait_linchong.jpg")
+	elif ResourceLoader.exists(p_cap):
+		portrait_rect.texture = load(p_cap)
+	elif ResourceLoader.exists("res://assets/portraits/Portrait_LinChong.jpg"):
+		portrait_rect.texture = load("res://assets/portraits/Portrait_LinChong.jpg")
 
 	banner_box.add_child(portrait_rect)
 

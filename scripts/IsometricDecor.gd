@@ -21,9 +21,9 @@ func _ready() -> void:
 	update_screen_position()
 
 func update_screen_position() -> void:
-	var map: Node2D = get_parent()
-	if map and map.has_method("grid_to_screen"):
-		position = map.call("grid_to_screen", grid_coord.x, grid_coord.y)
+	var sx: float = (float(grid_coord.x) - float(grid_coord.y)) * 32.0
+	var sy: float = (float(grid_coord.x) + float(grid_coord.y)) * 16.0
+	position = Vector2(sx, sy)
 
 func _process(delta: float) -> void:
 	sway_timer += delta

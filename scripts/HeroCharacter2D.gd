@@ -67,9 +67,10 @@ func load_hero_sprite_texture() -> void:
 		hero_sprite_texture = load(path)
 
 func update_screen_position_instant() -> void:
-	var map: Node2D = get_parent()
-	if map and map.has_method("grid_to_screen"):
-		position = map.call("grid_to_screen", grid_position.x, grid_position.y)
+	var sx: float = (float(grid_position.x) - float(grid_position.y)) * 32.0
+	var sy: float = (float(grid_position.x) + float(grid_position.y)) * 16.0
+	position = Vector2(sx, sy)
+	target_screen_pos = position
 
 func _process(delta: float) -> void:
 	anim_timer += delta
@@ -89,9 +90,9 @@ func _process(delta: float) -> void:
 			if path_points.size() > 0:
 				var next_grid: Vector2i = path_points.pop_front()
 				grid_position = next_grid
-				var map: Node2D = get_parent()
-				if map and map.has_method("grid_to_screen"):
-					target_screen_pos = map.call("grid_to_screen", next_grid.x, next_grid.y)
+				var sx: float = (float(next_grid.x) - float(next_grid.y)) * 32.0
+				var sy: float = (float(next_grid.x) + float(next_grid.y)) * 16.0
+				target_screen_pos = Vector2(sx, sy)
 			else:
 				is_moving = false
 				current_state = AnimState.WORK if assigned_job != "巡哨" else AnimState.IDLE
@@ -114,12 +115,12 @@ func update_facing_direction(dir_vec: Vector2) -> void:
 		current_dir = IsoDirection.SW
 
 func move_to_grid(new_grid: Vector2i) -> void:
-	var map: Node2D = get_parent()
-	if map and map.has_method("grid_to_screen"):
-		grid_position = new_grid
-		target_screen_pos = map.call("grid_to_screen", new_grid.x, new_grid.y)
-		is_moving = true
-		current_state = AnimState.WALK
+	grid_position = new_grid
+	var sx: float = (float(new_grid.x) - float(new_grid.y)) * 32.0
+	var sy: float = (float(new_grid.x) + float(new_grid.y)) * 16.0
+	target_screen_pos = Vector2(sx, sy)
+	is_moving = true
+	current_state = AnimState.WALK
 
 func assign_work(job_name: String) -> void:
 	assigned_job = job_name

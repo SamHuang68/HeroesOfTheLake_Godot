@@ -54,21 +54,19 @@ func _ready() -> void:
 	load_fortress_map("liangshan")
 
 func ensure_child_containers() -> void:
+	decorations_container = get_node_or_null("Decorations")
 	if not decorations_container:
-		decorations_container = get_node_or_null("Decorations")
-		if not decorations_container:
-			decorations_container = Node2D.new()
-			decorations_container.name = "Decorations"
-			decorations_container.y_sort_enabled = true
-			add_child(decorations_container)
+		decorations_container = Node2D.new()
+		decorations_container.name = "Decorations"
+		decorations_container.y_sort_enabled = true
+		add_child(decorations_container)
 
+	facilities_container = get_node_or_null("Facilities")
 	if not facilities_container:
-		facilities_container = get_node_or_null("Facilities")
-		if not facilities_container:
-			facilities_container = Node2D.new()
-			facilities_container.name = "Facilities"
-			facilities_container.y_sort_enabled = true
-			add_child(facilities_container)
+		facilities_container = Node2D.new()
+		facilities_container.name = "Facilities"
+		facilities_container.y_sort_enabled = true
+		add_child(facilities_container)
 
 func _process(delta: float) -> void:
 	map_anim_timer += delta
