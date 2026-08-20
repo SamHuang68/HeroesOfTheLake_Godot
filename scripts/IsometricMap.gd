@@ -50,6 +50,7 @@ signal facility_inspected(facility_node: Node2D)
 signal fortress_loaded(fortress_data: Dictionary)
 
 func _ready() -> void:
+	load_ground_textures()
 	ensure_child_containers()
 	load_fortress_map("liangshan")
 
@@ -318,58 +319,52 @@ func _draw() -> void:
 	if grid_data.has(selected_grid):
 		draw_tile_highlight(selected_grid, Color(0.2, 0.8, 1.0, 0.5), Color(0.1, 0.9, 1.0, 1.0))
 
+# 地面圖塊材質快取
+var tile_textures: Dictionary = {}
+
+func load_ground_textures() -> void:
+	var paths := {
+		TileType.WATER: "res://assets/sprites/terrain/tile_water.png",
+		TileType.GRASS: "res://assets/sprites/terrain/tile_grass.png",
+		TileType.FARMLAND: "res://assets/sprites/terrain/tile_farmland.png",
+		TileType.ROAD: "res://assets/sprites/terrain/tile_road.png",
+		TileType.STONE_PAVE: "res://assets/sprites/terrain/tile_stone.png",
+		TileType.DIRT_FLOOR: "res://assets/sprites/terrain/tile_road.png",
+		TileType.FOREST_MOSS: "res://assets/sprites/terrain/tile_grass.png"
+	}
+	for t in paths.keys():
+		var p: String = paths[t]
+		if ResourceLoader.exists(p):
+			tile_textures[t] = load(p)
+
+
+
 func draw_textured_ground_tile(grid_pos: Vector2i, type: int) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)
-	var p_top := center + Vector2(0, -HALF_H)
-	var p_right := center + Vector2(HALF_W, 0)
-	var p_bottom := center + Vector2(0, HALF_H)
-	var p_left := center + Vector2(-HALF_W, 0)
-	var points := PackedVector2Array([p_top, p_right, p_bottom, p_left])
+	var top_left := center - Vector2(HALF_W, HALF_H)
 
-	var fill_color: Color
-	var border_color: Color = Color(0.12, 0.15, 0.10, 0.2)
-
-	match type:
-		TileType.WATER:
-			var wave := sin(map_anim_timer * 2.5 + grid_pos.x * 0.8 + grid_pos.y * 0.8) * 0.05
-			fill_color = Color(0.20 + wave, 0.46 + wave, 0.68 + wave, 0.95)
-			border_color = Color(0.35, 0.65, 0.88, 0.4)
-		TileType.GRASS:
-			var g_var: float = ((grid_pos.x * 7 + grid_pos.y * 13) % 7) * 0.02
-			fill_color = Color(0.36 + g_var, 0.62 + g_var, 0.26 + g_var, 1.0)
-		TileType.FARMLAND:
-			fill_color = Color(0.68, 0.54, 0.26, 1.0)
-		TileType.DIRT_FLOOR:
-			fill_color = Color(0.72, 0.62, 0.48, 1.0)
-		TileType.FOREST_MOSS:
-			fill_color = Color(0.24, 0.45, 0.20, 1.0)
-		TileType.STONE_PAVE:
-			fill_color = Color(0.60, 0.62, 0.65, 1.0)
-		_:
-			fill_color = Color(0.4, 0.5, 0.3, 1.0)
-
-	draw_colored_polygon(points, fill_color)
-	draw_polyline(PackedVector2Array([p_top, p_right, p_bottom, p_left, p_top]), border_color, 1.0)
+	if tile_textures.has(type):
+		draw_texture(tile_textures[type], top_left)
+	else:
+		var p_top := center + Vector2(0, -HALF_H)
+		var p_right := center + Vector2(HALF_W, 0)
+		var p_bottom := center + Vector2(0, HALF_H)
+		var p_left := center + Vector2(-HALF_W, 0)
+		var points := PackedVector2Array([p_top, p_right, p_bottom, p_left])
+		var fill_color := Color(0.35, 0.60, 0.25, 1.0) if type != TileType.WATER else Color(0.20, 0.45, 0.70, 1.0)
+		draw_colored_polygon(points, fill_color)
 
 	if type == TileType.WATER:
 		var wave_off := sin(map_anim_timer * 3.0 + grid_pos.x) * 4.0
-		draw_line(center + Vector2(-12 + wave_off, -4), center + Vector2(12 + wave_off, -4), Color(0.6, 0.85, 1.0, 0.5), 1.5)
-		draw_line(center + Vector2(-8 - wave_off, 4), center + Vector2(8 - wave_off, 4), Color(0.6, 0.85, 1.0, 0.4), 1.5)
-	elif type == TileType.FARMLAND:
-		for i in range(-2, 3):
-			draw_line(center + Vector2(-16, i * 4), center + Vector2(16, i * 4), Color(0.55, 0.42, 0.20, 0.8), 2.0)
+		draw_line(center + Vector2(-10 + wave_off, -2), center + Vector2(10 + wave_off, -2), Color(0.7, 0.9, 1.0, 0.4), 1.0)
 
 func draw_road_tile(grid_pos: Vector2i) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)
-	var pts := PackedVector2Array([
-		center + Vector2(0, -HALF_H + 4),
-		center + Vector2(HALF_W - 8, 0),
-		center + Vector2(0, HALF_H - 4),
-		center + Vector2(-HALF_W + 8, 0)
-	])
-	draw_colored_polygon(pts, Color(0.62, 0.56, 0.44, 0.9))
-	draw_circle(center + Vector2(-4, -2), 1.5, Color(0.45, 0.40, 0.30, 0.8))
-	draw_circle(center + Vector2(6, 2), 2.0, Color(0.45, 0.40, 0.30, 0.8))
+	var top_left := center - Vector2(HALF_W, HALF_H)
+	if tile_textures.has(TileType.ROAD):
+		draw_texture(tile_textures[TileType.ROAD], top_left)
+	else:
+		draw_circle(center, 2.0, Color(0.5, 0.45, 0.35, 0.8))
 
 func draw_tile_highlight(grid_pos: Vector2i, fill_col: Color, line_col: Color) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)
