@@ -7,12 +7,14 @@ const DataManagerScript = preload("res://scripts/DataManager.gd")
 
 signal hero_inspect_requested(hero_data: Dictionary)
 signal hero_rewarded(hero_id: String, gold_amount: int)
+signal hero_recruited(hero_name: String)
+signal hero_exiled(hero_name: String)
 
 var search_filter: String = ""
 var hero_list_cache: Array = []
 
 func _ready() -> void:
-	custom_minimum_size = Vector2(560, 420)
+	custom_minimum_size = Vector2(620, 440)
 	build_personnel_ui()
 
 func build_personnel_ui() -> void:
@@ -44,7 +46,7 @@ func build_personnel_ui() -> void:
 
 	var title_box := HBoxContainer.new()
 	var title_lbl := Label.new()
-	title_lbl.text = " 人事名冊 — 梁山泊一百零八星"
+	title_lbl.text = " 人事名冊 — 梁山泊聚義好漢錄"
 	title_lbl.add_theme_color_override("font_color", Color.WHITE)
 	title_box.add_child(title_lbl)
 
@@ -91,8 +93,8 @@ func build_personnel_ui() -> void:
 	header_panel.add_theme_stylebox_override("panel", header_style)
 
 	var header_box := HBoxContainer.new()
-	var col_widths := [60, 60, 65, 45, 45, 45, 45, 45, 75]
-	var col_names := ["星宿", "稱號", "姓名", "體力", "臂力", "技能", "智力", "忠義", "操作"]
+	var col_widths := [60, 60, 65, 45, 45, 45, 45, 45, 140]
+	var col_names := ["星宿", "稱號", "姓名", "體力", "臂力", "技能", "智力", "忠義", "操作指令"]
 
 	for i in range(col_names.size()):
 		var clbl := Label.new()
@@ -134,7 +136,7 @@ func refresh_table() -> void:
 	for child in rows_vbox.get_children():
 		child.queue_free()
 
-	var col_widths := [60, 60, 65, 45, 45, 45, 45, 45, 75]
+	var col_widths := [60, 60, 65, 45, 45, 45, 45, 45, 140]
 	var count: int = 0
 
 	for h in hero_list_cache:
@@ -164,13 +166,13 @@ func refresh_table() -> void:
 			vlbl.add_theme_color_override("font_color", Color.BLACK)
 			r_box.add_child(vlbl)
 
-		# 操作按鈕
+		# 操作按鈕 (詳情 / 賞 / 錄用 / 流放)
 		var act_box := HBoxContainer.new()
 		act_box.custom_minimum_size = Vector2(col_widths[8], 0)
 
+		var hero_data: Dictionary = h
 		var view_btn := Button.new()
 		view_btn.text = "詳情"
-		var hero_data: Dictionary = h
 		view_btn.pressed.connect(func():
 			hero_inspect_requested.emit(hero_data)
 		)
@@ -184,6 +186,15 @@ func refresh_table() -> void:
 			refresh_table()
 		)
 		act_box.add_child(reward_btn)
+
+		var recruit_btn := Button.new()
+		recruit_btn.text = "錄用"
+		recruit_btn.pressed.connect(func():
+			hero_data["loyalty"] = maxi(hero_data["loyalty"], 80)
+			hero_recruited.emit(hero_data["name"])
+			refresh_table()
+		)
+		act_box.add_child(recruit_btn)
 
 		r_box.add_child(act_box)
 		row_panel.add_child(r_box)

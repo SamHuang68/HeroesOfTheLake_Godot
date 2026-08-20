@@ -1,14 +1,20 @@
 # Copyright (c) 2026 Sam Huang. All Rights Reserved.
-# 《水滸英雄錄：天導108星》- 遊戲主控制器 (Main Game Coordinator)
+# 《水滸英雄錄：天導108星》- 遊戲主控制器 (Main Game Coordinator - Full Systems)
 extends Node2D
 
 const DataManagerScript = preload("res://scripts/DataManager.gd")
+const SaveManagerScript = preload("res://scripts/SaveManager.gd")
+const EventManagerScript = preload("res://scripts/EventManager.gd")
+const ProfessionManagerScript = preload("res://scripts/ProfessionManager.gd")
+const CombatManagerScript = preload("res://scripts/CombatManager.gd")
 const HeroCharacter2DScript = preload("res://scripts/HeroCharacter2D.gd")
 
 @onready var camera: Camera2D = $Camera2D
 @onready var map: Node2D = $World2D/IsometricMap
 @onready var characters_container: Node2D = $World2D/IsometricMap/Characters
 @onready var ui_layer: CanvasLayer = $CanvasLayer
+
+# 所有 UI 視窗
 @onready var top_menu_bar: VBoxContainer = $CanvasLayer/TopMenuBar
 @onready var hero_modal: PanelContainer = $CanvasLayer/HeroDetailModal
 @onready var fortress_modal: PanelContainer = $CanvasLayer/FortressOverviewModal
@@ -19,6 +25,8 @@ const HeroCharacter2DScript = preload("res://scripts/HeroCharacter2D.gd")
 @onready var diplomacy_modal: PanelContainer = $CanvasLayer/DiplomacyModal
 @onready var facility_info_modal: PanelContainer = $CanvasLayer/FacilityInfoModal
 @onready var hero_action_modal: PanelContainer = $CanvasLayer/HeroActionModal
+@onready var strategem_modal: PanelContainer = $CanvasLayer/StrategemModal
+@onready var settings_modal: PanelContainer = $CanvasLayer/SettingsModal
 
 var is_dragging_camera: bool = false
 var last_mouse_pos: Vector2 = Vector2.ZERO
@@ -36,7 +44,7 @@ func _ready() -> void:
 	if top_menu_bar.has_signal("advance_month_clicked"):
 		top_menu_bar.connect("advance_month_clicked", _on_advance_month)
 
-	# 3. 綁定地圖點擊與設施檢視事件
+	# 3. 綁定地圖點擊與設施檢視
 	if map.has_signal("tile_clicked"):
 		map.connect("tile_clicked", _on_tile_clicked)
 	if map.has_signal("facility_constructed"):
@@ -46,7 +54,7 @@ func _ready() -> void:
 			facility_info_modal.call("display_facility", fac_node)
 		)
 
-	# 4. 綁定設施升級與好漢指派事件
+	# 4. 綁定設施升級與好漢進駐
 	if facility_info_modal.has_signal("facility_upgraded"):
 		facility_info_modal.connect("facility_upgraded", func(_f, g_cost, f_cost):
 			top_menu_bar.set("gold", top_menu_bar.get("gold") - g_cost)
@@ -55,7 +63,6 @@ func _ready() -> void:
 		)
 	if facility_info_modal.has_signal("hero_assigned_to_facility"):
 		facility_info_modal.connect("hero_assigned_to_facility", func(fac, h_name):
-			# 同步好漢的工作狀態與動畫
 			for child in characters_container.get_children():
 				if child.get("hero_name") == h_name:
 					var f_type: String = fac.get("facility_type")
@@ -64,7 +71,7 @@ func _ready() -> void:
 					break
 		)
 
-	# 5. 綁定好漢快捷指令事件
+	# 5. 綁定好漢指令
 	if hero_action_modal.has_signal("hero_reward_clicked"):
 		hero_action_modal.connect("hero_reward_clicked", func(hero_inst, g_cost):
 			top_menu_bar.set("gold", top_menu_bar.get("gold") - g_cost)
@@ -77,7 +84,7 @@ func _ready() -> void:
 				hero_modal.call("display_hero", h_data)
 		)
 
-	# 6. 綁定人事名冊事件
+	# 6. 綁定人事名冊事件 (查看 / 犒賞 / 錄用)
 	if personnel_modal.has_signal("hero_inspect_requested"):
 		personnel_modal.connect("hero_inspect_requested", func(h_data):
 			hero_modal.call("display_hero", h_data)
@@ -87,8 +94,13 @@ func _ready() -> void:
 			top_menu_bar.set("gold", top_menu_bar.get("gold") - gold_amt)
 			top_menu_bar.call("update_status_display")
 		)
+	if personnel_modal.has_signal("hero_recruited"):
+		personnel_modal.connect("hero_recruited", func(h_name):
+			top_menu_bar.set("prestige", top_menu_bar.get("prestige") + 20)
+			top_menu_bar.call("update_status_display")
+		)
 
-	# 7. 綁定建造事件
+	# 7. 綁定營建事件
 	if build_modal.has_signal("facility_chosen_to_build"):
 		build_modal.connect("facility_chosen_to_build", func(f_data):
 			var cost_gold: int = f_data.get("cost_gold", 100)
@@ -97,7 +109,15 @@ func _ready() -> void:
 				map.call("start_build_mode", f_data)
 		)
 
-	# 8. 綁定外交事件
+	# 8. 綁定軍事事件 (徵兵 / 出征)
+	if military_modal.has_signal("army_recruited"):
+		military_modal.connect("army_recruited", func(g_cost, troops):
+			top_menu_bar.set("gold", top_menu_bar.get("gold") - g_cost)
+			top_menu_bar.set("soldiers", top_menu_bar.get("soldiers") + troops)
+			top_menu_bar.call("update_status_display")
+		)
+
+	# 9. 綁定外交貿易事件
 	if diplomacy_modal.has_signal("resources_traded"):
 		diplomacy_modal.connect("resources_traded", func(g_delta, f_delta, a_delta):
 			top_menu_bar.set("gold", top_menu_bar.get("gold") + g_delta)
@@ -106,18 +126,55 @@ func _ready() -> void:
 			top_menu_bar.call("update_status_display")
 		)
 
-	# 9. 傳遞縮圖參考
+	# 10. 綁定計謀事件
+	if strategem_modal.has_signal("strategem_executed"):
+		strategem_modal.connect("strategem_executed", func(_sname, _tcity, scost):
+			top_menu_bar.set("gold", top_menu_bar.get("gold") - scost)
+			top_menu_bar.call("update_status_display")
+		)
+
+	# 11. 綁定系統存檔讀檔事件 (Save / Load)
+	if settings_modal.has_signal("game_save_requested"):
+		settings_modal.connect("game_save_requested", func(slot):
+			var save_payload := {
+				"year": top_menu_bar.get("current_year"),
+				"month": top_menu_bar.get("current_month"),
+				"leader": top_menu_bar.get("leader_name"),
+				"prestige": top_menu_bar.get("prestige"),
+				"gold": top_menu_bar.get("gold"),
+				"food": top_menu_bar.get("food"),
+				"arms": top_menu_bar.get("arms"),
+				"soldiers": top_menu_bar.get("soldiers")
+			}
+			SaveManagerScript.save_game(slot, save_payload)
+		)
+	if settings_modal.has_signal("game_load_requested"):
+		settings_modal.connect("game_load_requested", func(slot):
+			var loaded := SaveManagerScript.load_game(slot)
+			if not loaded.is_empty():
+				top_menu_bar.set("current_year", loaded.get("year", 1101))
+				top_menu_bar.set("current_month", loaded.get("month", 6))
+				top_menu_bar.set("leader_name", loaded.get("leader", "林沖"))
+				top_menu_bar.set("prestige", loaded.get("prestige", 350))
+				top_menu_bar.set("gold", loaded.get("gold", 10000))
+				top_menu_bar.set("food", loaded.get("food", 8000))
+				top_menu_bar.set("arms", loaded.get("arms", 6000))
+				top_menu_bar.set("soldiers", loaded.get("soldiers", 5000))
+				top_menu_bar.call("update_status_display")
+		)
+
+	# 12. 傳遞縮圖參考
 	minimap_window.set("map_ref", map)
 	minimap_window.set("camera_ref", camera)
 
-	# 10. 生成初始好漢角色
+	# 13. 生成初始好漢角色
 	spawn_initial_heroes()
 
-	# 11. 置中攝影機至聚義廳 (網格 16, 16)
+	# 14. 置中攝影機至聚義廳 (網格 16, 16)
 	var center_pos: Vector2 = map.call("grid_to_screen", 16, 16)
 	camera.position = center_pos
 
-	# 12. 初始視窗位置與狀態
+	# 15. 初始視窗位置與狀態
 	hero_modal.position = Vector2(20, 80)
 	hero_modal.hide()
 
@@ -144,6 +201,12 @@ func _ready() -> void:
 
 	hero_action_modal.position = Vector2(440, 180)
 	hero_action_modal.hide()
+
+	strategem_modal.position = Vector2(260, 100)
+	strategem_modal.hide()
+
+	settings_modal.position = Vector2(300, 130)
+	settings_modal.hide()
 
 func spawn_initial_heroes() -> void:
 	var initial_hero_names := ["LinChong", "WuSong", "LuZhishen", "LiJun", "YangZhi", "ShiJin", "HuaRong", "DaiZong"]
@@ -190,6 +253,9 @@ func _on_menu_item_selected(menu_name: String) -> void:
 		"faction":
 			var linchong_data: Dictionary = DataManagerScript.get_hero("LinChong")
 			hero_modal.call("display_hero", linchong_data)
+		"file", "settings":
+			settings_modal.visible = !settings_modal.visible
+			if settings_modal.visible: settings_modal.call("build_ui")
 
 func _on_quick_action_triggered(action: String) -> void:
 	match action:
@@ -208,7 +274,7 @@ func _on_quick_action_triggered(action: String) -> void:
 func _on_advance_month() -> void:
 	top_menu_bar.call("advance_time", 30)
 
-	# 依據所有設施與進駐好漢加乘計算月產能
+	# 1. 設施月產能核算
 	var facs_node: Node2D = map.get_node_or_null("Facilities")
 	var extra_gold: int = 0
 	var extra_food: int = 0
@@ -225,6 +291,15 @@ func _on_advance_month() -> void:
 				"Farm": extra_food += int(lvl * 250 * hero_mult)
 				"Market", "Tavern": extra_gold += int(lvl * 300 * hero_mult)
 				"Smithy": extra_arms += int(lvl * 150 * hero_mult)
+
+	# 2. 月度隨機江湖事件觸發
+	var cur_month: int = top_menu_bar.get("current_month")
+	var cur_prestige: int = top_menu_bar.get("prestige")
+	var event: Dictionary = EventManagerScript.check_monthly_events(cur_month, cur_prestige)
+	if not event.is_empty():
+		extra_gold += event.get("gold_delta", 0)
+		extra_food += event.get("food_delta", 0)
+		top_menu_bar.set("prestige", cur_prestige + event.get("prestige_delta", 0))
 
 	top_menu_bar.set("gold", top_menu_bar.get("gold") + extra_gold)
 	top_menu_bar.set("food", top_menu_bar.get("food") + extra_food)

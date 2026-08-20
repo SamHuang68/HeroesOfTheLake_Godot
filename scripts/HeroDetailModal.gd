@@ -1,37 +1,30 @@
 # Copyright (c) 2026 Sam Huang. All Rights Reserved.
-# 《水滸英雄錄：天導108星》- 1:1 光榮經典好漢詳細能力與列傳對話框 (Pop-up Modal)
+# 《水滸英雄錄：天導108星》- 好漢詳細能力 1:1 風光立繪對話框 (Hero Detail Modal)
 class_name HeroDetailModal
 extends PanelContainer
 
-var current_hero_data: Dictionary = {
-	"name": "林沖",
-	"title": "豹子頭",
-	"action": "現在正在山東搜索",
-	"portrait": "portrait_linchong.jpg",
-	"might": 92.0,
-	"skill": 85.0,
-	"intel": 69.0,
-	"stamina_curr": 95,
-	"stamina_max": 95,
-	"loyalty": 91,
-	"benevolence": 82,
-	"courage": 86,
-	"allegiance": -1, # --
-	"bio": "【天雄星 · 豹子頭 林沖】\n梁山馬軍五虎將之首，生得豹頭環眼、燕頷虎鬚，人稱小張飛。原為東京八十萬禁軍槍棒教頭，武藝高強，擅使丈八蛇矛。\n因遭太尉高俅陷害發配滄州，後於草料場風雪夜手刃陸謙、富安，上梁山大聚義，威震天下！"
-}
+const DataManagerScript = preload("res://scripts/DataManager.gd")
 
-var current_tab: int = 0 # 0: 能力, 1: 狀態, 2: 關係, 3: 士兵, 4: 物品, 5: 列傳
-var content_container: VBoxContainer
+var current_hero: Dictionary = {}
+var current_tab: int = 0 # 0:能力, 1:狀態, 2:關係, 3:士兵, 4:物品, 5:列傳
 
 func _ready() -> void:
 	custom_minimum_size = Vector2(430, 520)
-	build_window_ui()
+	var default_hero := DataManagerScript.get_hero("LinChong")
+	display_hero(default_hero)
 
-func build_window_ui() -> void:
+func display_hero(hero_data: Dictionary) -> void:
+	if hero_data.is_empty():
+		return
+	current_hero = hero_data
+	build_hero_ui()
+	show()
+
+func build_hero_ui() -> void:
 	for child in get_children():
 		child.queue_free()
-		
-	# 外框 Windows 98 經典凸起風格 (Bevel Grey)
+
+	# 外框 Windows 98 凸起邊框
 	var win_style := StyleBoxFlat.new()
 	win_style.bg_color = Color(0.86, 0.86, 0.84, 1.0)
 	win_style.border_width_left = 3
@@ -44,184 +37,237 @@ func build_window_ui() -> void:
 	win_style.set_content_margin_all(3.0)
 	add_theme_stylebox_override("panel", win_style)
 
-	var main_vbox := VBoxContainer.new()
-	main_vbox.add_theme_constant_override("separation", 6)
+	var vbox := VBoxContainer.new()
+	vbox.add_theme_constant_override("separation", 3)
 
-	# 1. 視窗標題列
+	# 1. 頂部標題列
 	var title_panel := PanelContainer.new()
 	var title_style := StyleBoxFlat.new()
 	title_style.bg_color = Color(0.0, 0.12, 0.45, 1.0)
 	title_style.set_content_margin_all(3.0)
 	title_panel.add_theme_stylebox_override("panel", title_style)
-	
+
 	var title_box := HBoxContainer.new()
 	var title_lbl := Label.new()
-	title_lbl.text = " 流浪"
+	title_lbl.text = " 好漢情報 — %s %s" % [current_hero.get("title", "天雄星"), current_hero.get("name", "林沖")]
 	title_lbl.add_theme_color_override("font_color", Color.WHITE)
 	title_box.add_child(title_lbl)
-	
+
 	var spacer := Control.new()
 	spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	title_box.add_child(spacer)
-	
+
 	var close_btn := Button.new()
 	close_btn.text = " X "
 	close_btn.pressed.connect(func(): hide())
 	title_box.add_child(close_btn)
-	title_panel.add_child(title_box)
-	main_vbox.add_child(title_panel)
 
-	# 2. 頂部好漢立繪與風光意境橫幅 (Scenic Hero Banner)
+	title_panel.add_child(title_box)
+	vbox.add_child(title_panel)
+
+	# 2. 水泊風光橫幅與好漢立繪區
 	var banner_panel := PanelContainer.new()
 	banner_panel.custom_minimum_size = Vector2(0, 140)
 	var banner_style := StyleBoxFlat.new()
-	banner_style.bg_color = Color(0.35, 0.45, 0.50, 1.0)
-	banner_style.border_color = Color(0.15, 0.15, 0.15, 1.0)
-	banner_style.border_width_bottom = 2
+	banner_style.bg_color = Color(0.15, 0.25, 0.35, 1.0)
 	banner_panel.add_theme_stylebox_override("panel", banner_style)
 
 	var banner_box := HBoxContainer.new()
-	banner_box.set_anchors_preset(Control.PRESET_FULL_RECT)
+	banner_box.add_theme_constant_override("separation", 10)
 
-	# 左側蘆葦湖畔風光文字
-	var scenic_lbl := Label.new()
-	scenic_lbl.text = " 🌾 水泊潯陽江畔 · 蘆花飄蕩\n 遠山疊翠 · 英雄雲集"
-	scenic_lbl.add_theme_color_override("font_color", Color(0.9, 0.9, 0.85))
-	banner_box.add_child(scenic_lbl)
-
-	var banner_spacer := Control.new()
-	banner_spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	banner_box.add_child(banner_spacer)
-
-	# 右側好漢立繪頭像 (Portrait TextureRect)
+	# 左側立繪
 	var portrait_rect := TextureRect.new()
-	portrait_rect.custom_minimum_size = Vector2(110, 130)
+	portrait_rect.custom_minimum_size = Vector2(100, 130)
 	portrait_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	portrait_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-	
-	# 嘗試載入轉移過來的 211 好漢頭像
-	var portrait_path := "res://assets/portraits/%s" % current_hero_data["portrait"]
-	if ResourceLoader.exists(portrait_path):
-		portrait_rect.texture = load(portrait_path)
+	portrait_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+
+	var p_file: String = current_hero.get("portrait", "")
+	var p_path := "res://assets/portraits/%s" % p_file
+	if ResourceLoader.exists(p_path):
+		portrait_rect.texture = load(p_path)
+	elif ResourceLoader.exists("res://assets/portraits/portrait_linchong.jpg"):
+		portrait_rect.texture = load("res://assets/portraits/portrait_linchong.jpg")
+
 	banner_box.add_child(portrait_rect)
 
-	banner_panel.add_child(banner_box)
-	main_vbox.add_child(banner_panel)
+	# 右側水泊風光詩詞與基本稱號
+	var info_vbox := VBoxContainer.new()
+	info_vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
-	# 3. 好漢稱號、姓名與當前行動狀態
 	var name_lbl := Label.new()
-	name_lbl.text = " %s  %s" % [current_hero_data["title"], current_hero_data["name"]]
-	name_lbl.add_theme_color_override("font_color", Color.BLACK)
-	main_vbox.add_child(name_lbl)
+	name_lbl.text = "【%s】 %s" % [current_hero.get("star", "天雄星"), current_hero.get("name", "林沖")]
+	name_lbl.add_theme_color_override("font_color", Color(1.0, 0.9, 0.4))
+	info_vbox.add_child(name_lbl)
 
-	var action_lbl := Label.new()
-	action_lbl.text = " %s" % current_hero_data["action"]
-	action_lbl.add_theme_color_override("font_color", Color(0.3, 0.3, 0.3))
-	main_vbox.add_child(action_lbl)
+	var title_desc := Label.new()
+	title_desc.text = "稱號：%s  |  星宿：%s" % [current_hero.get("title", "豹子頭"), current_hero.get("star", "天雄星")]
+	title_desc.add_theme_color_override("font_color", Color(0.9, 0.9, 0.9))
+	info_vbox.add_child(title_desc)
 
-	# 4. 六大分頁標籤導航 (能力 | 狀態 | 關係 | 士兵 | 物品 | 列傳)
-	var tab_box := HBoxContainer.new()
+	var status_quick := Label.new()
+	status_quick.text = "體力: %d / %d  |  忠義: %d" % [current_hero.get("stamina_curr", 94), current_hero.get("stamina_max", 95), current_hero.get("loyalty", 90)]
+	status_quick.add_theme_color_override("font_color", Color(0.6, 0.9, 0.6))
+	info_vbox.add_child(status_quick)
+
+	banner_box.add_child(info_vbox)
+	banner_panel.add_child(banner_box)
+	vbox.add_child(banner_panel)
+
+	# 3. 六大分頁標籤按鈕 (能力 / 狀態 / 關係 / 士兵 / 物品 / 列傳)
+	var tabs_box := HBoxContainer.new()
 	var tab_names := ["能力", "狀態", "關係", "士兵", "物品", "列傳"]
+
 	for i in range(tab_names.size()):
-		var tbtn := Button.new()
-		tbtn.text = " %s " % tab_names[i]
-		var idx := i
-		tbtn.pressed.connect(func(): switch_tab(idx))
-		tab_box.add_child(tbtn)
-		
-	main_vbox.add_child(tab_box)
+		var t_idx := i
+		var t_btn := Button.new()
+		t_btn.text = " %s " % tab_names[i]
+		t_btn.flat = (current_tab != i)
+		t_btn.pressed.connect(func():
+			current_tab = t_idx
+			build_hero_ui()
+		)
+		tabs_box.add_child(t_btn)
 
-	# 5. 屬性內容面板
-	content_container = VBoxContainer.new()
-	content_container.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	main_vbox.add_child(content_container)
+	vbox.add_child(tabs_box)
 
-	add_child(main_vbox)
-	update_tab_content()
+	# 4. 分頁詳細內容區
+	var content_panel := PanelContainer.new()
+	content_panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	var c_style := StyleBoxFlat.new()
+	c_style.bg_color = Color.WHITE
+	c_style.set_content_margin_all(6.0)
+	content_panel.add_theme_stylebox_override("panel", c_style)
 
-func switch_tab(tab_idx: int) -> void:
-	current_tab = tab_idx
-	update_tab_content()
+	match current_tab:
+		0: content_panel.add_child(build_tab_ability())
+		1: content_panel.add_child(build_tab_status())
+		2: content_panel.add_child(build_tab_relations())
+		3: content_panel.add_child(build_tab_military())
+		4: content_panel.add_child(build_tab_items())
+		5: content_panel.add_child(build_tab_biography())
 
-func update_tab_content() -> void:
-	if not content_container: return
-	for child in content_container.get_children():
-		child.queue_free()
+	vbox.add_child(content_panel)
 
-	if current_tab == 0: # 能力 (Exact 1:1 KOEI Layout with Blue Segmented Bars)
-		content_container.add_child(create_stat_row("臂力", current_hero_data["might"], 9, "忠義", current_hero_data["loyalty"], 9))
-		content_container.add_child(create_stat_row("技能", current_hero_data["skill"], 9, "仁愛", current_hero_data["benevolence"], 8))
-		content_container.add_child(create_stat_row("智力", current_hero_data["intel"], 7, "勇氣", current_hero_data["courage"], 9))
-		content_container.add_child(create_stat_row("體力", current_hero_data["stamina_curr"], 10, "忠誠", current_hero_data["allegiance"], 0, true))
-	elif current_tab == 5: # 列傳
-		var bio_scroll := ScrollContainer.new()
-		bio_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-		var bio_lbl := Label.new()
-		bio_lbl.text = current_hero_data["bio"]
-		bio_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		bio_lbl.add_theme_color_override("font_color", Color.BLACK)
-		bio_scroll.add_child(bio_lbl)
-		content_container.add_child(bio_scroll)
-	else:
-		var extra_lbl := Label.new()
-		extra_lbl.text = "職業：槍棒教頭 | 兵種適性：騎兵(S) 步兵(A) 水軍(B) 弓弩(A)\n裝備神兵：丈八蛇矛 (+18 臂力) | 名駒：踢雪烏騅馬\n統率部隊：梁山第一先鋒軍 (統兵 1,000)"
-		extra_lbl.add_theme_color_override("font_color", Color.BLACK)
-		content_container.add_child(extra_lbl)
+	# 5. 底部關閉
+	var btm_box := HBoxContainer.new()
+	var bclose := Button.new()
+	bclose.text = "   關閉情報   "
+	bclose.pressed.connect(func(): hide())
+	btm_box.add_child(bclose)
+	vbox.add_child(btm_box)
 
-func create_stat_row(name1: String, val1: float, bar1_cnt: int, name2: String, val2: float, bar2_cnt: int, is_stamina: bool = false) -> HBoxContainer:
-	var row := HBoxContainer.new()
+	add_child(vbox)
 
-	# 藍色段狀方塊條
-	var bar1_str := ""
-	for i in range(bar1_cnt): bar1_str += "■"
-	for i in range(10 - bar1_cnt): bar1_str += "  "
+func build_tab_ability() -> VBoxContainer:
+	var avbox := VBoxContainer.new()
+	var stats := [
+		{"name": "體力 (Vitality)", "val": current_hero.get("vitality", 94.0), "max": 100},
+		{"name": "臂力 (Might)", "val": current_hero.get("might", 96.0), "max": 100},
+		{"name": "技能 (Skill)", "val": current_hero.get("skill", 90.0), "max": 100},
+		{"name": "智力 (Intellect)", "val": current_hero.get("intel", 70.0), "max": 100},
+		{"name": "忠義 (Loyalty)", "val": current_hero.get("loyalty", 90), "max": 100},
+		{"name": "仁德 (Benevolence)", "val": current_hero.get("benevolence", 85), "max": 100},
+		{"name": "勇氣 (Courage)", "val": current_hero.get("courage", 95), "max": 100}
+	]
 
-	var bar2_str := ""
-	for i in range(bar2_cnt): bar2_str += "■"
-	for i in range(10 - bar2_cnt): bar2_str += "  "
+	for st in stats:
+		var row := HBoxContainer.new()
+		var lbl := Label.new()
+		lbl.text = "%s: %d" % [st["name"], int(st["val"])]
+		lbl.custom_minimum_size = Vector2(160, 0)
+		lbl.add_theme_color_override("font_color", Color.BLACK)
+		row.add_child(lbl)
 
-	var val1_str := "%d/%d" % [int(val1), current_hero_data["stamina_max"]] if is_stamina else "%.2f" % val1
-	var val2_str := "--" if val2 < 0 else "%d" % int(val2)
+		var bar := ProgressBar.new()
+		bar.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		bar.max_value = st["max"]
+		bar.value = st["val"]
+		row.add_child(bar)
+		avbox.add_child(row)
 
-	# 左側屬性
-	var l_name := Label.new()
-	l_name.text = "%s: " % name1
-	l_name.add_theme_color_override("font_color", Color.BLACK)
-	row.add_child(l_name)
+	return avbox
 
-	var l_bar := Label.new()
-	l_bar.text = bar1_str
-	l_bar.add_theme_color_override("font_color", Color(0.2, 0.55, 0.95))
-	row.add_child(l_bar)
+func build_tab_status() -> VBoxContainer:
+	var svbox := VBoxContainer.new()
+	var labels := [
+		"所在要塞：梁山泊水泊總寨",
+		"所屬陣營：梁山泊義軍 (宋江 · 林沖)",
+		"指派職能：先鋒馬軍大都督 · 巡哨防衛",
+		"月領俸祿：20 黃金 / 月",
+		"身心狀態：精力充沛 · 鬥志昂揚",
+		"聲望威名：威震山東八百里"
+	]
+	for txt in labels:
+		var l := Label.new()
+		l.text = "• " + txt
+		l.add_theme_color_override("font_color", Color.BLACK)
+		svbox.add_child(l)
+	return svbox
 
-	var l_val := Label.new()
-	l_val.text = " %s" % val1_str
-	l_val.add_theme_color_override("font_color", Color.BLACK)
-	row.add_child(l_val)
+func build_tab_relations() -> VBoxContainer:
+	var rvbox := VBoxContainer.new()
+	var rels := [
+		"🤝 結拜義兄弟：【花和尚 魯智深】(生死之交)",
+		"🤝 摯友至交：【行者 武松】、【小旋風 柴進】",
+		"⚔️ 宿敵仇讎：【太尉 高俅】、【高衙內】、【陸謙】",
+		"👥 麾下副將：【操刀鬼 曹正】、【摸著天 杜遷】"
+	]
+	for txt in rels:
+		var l := Label.new()
+		l.text = txt
+		l.add_theme_color_override("font_color", Color(0.1, 0.2, 0.6))
+		rvbox.add_child(l)
+	return rvbox
 
-	var spacer := Control.new()
-	spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(spacer)
+func build_tab_military() -> VBoxContainer:
+	var mvbox := VBoxContainer.new()
+	var aptitudes := [
+		{"name": "🐎 騎兵適性", "rank": "S (神級突破)", "val": 98},
+		{"name": "🛡️ 步兵適性", "rank": "A (精通攻防)", "val": 88},
+		{"name": "⛵ 水軍適性", "rank": "B (熟練水戰)", "val": 75},
+		{"name": "🏹 弓弩適性", "rank": "A (善使強弓)", "val": 85}
+	]
+	for apt in aptitudes:
+		var row := HBoxContainer.new()
+		var l := Label.new()
+		l.text = "%s: %s" % [apt["name"], apt["rank"]]
+		l.custom_minimum_size = Vector2(170, 0)
+		l.add_theme_color_override("font_color", Color.BLACK)
+		row.add_child(l)
 
-	# 右側屬性
-	var r_name := Label.new()
-	r_name.text = "%s: " % name2
-	r_name.add_theme_color_override("font_color", Color.BLACK)
-	row.add_child(r_name)
+		var bar := ProgressBar.new()
+		bar.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		bar.max_value = 100
+		bar.value = apt["val"]
+		row.add_child(bar)
+		mvbox.add_child(row)
+	return mvbox
 
-	var r_bar := Label.new()
-	r_bar.text = bar2_str
-	r_bar.add_theme_color_override("font_color", Color(0.2, 0.55, 0.95))
-	row.add_child(r_bar)
+func build_tab_items() -> VBoxContainer:
+	var ivbox := VBoxContainer.new()
+	var items := [
+		"🗡️ 裝備神兵：【丈八蛇矛】(臂力 +10, 附帶突擊連擊)",
+		"🛡️ 護身寶甲：【烏油連環鎧】(防禦 +15, 抵禦弓矢)",
+		"🐎 絕世坐騎：【照夜玉獅子】(行軍速度 +30%)",
+		"📜 隨身寶典：【太玄經殘卷】(智力 +5)"
+	]
+	for item_txt in items:
+		var l := Label.new()
+		l.text = item_txt
+		l.add_theme_color_override("font_color", Color(0.6, 0.3, 0.0))
+		ivbox.add_child(l)
+	return ivbox
 
-	var r_val := Label.new()
-	r_val.text = " %s" % val2_str
-	r_val.add_theme_color_override("font_color", Color.BLACK)
-	row.add_child(r_val)
+func build_tab_biography() -> VBoxContainer:
+	var bvbox := VBoxContainer.new()
+	var scroll := ScrollContainer.new()
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 
-	return row
+	var bio_lbl := Label.new()
+	bio_lbl.text = current_hero.get("bio", "梁山好漢生平列傳...")
+	bio_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	bio_lbl.add_theme_color_override("font_color", Color(0.15, 0.15, 0.15))
+	scroll.add_child(bio_lbl)
 
-func display_hero(hero_data: Dictionary) -> void:
-	current_hero_data = hero_data
-	build_window_ui()
-	show()
+	bvbox.add_child(scroll)
+	return bvbox

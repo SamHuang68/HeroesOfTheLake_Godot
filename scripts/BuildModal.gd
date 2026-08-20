@@ -1,23 +1,22 @@
 # Copyright (c) 2026 Sam Huang. All Rights Reserved.
-# 《水滸英雄錄：天導108星》- 設施營建與要塞開發對話框 (Build Modal)
+# 《水滸英雄錄：天導108星》- 設施營建、拆除與要塞開發對話框 (Build Modal)
 class_name BuildModal
 extends PanelContainer
 
 const DataManagerScript = preload("res://scripts/DataManager.gd")
 
 signal facility_chosen_to_build(facility_data: Dictionary)
-
-var facilities_list: Array = []
+signal facility_demolish_requested()
+signal land_clear_requested()
 
 func _ready() -> void:
-	custom_minimum_size = Vector2(500, 400)
+	custom_minimum_size = Vector2(540, 420)
 	build_ui()
 
 func build_ui() -> void:
 	for child in get_children():
 		child.queue_free()
 
-	# 外框 Windows 98 經典風格
 	var win_style := StyleBoxFlat.new()
 	win_style.bg_color = Color(0.86, 0.86, 0.84, 1.0)
 	win_style.border_width_left = 3
@@ -57,6 +56,25 @@ func build_ui() -> void:
 
 	title_panel.add_child(title_box)
 	vbox.add_child(title_panel)
+
+	# 快捷功能列 (拆除設施 / 拓荒整地)
+	var action_bar := HBoxContainer.new()
+	var demo_btn := Button.new()
+	demo_btn.text = " 🔨 拆除設施 (退還50%金糧) "
+	demo_btn.pressed.connect(func():
+		facility_demolish_requested.emit()
+		hide()
+	)
+	action_bar.add_child(demo_btn)
+
+	var clear_btn := Button.new()
+	clear_btn.text = " 🌾 拓荒整地 (開闢水泊良田) "
+	clear_btn.pressed.connect(func():
+		land_clear_requested.emit()
+		hide()
+	)
+	action_bar.add_child(clear_btn)
+	vbox.add_child(action_bar)
 
 	# 說明文字
 	var hint_lbl := Label.new()

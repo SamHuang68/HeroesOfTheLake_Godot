@@ -1,11 +1,20 @@
 # Copyright (c) 2026 Sam Huang. All Rights Reserved.
-# 《水滸英雄錄：天導108星》- 軍事征伐與演武單挑對話框 (Military & Duel Modal)
+# 《水滸英雄錄：天導108星》- 軍事征伐、徵兵練兵與演武單挑對話框 (Military & Duel Modal)
 class_name MilitaryModal
 extends PanelContainer
 
 const DataManagerScript = preload("res://scripts/DataManager.gd")
+const CombatManagerScript = preload("res://scripts/CombatManager.gd")
 
-var current_mode: int = 0 # 0: 八大陣型, 1: 演武單挑
+signal army_recruited(gold_cost: int, troops_added: int)
+signal army_dispatched(formation_name: String, commander: String, troops: int)
+
+var current_mode: int = 0 # 0: 徵兵練兵, 1: 八大陣型, 2: 演武單挑
+
+# 兵力與士氣狀態
+var total_soldiers: int = 5000
+var army_morale: int = 85
+var army_proficiency: int = 75
 
 # 單挑狀態
 var hero1_name: String = "林沖"
@@ -23,14 +32,13 @@ var hero2_might: int = 91
 var battle_log: Array[String] = []
 
 func _ready() -> void:
-	custom_minimum_size = Vector2(580, 440)
+	custom_minimum_size = Vector2(600, 460)
 	build_ui()
 
 func build_ui() -> void:
 	for child in get_children():
 		child.queue_free()
 
-	# 外框 Windows 98 風格
 	var win_style := StyleBoxFlat.new()
 	win_style.bg_color = Color(0.86, 0.86, 0.84, 1.0)
 	win_style.border_width_left = 3
@@ -55,7 +63,7 @@ func build_ui() -> void:
 
 	var title_box := HBoxContainer.new()
 	var title_lbl := Label.new()
-	title_lbl.text = " 軍事征伐與演武單挑 — 梁山八軍大演武"
+	title_lbl.text = " 軍事征伐與演武堂 — 梁山八軍大營"
 	title_lbl.add_theme_color_override("font_color", Color.WHITE)
 	title_box.add_child(title_lbl)
 
@@ -71,20 +79,31 @@ func build_ui() -> void:
 	title_panel.add_child(title_box)
 	vbox.add_child(title_panel)
 
-	# 2. 分頁按鈕 (八大陣型 / 演武單挑)
+	# 2. 分頁按鈕
 	var tab_box := HBoxContainer.new()
+	var btn_recruit := Button.new()
+	btn_recruit.text = " 🛡️ 徵兵與操演 "
+	btn_recruit.flat = (current_mode != 0)
+	btn_recruit.pressed.connect(func():
+		current_mode = 0
+		build_ui()
+	)
+	tab_box.add_child(btn_recruit)
+
 	var btn_formation := Button.new()
 	btn_formation.text = " ⚔️ 八大陣型出征 "
+	btn_formation.flat = (current_mode != 1)
 	btn_formation.pressed.connect(func():
-		current_mode = 0
+		current_mode = 1
 		build_ui()
 	)
 	tab_box.add_child(btn_formation)
 
 	var btn_duel := Button.new()
-	btn_duel.text = " 🥋 演武堂名將單挑 "
+	btn_duel.text = " 🥋 演武名將單挑 "
+	btn_duel.flat = (current_mode != 2)
 	btn_duel.pressed.connect(func():
-		current_mode = 1
+		current_mode = 2
 		reset_duel()
 		build_ui()
 	)
@@ -96,10 +115,10 @@ func build_ui() -> void:
 	var content_panel := PanelContainer.new()
 	content_panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
 
-	if current_mode == 0:
-		content_panel.add_child(build_formation_view())
-	else:
-		content_panel.add_child(build_duel_view())
+	match current_mode:
+		0: content_panel.add_child(build_drill_view())
+		1: content_panel.add_child(build_formation_view())
+		2: content_panel.add_child(build_duel_view())
 
 	vbox.add_child(content_panel)
 
@@ -112,6 +131,61 @@ func build_ui() -> void:
 	vbox.add_child(btm_box)
 
 	add_child(vbox)
+
+func build_drill_view() -> VBoxContainer:
+	var dvbox := VBoxContainer.new()
+	dvbox.add_theme_constant_override("separation", 6)
+
+	var info_p := PanelContainer.new()
+	var ip_s := StyleBoxFlat.new()
+	ip_s.bg_color = Color.WHITE
+	ip_s.set_content_margin_all(6.0)
+	info_p.add_theme_stylebox_override("panel", ip_s)
+
+	var ivbox := VBoxContainer.new()
+	var slbl := Label.new()
+	slbl.text = "🚩 全軍現役總兵力：%d 人  |  全軍士氣：%d / 100  |  陣型熟練度：%d / 100" % [total_soldiers, army_morale, army_proficiency]
+	slbl.add_theme_color_override("font_color", Color.BLACK)
+	ivbox.add_child(slbl)
+	info_p.add_child(ivbox)
+	dvbox.add_child(info_p)
+
+	# 徵兵按鈕
+	var act_box := HBoxContainer.new()
+	var recruit_500_btn := Button.new()
+	recruit_500_btn.text = " ➕ 招募 500 精壯義軍 (耗金 500 糧 300) "
+	recruit_500_btn.pressed.connect(func():
+		total_soldiers += 500
+		army_recruited.emit(500, 500)
+		battle_log.append("山寨招募 500 名英勇義軍加入先鋒步騎軍！")
+		build_ui()
+	)
+	act_box.add_child(recruit_500_btn)
+
+	var train_btn := Button.new()
+	train_btn.text = " 🥋 全軍校場大演練 (士氣+10, 熟練+5) "
+	train_btn.pressed.connect(func():
+		army_morale = mini(100, army_morale + 10)
+		army_proficiency = mini(100, army_proficiency + 5)
+		battle_log.append("林沖、花榮於校場督促三軍操演，士氣振奮！")
+		build_ui()
+	)
+	act_box.add_child(train_btn)
+	dvbox.add_child(act_box)
+
+	# 操練日誌
+	var scroll := ScrollContainer.new()
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	var log_vbox := VBoxContainer.new()
+	for l in battle_log:
+		var lbl := Label.new()
+		lbl.text = l
+		lbl.add_theme_color_override("font_color", Color(0.1, 0.1, 0.4))
+		log_vbox.add_child(lbl)
+	scroll.add_child(log_vbox)
+	dvbox.add_child(scroll)
+
+	return dvbox
 
 func build_formation_view() -> VBoxContainer:
 	var fvbox := VBoxContainer.new()
@@ -145,16 +219,15 @@ func build_formation_view() -> VBoxContainer:
 		blbl.add_theme_color_override("font_color", Color(0.1, 0.4, 0.1))
 		hbox.add_child(blbl)
 
-		var clbl := Label.new()
-		clbl.text = f["commander"]
-		clbl.custom_minimum_size = Vector2(140, 0)
-		clbl.add_theme_color_override("font_color", Color(0.3, 0.3, 0.3))
-		hbox.add_child(clbl)
-
 		var sbtn := Button.new()
 		sbtn.text = " 配屬出征 "
+		var fname: String = f["name"]
+		var fcmd: String = f["commander"]
 		sbtn.pressed.connect(func():
-			battle_log.append("已指派【%s】為主陣型，集結 1,000 精銳部隊出征！" % f["name"])
+			army_dispatched.emit(fname, fcmd, 1000)
+			battle_log.append("已指派【%s】為主陣型，由【%s】率 1,000 精銳出征！" % [fname, fcmd])
+			current_mode = 0
+			build_ui()
 		)
 		hbox.add_child(sbtn)
 
@@ -167,10 +240,8 @@ func build_duel_view() -> VBoxContainer:
 	var dvbox := VBoxContainer.new()
 	dvbox.add_theme_constant_override("separation", 6)
 
-	# 1. 雙方血條與頭像狀態
 	var vs_box := HBoxContainer.new()
 
-	# 我方好漢
 	var h1_box := VBoxContainer.new()
 	h1_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var h1_lbl := Label.new()
@@ -189,7 +260,6 @@ func build_duel_view() -> VBoxContainer:
 	vs_lbl.add_theme_color_override("font_color", Color.RED)
 	vs_box.add_child(vs_lbl)
 
-	# 敵方名將
 	var h2_box := VBoxContainer.new()
 	h2_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var h2_lbl := Label.new()
@@ -205,9 +275,7 @@ func build_duel_view() -> VBoxContainer:
 
 	dvbox.add_child(vs_box)
 
-	# 2. 戰鬥操作按鈕 (果斷突擊 / 普通攻擊 / 連續射擊 / 運功回氣)
 	var act_box := HBoxContainer.new()
-	
 	var btn_atk := Button.new()
 	btn_atk.text = " 🗡️ 普通攻擊 "
 	btn_atk.pressed.connect(func(): perform_attack("普通攻擊", 18, 5))
@@ -232,10 +300,8 @@ func build_duel_view() -> VBoxContainer:
 		build_ui()
 	)
 	act_box.add_child(btn_rest)
-
 	dvbox.add_child(act_box)
 
-	# 3. 戰鬥日誌 (Combat Log)
 	var log_scroll := ScrollContainer.new()
 	log_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	var log_vbox := VBoxContainer.new()
@@ -259,7 +325,7 @@ func perform_attack(skill_name: String, base_dmg: int, stamina_cost: int) -> voi
 	var dmg: int = int(base_dmg * (hero1_might / 90.0) + randi() % 6)
 	hero2_hp = maxi(0, hero2_hp - dmg)
 
-	battle_log.append("【%s】使出一招【%s】，丈八長槍如游龍出海，重創【%s】造成 %d 點傷害！" % [hero1_name, skill_name, hero2_name, dmg])
+	battle_log.append("【%s】使出一招【%s】，重創【%s】造成 %d 點傷害！" % [hero1_name, skill_name, hero2_name, dmg])
 
 	if hero2_hp <= 0:
 		battle_log.append("🏆【大勝！】敵將【%s】力竭落馬，已被我軍生擒！" % hero2_name)
@@ -271,11 +337,9 @@ func perform_attack(skill_name: String, base_dmg: int, stamina_cost: int) -> voi
 
 func enemy_counter_attack() -> void:
 	if hero2_hp <= 0: return
-
 	var enemy_dmg: int = int(20 * (hero2_might / 90.0) + randi() % 8)
 	hero1_hp = maxi(0, hero1_hp - enemy_dmg)
-	battle_log.append("【%s】橫槍反擊，凌厲逼近，對【%s】造成 %d 點傷害！" % [hero2_name, hero1_name, enemy_dmg])
-
+	battle_log.append("【%s】橫槍反擊，對【%s】造成 %d 點傷害！" % [hero2_name, hero1_name, enemy_dmg])
 	if hero1_hp <= 0:
 		battle_log.append("⚠️【危險！】我方【%s】氣血不支，退回本陣！" % hero1_name)
 
