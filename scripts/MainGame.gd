@@ -2,11 +2,7 @@
 # 《水滸英雄錄：天導108星》- 遊戲主控制器 (Main Game Coordinator)
 extends Node2D
 
-const IsometricMapScript = preload("res://scripts/IsometricMap.gd")
-const TopMenuBarScript = preload("res://scripts/TopMenuBar.gd")
-const HeroDetailModalScript = preload("res://scripts/HeroDetailModal.gd")
-const FortressOverviewModalScript = preload("res://scripts/FortressOverviewModal.gd")
-const MinimapWindowScript = preload("res://scripts/MinimapWindow.gd")
+const DataManagerScript = preload("res://scripts/DataManager.gd")
 const HeroCharacter2DScript = preload("res://scripts/HeroCharacter2D.gd")
 
 @onready var camera: Camera2D = $Camera2D
@@ -17,13 +13,20 @@ const HeroCharacter2DScript = preload("res://scripts/HeroCharacter2D.gd")
 @onready var hero_modal: PanelContainer = $CanvasLayer/HeroDetailModal
 @onready var fortress_modal: PanelContainer = $CanvasLayer/FortressOverviewModal
 @onready var minimap_window: PanelContainer = $CanvasLayer/MinimapWindow
+@onready var personnel_modal: PanelContainer = $CanvasLayer/PersonnelModal
+@onready var build_modal: PanelContainer = $CanvasLayer/BuildModal
+@onready var military_modal: PanelContainer = $CanvasLayer/MilitaryModal
+@onready var diplomacy_modal: PanelContainer = $CanvasLayer/DiplomacyModal
 
 var is_dragging_camera: bool = false
 var last_mouse_pos: Vector2 = Vector2.ZERO
 var zoom_level: float = 1.0
 
 func _ready() -> void:
-	# 綁定頂部選單事件
+	# 1. 初始化數據庫
+	DataManagerScript.initialize()
+
+	# 2. 綁定頂部選單事件
 	if top_menu_bar.has_signal("menu_item_selected"):
 		top_menu_bar.connect("menu_item_selected", _on_menu_item_selected)
 	if top_menu_bar.has_signal("quick_action_triggered"):
@@ -31,22 +34,51 @@ func _ready() -> void:
 	if top_menu_bar.has_signal("advance_month_clicked"):
 		top_menu_bar.connect("advance_month_clicked", _on_advance_month)
 
-	# 綁定地圖點擊事件
+	# 3. 綁定地圖點擊與建造事件
 	if map.has_signal("tile_clicked"):
 		map.connect("tile_clicked", _on_tile_clicked)
+	if map.has_signal("facility_constructed"):
+		map.connect("facility_constructed", _on_facility_constructed)
 
-	# 傳遞地圖與攝影機參考至縮圖
+	# 4. 綁定各子面板事件
+	if personnel_modal.has_signal("hero_inspect_requested"):
+		personnel_modal.connect("hero_inspect_requested", func(h_data):
+			hero_modal.call("display_hero", h_data)
+		)
+	if personnel_modal.has_signal("hero_rewarded"):
+		personnel_modal.connect("hero_rewarded", func(_h_id, gold_amt):
+			top_menu_bar.set("gold", top_menu_bar.get("gold") - gold_amt)
+			top_menu_bar.call("update_status_display")
+		)
+
+	if build_modal.has_signal("facility_chosen_to_build"):
+		build_modal.connect("facility_chosen_to_build", func(f_data):
+			var cost_gold: int = f_data.get("cost_gold", 100)
+			var cost_food: int = f_data.get("cost_food", 50)
+			if top_menu_bar.get("gold") >= cost_gold and top_menu_bar.get("food") >= cost_food:
+				map.call("start_build_mode", f_data)
+		)
+
+	if diplomacy_modal.has_signal("resources_traded"):
+		diplomacy_modal.connect("resources_traded", func(g_delta, f_delta, a_delta):
+			top_menu_bar.set("gold", top_menu_bar.get("gold") + g_delta)
+			top_menu_bar.set("food", top_menu_bar.get("food") + f_delta)
+			top_menu_bar.set("arms", top_menu_bar.get("arms") + a_delta)
+			top_menu_bar.call("update_status_display")
+		)
+
+	# 5. 傳遞地圖與攝影機參考至縮圖
 	minimap_window.set("map_ref", map)
 	minimap_window.set("camera_ref", camera)
 
-	# 生成初始 2D 好漢角色
+	# 6. 生成初始好漢角色
 	spawn_initial_heroes()
 
-	# 置中攝影機至聚義廳 (網格 16, 16)
+	# 7. 置中攝影機至聚義廳 (網格 16, 16)
 	var center_pos: Vector2 = map.call("grid_to_screen", 16, 16)
 	camera.position = center_pos
 
-	# 預設顯示左側好漢面板與右側要塞一覽表 (1:1 截圖情境)
+	# 8. 預設顯示佈局
 	hero_modal.position = Vector2(20, 80)
 	hero_modal.show()
 
@@ -56,79 +88,109 @@ func _ready() -> void:
 	minimap_window.position = Vector2(20, 480)
 	minimap_window.show()
 
+	personnel_modal.position = Vector2(200, 100)
+	personnel_modal.hide()
+
+	build_modal.position = Vector2(300, 120)
+	build_modal.hide()
+
+	military_modal.position = Vector2(240, 90)
+	military_modal.hide()
+
+	diplomacy_modal.position = Vector2(280, 110)
+	diplomacy_modal.hide()
+
 func spawn_initial_heroes() -> void:
-	var heroes_data: Array[Dictionary] = [
-		{
-			"name": "林沖", "title": "豹子頭", "grid": Vector2i(16, 16),
-			"might": 92.0, "skill": 85.0, "intel": 69.0, "stamina_curr": 95, "stamina_max": 95,
-			"loyalty": 91, "benevolence": 82, "courage": 86, "allegiance": -1,
-			"portrait": "portrait_linchong.jpg", "action": "現在正在山東搜索",
-			"bio": "【天雄星 · 豹子頭 林沖】\n梁山馬軍五虎將之首，生得豹頭環眼、燕頷虎鬚，人稱小張飛。原為東京八十萬禁軍槍棒教頭，武藝高強，擅使丈八蛇矛。"
-		},
-		{
-			"name": "武松", "title": "行者", "grid": Vector2i(17, 15),
-			"might": 95.0, "skill": 88.0, "intel": 64.0, "stamina_curr": 98, "stamina_max": 98,
-			"loyalty": 94, "benevolence": 76, "courage": 99, "allegiance": -1,
-			"portrait": "portrait_wusong.jpg", "action": "正在要塞巡哨",
-			"bio": "【天傷星 · 行者 武松】\n清河縣人氏，景陽岡赤手空拳打死猛虎，威震天下。血濺鴛鴦樓，快意恩仇，雙戒刀所向無敵！"
-		},
-		{
-			"name": "魯智深", "title": "花和尚", "grid": Vector2i(15, 17),
-			"might": 96.0, "skill": 82.0, "intel": 60.0, "stamina_curr": 99, "stamina_max": 99,
-			"loyalty": 96, "benevolence": 88, "courage": 98, "allegiance": -1,
-			"portrait": "portrait_luzhishen.jpg", "action": "正在操練步軍",
-			"bio": "【天孤星 · 花和尚 魯智深】\n原為延安府提轄，為救金翠蓮三拳打死鎮關西，大鬧五台山、倒拔垂楊柳，使六十二斤水磨禪杖！"
-		},
-		{
-			"name": "李俊", "title": "混江龍", "grid": Vector2i(14, 14),
-			"might": 84.0, "skill": 82.0, "intel": 78.0, "stamina_curr": 92, "stamina_max": 92,
-			"loyalty": 88, "benevolence": 84, "courage": 90, "allegiance": -1,
-			"portrait": "portrait_lijun.jpg", "action": "正在水泊巡航",
-			"bio": "【天壽星 · 混江龍 李俊】\n梁山水軍大都督之首，生於潯陽江上，水性通神，智勇兼備！"
-		}
+	var initial_hero_names := ["LinChong", "WuSong", "LuZhishen", "LiJun", "YangZhi", "ShiJin", "HuaRong", "DaiZong"]
+	var grid_offsets: Array[Vector2i] = [
+		Vector2i(16, 16), Vector2i(17, 15), Vector2i(15, 17), Vector2i(14, 14),
+		Vector2i(18, 16), Vector2i(16, 18), Vector2i(15, 15), Vector2i(17, 17)
 	]
 
-	for data in heroes_data:
+	for i in range(initial_hero_names.size()):
+		var h_id: String = initial_hero_names[i]
+		var h_data: Dictionary = DataManagerScript.get_hero(h_id)
+		if h_data.is_empty():
+			continue
+
 		var hero_node: Node2D = HeroCharacter2DScript.new()
-		hero_node.set("hero_name", data["name"])
-		hero_node.set("title_name", data["title"])
-		hero_node.set("grid_position", data["grid"])
-		hero_node.set("current_stamina", data["stamina_curr"])
-		hero_node.set("max_stamina", data["stamina_max"])
-		hero_node.set("current_energy", int(data["might"] * 0.5))
-		hero_node.set("portrait_file", data["portrait"])
-		
-		var hero_dict: Dictionary = data
+		hero_node.set("hero_name", h_data["name"])
+		hero_node.set("title_name", h_data["title"])
+		hero_node.set("grid_position", grid_offsets[i])
+		hero_node.set("current_stamina", h_data["stamina_curr"])
+		hero_node.set("max_stamina", h_data["stamina_max"])
+		hero_node.set("current_energy", int(h_data["might"] * 0.5))
+		hero_node.set("portrait_file", h_data["portrait"])
+
+		var hero_dict: Dictionary = h_data
 		if hero_node.has_signal("hero_selected"):
 			hero_node.connect("hero_selected", func(_h):
 				hero_modal.call("display_hero", hero_dict)
 			)
-		
+
 		characters_container.add_child(hero_node)
 
 func _on_menu_item_selected(menu_name: String) -> void:
 	match menu_name:
 		"personnel":
-			hero_modal.visible = !hero_modal.visible
+			personnel_modal.visible = !personnel_modal.visible
+			if personnel_modal.visible: personnel_modal.call("refresh_table")
 		"fortress", "info":
 			fortress_modal.visible = !fortress_modal.visible
-		"file", "settings":
-			pass
+		"build":
+			build_modal.visible = !build_modal.visible
+		"military":
+			military_modal.visible = !military_modal.visible
+		"diplomacy":
+			diplomacy_modal.visible = !diplomacy_modal.visible
+		"faction":
+			hero_modal.visible = !hero_modal.visible
 
 func _on_quick_action_triggered(action: String) -> void:
 	match action:
 		"地":
 			minimap_window.visible = !minimap_window.visible
 		"人":
-			hero_modal.visible = !hero_modal.visible
+			personnel_modal.visible = !personnel_modal.visible
+			if personnel_modal.visible: personnel_modal.call("refresh_table")
 		"寨":
+			fortress_modal.visible = !fortress_modal.visible
+		"土":
+			build_modal.visible = !build_modal.visible
+		"全":
 			fortress_modal.visible = !fortress_modal.visible
 
 func _on_advance_month() -> void:
 	top_menu_bar.call("advance_time", 30)
 
+	# 依據已建成的設施增產
+	var fac_list: Array = map.get("constructed_facilities")
+	var extra_gold: int = 0
+	var extra_food: int = 0
+	var extra_arms: int = 0
+
+	for f in fac_list:
+		var fdata: Dictionary = f.get("data", {})
+		var output: int = fdata.get("output", 20)
+		var ftype: String = fdata.get("type", "")
+		match ftype:
+			"Farm", "FishingPond": extra_food += output * 10
+			"Market", "Entertainment", "Tavern": extra_gold += output * 15
+			"Smithy", "Barracks": extra_arms += output * 8
+
+	top_menu_bar.set("gold", top_menu_bar.get("gold") + extra_gold)
+	top_menu_bar.set("food", top_menu_bar.get("food") + extra_food)
+	top_menu_bar.set("arms", top_menu_bar.get("arms") + extra_arms)
+	top_menu_bar.call("update_status_display")
+
+func _on_facility_constructed(fac_data: Dictionary, _grid_pos: Vector2i) -> void:
+	var cost_gold: int = fac_data.get("cost_gold", 100)
+	var cost_food: int = fac_data.get("cost_food", 50)
+	top_menu_bar.set("gold", top_menu_bar.get("gold") - cost_gold)
+	top_menu_bar.set("food", top_menu_bar.get("food") - cost_food)
+	top_menu_bar.call("update_status_display")
+
 func _on_tile_clicked(grid_pos: Vector2i, _type: int) -> void:
-	# 若選中好漢，指示其移動
 	for child in characters_container.get_children():
 		if child.get("hero_name") == "林沖":
 			child.call("move_to_grid", grid_pos)
