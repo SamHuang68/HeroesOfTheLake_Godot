@@ -213,11 +213,18 @@ func _ready() -> void:
 	settings_modal.position = Vector2(300, 130)
 	settings_modal.hide()
 
+const HeroVisualControllerScript = preload("res://scripts/HeroVisualController.gd")
+const CharacterModelDatabaseScript = preload("res://scripts/CharacterModelDatabase.gd")
+
 func spawn_initial_heroes() -> void:
-	var initial_hero_names := ["LinChong", "WuSong", "LuZhishen", "LiJun", "YangZhi", "ShiJin", "HuaRong", "DaiZong"]
+	var initial_hero_names := [
+		"LinChong", "WuSong", "LuZhishen", "LiJun", "YangZhi", "ShiJin", "HuaRong", "DaiZong",
+		"HuSanniang", "SunErniang", "LiShishi", "SongJiang"
+	]
 	var grid_offsets: Array[Vector2i] = [
 		Vector2i(16, 16), Vector2i(17, 15), Vector2i(15, 17), Vector2i(14, 14),
-		Vector2i(18, 16), Vector2i(16, 18), Vector2i(15, 15), Vector2i(17, 17)
+		Vector2i(18, 16), Vector2i(16, 18), Vector2i(15, 15), Vector2i(17, 17),
+		Vector2i(19, 15), Vector2i(14, 16), Vector2i(19, 13), Vector2i(16, 15)
 	]
 
 	for i in range(initial_hero_names.size()):
@@ -226,17 +233,16 @@ func spawn_initial_heroes() -> void:
 		if h_data.is_empty():
 			continue
 
-		var hero_node: Node2D = HeroCharacter2DScript.new()
+		var m_id: String = CharacterModelDatabaseScript.get_model_for_hero(h_id)
+		var hero_node: Node2D = HeroVisualControllerScript.new()
+		hero_node.set("model_id", m_id)
 		hero_node.set("hero_name", h_data["name"])
-		hero_node.set("title_name", h_data["title"])
 		hero_node.set("grid_position", grid_offsets[i])
 		hero_node.set("current_stamina", h_data["stamina_curr"])
 		hero_node.set("max_stamina", h_data["stamina_max"])
-		hero_node.set("current_energy", int(h_data["might"] * 0.5))
-		hero_node.set("portrait_file", h_data["portrait"])
 
-		if hero_node.has_signal("hero_selected"):
-			hero_node.connect("hero_selected", func(h_inst):
+		if hero_node.has_signal("character_clicked"):
+			hero_node.connect("character_clicked", func(h_inst):
 				hero_action_modal.call("display_hero", h_inst)
 			)
 
