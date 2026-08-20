@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://66xb7d5u7h6a"
+
+[deps]
+
+files=["res://data/Facilities/FacilityDataTable.FacilityType.translation", "res://data/Facilities/FacilityDataTable.DisplayName.translation", "res://data/Facilities/FacilityDataTable.Description.translation", "res://data/Facilities/FacilityDataTable.BuildCostGold.translation", "res://data/Facilities/FacilityDataTable.BuildCostFood.translation", "res://data/Facilities/FacilityDataTable.BuildTurns.translation", "res://data/Facilities/FacilityDataTable.PreferredAptitude.translation", "res://data/Facilities/FacilityDataTable.BaseProductionAmount.translation"]
+
+source_file="res://data/Facilities/FacilityDataTable.csv"
+dest_files=["res://data/Facilities/FacilityDataTable.FacilityType.translation", "res://data/Facilities/FacilityDataTable.DisplayName.translation", "res://data/Facilities/FacilityDataTable.Description.translation", "res://data/Facilities/FacilityDataTable.BuildCostGold.translation", "res://data/Facilities/FacilityDataTable.BuildCostFood.translation", "res://data/Facilities/FacilityDataTable.BuildTurns.translation", "res://data/Facilities/FacilityDataTable.PreferredAptitude.translation", "res://data/Facilities/FacilityDataTable.BaseProductionAmount.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

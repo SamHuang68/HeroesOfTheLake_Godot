@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://difibjdh3r17d"
+
+[deps]
+
+files=["res://data/Heroes/HeroDataTable.HeroID.translation", "res://data/Heroes/HeroDataTable.DisplayName.translation", "res://data/Heroes/HeroDataTable.Nickname.translation", "res://data/Heroes/HeroDataTable.Rank.translation", "res://data/Heroes/HeroDataTable.StarType.translation", "res://data/Heroes/HeroDataTable.Vitality.translation", "res://data/Heroes/HeroDataTable.Strength.translation", "res://data/Heroes/HeroDataTable.Dexterity.translation", "res://data/Heroes/HeroDataTable.Intelligence.translation", "res://data/Heroes/HeroDataTable.Morale.translation", "res://data/Heroes/HeroDataTable.PrimaryAptitude.translation", "res://data/Heroes/HeroDataTable.SecondaryAptitude.translation", "res://data/Heroes/HeroDataTable.DefaultLoyalty.translation", "res://data/Heroes/HeroDataTable.HeroTrait.translation", "res://data/Heroes/HeroDataTable.DefaultEquipment.translation", "res://data/Heroes/HeroDataTable.Fame.translation", "res://data/Heroes/HeroDataTable.PortraitPath.translation", "res://data/Heroes/HeroDataTable.Biography.translation"]
+
+source_file="res://data/Heroes/HeroDataTable.csv"
+dest_files=["res://data/Heroes/HeroDataTable.HeroID.translation", "res://data/Heroes/HeroDataTable.DisplayName.translation", "res://data/Heroes/HeroDataTable.Nickname.translation", "res://data/Heroes/HeroDataTable.Rank.translation", "res://data/Heroes/HeroDataTable.StarType.translation", "res://data/Heroes/HeroDataTable.Vitality.translation", "res://data/Heroes/HeroDataTable.Strength.translation", "res://data/Heroes/HeroDataTable.Dexterity.translation", "res://data/Heroes/HeroDataTable.Intelligence.translation", "res://data/Heroes/HeroDataTable.Morale.translation", "res://data/Heroes/HeroDataTable.PrimaryAptitude.translation", "res://data/Heroes/HeroDataTable.SecondaryAptitude.translation", "res://data/Heroes/HeroDataTable.DefaultLoyalty.translation", "res://data/Heroes/HeroDataTable.HeroTrait.translation", "res://data/Heroes/HeroDataTable.DefaultEquipment.translation", "res://data/Heroes/HeroDataTable.Fame.translation", "res://data/Heroes/HeroDataTable.PortraitPath.translation", "res://data/Heroes/HeroDataTable.Biography.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cfwhfobrmqyk8"
+
+[deps]
+
+files=["res://data/Heroes/HeroQuestDataTable.QuestID.translation", "res://data/Heroes/HeroQuestDataTable.HeroID.translation", "res://data/Heroes/HeroQuestDataTable.QuestTitle.translation", "res://data/Heroes/HeroQuestDataTable.TriggerCondition.translation", "res://data/Heroes/HeroQuestDataTable.TargetNodeID.translation", "res://data/Heroes/HeroQuestDataTable.RewardExp.translation", "res://data/Heroes/HeroQuestDataTable.RewardItemID.translation", "res://data/Heroes/HeroQuestDataTable.RewardFame.translation", "res://data/Heroes/HeroQuestDataTable.QuestDescription.translation"]
+
+source_file="res://data/Heroes/HeroQuestDataTable.csv"
+dest_files=["res://data/Heroes/HeroQuestDataTable.QuestID.translation", "res://data/Heroes/HeroQuestDataTable.HeroID.translation", "res://data/Heroes/HeroQuestDataTable.QuestTitle.translation", "res://data/Heroes/HeroQuestDataTable.TriggerCondition.translation", "res://data/Heroes/HeroQuestDataTable.TargetNodeID.translation", "res://data/Heroes/HeroQuestDataTable.RewardExp.translation", "res://data/Heroes/HeroQuestDataTable.RewardItemID.translation", "res://data/Heroes/HeroQuestDataTable.RewardFame.translation", "res://data/Heroes/HeroQuestDataTable.QuestDescription.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

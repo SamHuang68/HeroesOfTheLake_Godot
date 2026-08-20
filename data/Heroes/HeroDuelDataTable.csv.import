@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://utvynv2430n6"
+
+[deps]
+
+files=["res://data/Heroes/HeroDuelDataTable.HeroID.translation", "res://data/Heroes/HeroDuelDataTable.SignatureMove.translation", "res://data/Heroes/HeroDuelDataTable.DuelPower.translation", "res://data/Heroes/HeroDuelDataTable.KillRatePercent.translation", "res://data/Heroes/HeroDuelDataTable.CaptureRatePercent.translation", "res://data/Heroes/HeroDuelDataTable.SignatureMoveName.translation", "res://data/Heroes/HeroDuelDataTable.MoveDescription.translation"]
+
+source_file="res://data/Heroes/HeroDuelDataTable.csv"
+dest_files=["res://data/Heroes/HeroDuelDataTable.HeroID.translation", "res://data/Heroes/HeroDuelDataTable.SignatureMove.translation", "res://data/Heroes/HeroDuelDataTable.DuelPower.translation", "res://data/Heroes/HeroDuelDataTable.KillRatePercent.translation", "res://data/Heroes/HeroDuelDataTable.CaptureRatePercent.translation", "res://data/Heroes/HeroDuelDataTable.SignatureMoveName.translation", "res://data/Heroes/HeroDuelDataTable.MoveDescription.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,5 +1,5 @@
 # Copyright (c) 2026 Sam Huang. All Rights Reserved.
-# 《水滸英雄錄：天導108星》- 2D 等角好漢角色 (動畫狀態機、4視角 Sprite 與指派工作動態)
+# 《水滸英雄錄：天導108星》- 2D 等角好漢角色 (載入具體精靈圖、動畫狀態機、4視角 Sprite 與滑鼠互動)
 class_name HeroCharacter2D
 extends Node2D
 
@@ -27,6 +27,11 @@ enum IsoDirection {
 @export var grid_position: Vector2i = Vector2i(16, 16)
 @export var move_speed: float = 80.0
 @export var portrait_file: String = "portrait_linchong.jpg"
+@export var sprite_file: String = "linchong_sprite.png"
+
+# 精靈貼圖快取
+var hero_sprite_texture: Texture2D = null
+var is_hovered: bool = false
 
 # 狀態機與動畫變數
 var current_state: AnimState = AnimState.IDLE
@@ -43,9 +48,24 @@ signal hero_selected(hero: Node2D)
 
 func _ready() -> void:
 	z_as_relative = true
+	load_hero_sprite_texture()
 	update_screen_position_instant()
 
-## 立即同步網格位置至螢幕像素 (錨點 Pivot 設在雙腳底部 (0, 0))
+func load_hero_sprite_texture() -> void:
+	var name_map := {
+		"林沖": "res://assets/sprites/characters/linchong_sprite.png",
+		"武松": "res://assets/sprites/characters/wusong_sprite.png",
+		"魯智深": "res://assets/sprites/characters/luzhishen_sprite.png",
+		"李俊": "res://assets/sprites/characters/lijun_sprite.png",
+		"花榮": "res://assets/sprites/characters/huarong_sprite.png",
+		"宋江": "res://assets/sprites/characters/songjiang_sprite.png",
+		"吳用": "res://assets/sprites/characters/wuyong_sprite.png",
+		"湯隆": "res://assets/sprites/characters/tanglong_sprite.png"
+	}
+	var path: String = name_map.get(hero_name, "res://assets/sprites/characters/linchong_sprite.png")
+	if ResourceLoader.exists(path):
+		hero_sprite_texture = load(path)
+
 func update_screen_position_instant() -> void:
 	var map: Node2D = get_parent()
 	if map and map.has_method("grid_to_screen"):
@@ -109,77 +129,53 @@ func assign_work(job_name: String) -> void:
 func _draw() -> void:
 	# 1. 繪製好漢影子 (腳底中心)
 	draw_colored_polygon(PackedVector2Array([
-		Vector2(-11, 1), Vector2(0, -3), Vector2(11, 1), Vector2(0, 5)
+		Vector2(-12, 1), Vector2(0, -3), Vector2(12, 1), Vector2(0, 5)
 	]), Color(0.0, 0.0, 0.0, 0.35))
 
-	# 2. 依照動畫狀態與 4 視向繪製精靈 Sprite 幀動作
-	draw_animated_hero_sprite()
+	# 2. 繪製具體好漢精靈貼圖 (帶待機呼吸/步態擺動動畫)
+	if hero_sprite_texture:
+		draw_tangible_hero_sprite()
+	else:
+		draw_animated_hero_sprite()
 
-	# 3. 頭頂懸浮微型數值標籤 (姓名、任務 Badge、體力氣力條)
+	# 3. 滑鼠懸停高亮
+	if is_hovered:
+		draw_circle(Vector2(0, -20), 22.0, Color(1.0, 0.9, 0.2, 0.25))
+
+	# 4. 頭頂懸浮微型數值標籤 (姓名、任務 Badge、體力條 HP/MaxHP)
 	draw_overhead_badge()
 
-## 繪製好漢 4 視向動畫 Sprite
-func draw_animated_hero_sprite() -> void:
-	# 待機呼吸 / 行走顛簸 / 勞作揮動
+## 繪製具體真實好漢精靈貼圖
+func draw_tangible_hero_sprite() -> void:
 	var bob_y: float = 0.0
-	var leg_swing: float = 0.0
-	var arm_swing: float = 0.0
-
 	if current_state == AnimState.WALK:
-		bob_y = sin(anim_frame * PI / 2.0) * 2.0
-		leg_swing = sin(anim_frame * PI / 2.0) * 3.5
+		bob_y = sin(anim_frame * PI / 2.0) * 2.5
 	elif current_state == AnimState.WORK:
-		arm_swing = sin(anim_timer * 15.0) * 8.0
-	else: # IDLE
-		bob_y = sin(anim_timer * 3.0) * 0.8
-
-	var flip_x: float = -1.0 if (current_dir in [IsoDirection.NW, IsoDirection.SW]) else 1.0
-
-	# 雙腿
-	draw_line(Vector2(-3 * flip_x + leg_swing, 0 + bob_y), Vector2(-3 * flip_x, -7 + bob_y), Color(0.15, 0.15, 0.2, 1.0), 2.5)
-	draw_line(Vector2(3 * flip_x - leg_swing, 0 + bob_y), Vector2(3 * flip_x, -7 + bob_y), Color(0.15, 0.15, 0.2, 1.0), 2.5)
-
-	# 白袍長衫與戰甲
-	draw_colored_polygon(PackedVector2Array([
-		Vector2(-7 * flip_x, -6 + bob_y), Vector2(7 * flip_x, -6 + bob_y),
-		Vector2(8 * flip_x, 1 + bob_y), Vector2(-8 * flip_x, 1 + bob_y)
-	]), Color(0.88, 0.88, 0.85, 1.0)) # 白袍
-
-	draw_colored_polygon(PackedVector2Array([
-		Vector2(-6 * flip_x, -18 + bob_y), Vector2(6 * flip_x, -18 + bob_y),
-		Vector2(7 * flip_x, -6 + bob_y), Vector2(-7 * flip_x, -6 + bob_y)
-	]), Color(0.2, 0.35, 0.65, 1.0)) # 藍甲
-
-	# 頭部與白氈笠
-	draw_circle(Vector2(0, -23 + bob_y), 5.5, Color(0.95, 0.80, 0.65, 1.0))
-	draw_colored_polygon(PackedVector2Array([
-		Vector2(-9 * flip_x, -26 + bob_y), Vector2(9 * flip_x, -26 + bob_y), Vector2(0, -32 + bob_y)
-	]), Color(0.92, 0.90, 0.82, 1.0)) # 白氈大帽
-
-	# 武器 / 勞作工具
-	if current_state == AnimState.WORK:
-		if assigned_job == "打鐵":
-			# 鐵鎚揮擊
-			draw_line(Vector2(4 * flip_x, -12 + bob_y), Vector2(10 * flip_x + arm_swing, -22 + bob_y - arm_swing), Color(0.4, 0.25, 0.15, 1.0), 2.5)
-			draw_rect(Rect2(8 * flip_x + arm_swing, -26 + bob_y - arm_swing, 6, 4), Color(0.5, 0.5, 0.55, 1.0))
-		elif assigned_job == "農耕":
-			# 鋤頭
-			draw_line(Vector2(4 * flip_x, -10 + bob_y), Vector2(12 * flip_x, 4 + bob_y + arm_swing * 0.5), Color(0.4, 0.25, 0.15, 1.0), 2.5)
-		else:
-			# 操練槍棒
-			draw_line(Vector2(4 * flip_x, -10 + bob_y), Vector2(14 * flip_x + arm_swing, -34 + bob_y), Color(0.7, 0.5, 0.3, 1.0), 2.0)
+		bob_y = sin(anim_timer * 12.0) * 2.0
 	else:
-		# 佩長槍
-		draw_line(Vector2(4 * flip_x, 1 + bob_y), Vector2(12 * flip_x, -36 + bob_y), Color(0.7, 0.5, 0.3, 1.0), 2.0)
-		draw_line(Vector2(12 * flip_x, -36 + bob_y), Vector2(14 * flip_x, -42 + bob_y), Color(0.9, 0.9, 0.9, 1.0), 2.5)
+		bob_y = sin(anim_timer * 3.0) * 1.0
 
-## 繪製頭頂懸浮微型數值標籤 (顯示姓名、體力條 HP/MaxHP、指派任務圖示)
+	var tex_size := hero_sprite_texture.get_size()
+	var dest_rect := Rect2(-tex_size.x / 2.0, -tex_size.y + 12 + bob_y, tex_size.x, tex_size.y)
+
+	# 依照 4 視向翻轉
+	if current_dir in [IsoDirection.NW, IsoDirection.SW]:
+		draw_set_transform(Vector2.ZERO, 0, Vector2(-1.0, 1.0))
+		draw_texture(hero_sprite_texture, Vector2(-tex_size.x / 2.0, -tex_size.y + 12 + bob_y))
+		draw_set_transform(Vector2.ZERO, 0, Vector2(1.0, 1.0))
+	else:
+		draw_texture(hero_sprite_texture, dest_rect.position)
+
+func draw_animated_hero_sprite() -> void:
+	var bob_y: float = sin(anim_timer * 3.0) * 0.8
+	draw_circle(Vector2(0, -20 + bob_y), 8.0, Color(0.9, 0.8, 0.6, 1.0))
+
+## 繪製頭頂懸浮微型數值標籤
 func draw_overhead_badge() -> void:
-	var badge_rect := Rect2(-32, -58, 64, 18)
+	var badge_rect := Rect2(-34, -58, 68, 18)
 	draw_rect(badge_rect, Color(0.06, 0.09, 0.18, 0.9), true)
 	draw_rect(badge_rect, Color(0.85, 0.75, 0.35, 0.9), false, 1.0)
 
-	# 任務圖示
 	var job_icon: String = "⚔️"
 	match assigned_job:
 		"打鐵": job_icon = "⚒️"
@@ -190,16 +186,22 @@ func draw_overhead_badge() -> void:
 
 	var stat_text := "%s %s %d/%d" % [job_icon, hero_name, current_energy, current_stamina]
 	var default_font := ThemeDB.fallback_font
-	draw_string(default_font, Vector2(-30, -45), stat_text, HORIZONTAL_ALIGNMENT_CENTER, 60, 9, Color(1.0, 0.95, 0.7, 1.0))
+	draw_string(default_font, Vector2(-32, -45), stat_text, HORIZONTAL_ALIGNMENT_CENTER, 64, 9, Color(1.0, 0.95, 0.7, 1.0))
 
 	# 微型體力血條 (綠/紅漸變)
 	var bar_ratio: float = clampf(float(current_stamina) / float(max_stamina), 0.0, 1.0)
-	var bar_width: float = 58.0 * bar_ratio
-	draw_rect(Rect2(-29, -43, 58, 2), Color(0.3, 0.1, 0.1, 0.8))
-	draw_rect(Rect2(-29, -43, bar_width, 2), Color(0.2, 0.85, 0.3, 1.0))
+	var bar_width: float = 62.0 * bar_ratio
+	draw_rect(Rect2(-31, -43, 62, 2), Color(0.3, 0.1, 0.1, 0.8))
+	draw_rect(Rect2(-31, -43, bar_width, 2), Color(0.2, 0.85, 0.3, 1.0))
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+	if event is InputEventMouseMotion:
+		var local_m := to_local(event.position)
+		var hover_now: bool = (local_m.distance_to(Vector2(0, -20)) < 26.0)
+		if hover_now != is_hovered:
+			is_hovered = hover_now
+			queue_redraw()
+	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		var mouse_local := to_local(event.position)
-		if mouse_local.distance_to(Vector2(0, -20)) < 25.0:
+		if mouse_local.distance_to(Vector2(0, -20)) < 26.0:
 			hero_selected.emit(self)

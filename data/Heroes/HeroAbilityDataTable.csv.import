@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b28phxx0eq0hy"
+
+[deps]
+
+files=["res://data/Heroes/HeroAbilityDataTable.AbilityID.translation", "res://data/Heroes/HeroAbilityDataTable.HeroID.translation", "res://data/Heroes/HeroAbilityDataTable.AbilityName.translation", "res://data/Heroes/HeroAbilityDataTable.CooldownTurns.translation", "res://data/Heroes/HeroAbilityDataTable.StaminaCost.translation", "res://data/Heroes/HeroAbilityDataTable.CastRange.translation", "res://data/Heroes/HeroAbilityDataTable.AOERadius.translation", "res://data/Heroes/HeroAbilityDataTable.BaseDamage.translation", "res://data/Heroes/HeroAbilityDataTable.StatusEffect.translation", "res://data/Heroes/HeroAbilityDataTable.Description.translation"]
+
+source_file="res://data/Heroes/HeroAbilityDataTable.csv"
+dest_files=["res://data/Heroes/HeroAbilityDataTable.AbilityID.translation", "res://data/Heroes/HeroAbilityDataTable.HeroID.translation", "res://data/Heroes/HeroAbilityDataTable.AbilityName.translation", "res://data/Heroes/HeroAbilityDataTable.CooldownTurns.translation", "res://data/Heroes/HeroAbilityDataTable.StaminaCost.translation", "res://data/Heroes/HeroAbilityDataTable.CastRange.translation", "res://data/Heroes/HeroAbilityDataTable.AOERadius.translation", "res://data/Heroes/HeroAbilityDataTable.BaseDamage.translation", "res://data/Heroes/HeroAbilityDataTable.StatusEffect.translation", "res://data/Heroes/HeroAbilityDataTable.Description.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

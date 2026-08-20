@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://0lpuwk6lxn1"
+
+[deps]
+
+files=["res://data/Heroes/HeroBondDataTable.BondID.translation", "res://data/Heroes/HeroBondDataTable.HeroA.translation", "res://data/Heroes/HeroBondDataTable.HeroB.translation", "res://data/Heroes/HeroBondDataTable.BondType.translation", "res://data/Heroes/HeroBondDataTable.SynergyBonusPercent.translation", "res://data/Heroes/HeroBondDataTable.BondName.translation", "res://data/Heroes/HeroBondDataTable.Description.translation"]
+
+source_file="res://data/Heroes/HeroBondDataTable.csv"
+dest_files=["res://data/Heroes/HeroBondDataTable.BondID.translation", "res://data/Heroes/HeroBondDataTable.HeroA.translation", "res://data/Heroes/HeroBondDataTable.HeroB.translation", "res://data/Heroes/HeroBondDataTable.BondType.translation", "res://data/Heroes/HeroBondDataTable.SynergyBonusPercent.translation", "res://data/Heroes/HeroBondDataTable.BondName.translation", "res://data/Heroes/HeroBondDataTable.Description.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

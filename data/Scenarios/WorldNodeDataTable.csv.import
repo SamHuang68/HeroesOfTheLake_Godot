@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ddm45687wbl8c"
+
+[deps]
+
+files=["res://data/Scenarios/WorldNodeDataTable.NodeID.translation", "res://data/Scenarios/WorldNodeDataTable.NodeName.translation", "res://data/Scenarios/WorldNodeDataTable.NodeType.translation", "res://data/Scenarios/WorldNodeDataTable.PosX.translation", "res://data/Scenarios/WorldNodeDataTable.PosY.translation", "res://data/Scenarios/WorldNodeDataTable.InitialOwner.translation", "res://data/Scenarios/WorldNodeDataTable.GarrisonStrength.translation"]
+
+source_file="res://data/Scenarios/WorldNodeDataTable.csv"
+dest_files=["res://data/Scenarios/WorldNodeDataTable.NodeID.translation", "res://data/Scenarios/WorldNodeDataTable.NodeName.translation", "res://data/Scenarios/WorldNodeDataTable.NodeType.translation", "res://data/Scenarios/WorldNodeDataTable.PosX.translation", "res://data/Scenarios/WorldNodeDataTable.PosY.translation", "res://data/Scenarios/WorldNodeDataTable.InitialOwner.translation", "res://data/Scenarios/WorldNodeDataTable.GarrisonStrength.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

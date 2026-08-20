@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dsk4q30gefe7q"
+
+[deps]
+
+files=["res://data/Heroes/HeroFormationDataTable.HeroID.translation", "res://data/Heroes/HeroFormationDataTable.PrimaryFormation.translation", "res://data/Heroes/HeroFormationDataTable.InfantryProficiency.translation", "res://data/Heroes/HeroFormationDataTable.CavalryProficiency.translation", "res://data/Heroes/HeroFormationDataTable.ArcherProficiency.translation", "res://data/Heroes/HeroFormationDataTable.NavalProficiency.translation", "res://data/Heroes/HeroFormationDataTable.SiegeProficiency.translation", "res://data/Heroes/HeroFormationDataTable.FormationBonusDesc.translation"]
+
+source_file="res://data/Heroes/HeroFormationDataTable.csv"
+dest_files=["res://data/Heroes/HeroFormationDataTable.HeroID.translation", "res://data/Heroes/HeroFormationDataTable.PrimaryFormation.translation", "res://data/Heroes/HeroFormationDataTable.InfantryProficiency.translation", "res://data/Heroes/HeroFormationDataTable.CavalryProficiency.translation", "res://data/Heroes/HeroFormationDataTable.ArcherProficiency.translation", "res://data/Heroes/HeroFormationDataTable.NavalProficiency.translation", "res://data/Heroes/HeroFormationDataTable.SiegeProficiency.translation", "res://data/Heroes/HeroFormationDataTable.FormationBonusDesc.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

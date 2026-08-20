@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://lv8t3byst1w4"
+
+[deps]
+
+files=["res://data/Items/ItemDataTable.ItemID.translation", "res://data/Items/ItemDataTable.DisplayName.translation", "res://data/Items/ItemDataTable.ItemType.translation", "res://data/Items/ItemDataTable.StrengthBonus.translation", "res://data/Items/ItemDataTable.VitalityBonus.translation", "res://data/Items/ItemDataTable.DexterityBonus.translation", "res://data/Items/ItemDataTable.IntelligenceBonus.translation", "res://data/Items/ItemDataTable.MoraleBonus.translation", "res://data/Items/ItemDataTable.GrantedTrait.translation", "res://data/Items/ItemDataTable.GoldValue.translation", "res://data/Items/ItemDataTable.Description.translation"]
+
+source_file="res://data/Items/ItemDataTable.csv"
+dest_files=["res://data/Items/ItemDataTable.ItemID.translation", "res://data/Items/ItemDataTable.DisplayName.translation", "res://data/Items/ItemDataTable.ItemType.translation", "res://data/Items/ItemDataTable.StrengthBonus.translation", "res://data/Items/ItemDataTable.VitalityBonus.translation", "res://data/Items/ItemDataTable.DexterityBonus.translation", "res://data/Items/ItemDataTable.IntelligenceBonus.translation", "res://data/Items/ItemDataTable.MoraleBonus.translation", "res://data/Items/ItemDataTable.GrantedTrait.translation", "res://data/Items/ItemDataTable.GoldValue.translation", "res://data/Items/ItemDataTable.Description.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

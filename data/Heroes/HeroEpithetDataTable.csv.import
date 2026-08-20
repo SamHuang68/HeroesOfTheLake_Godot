@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dw1t46lpi17l0"
+
+[deps]
+
+files=["res://data/Heroes/HeroEpithetDataTable.HeroID.translation", "res://data/Heroes/HeroEpithetDataTable.Nickname.translation", "res://data/Heroes/HeroEpithetDataTable.StarType.translation", "res://data/Heroes/HeroEpithetDataTable.AuraID.translation", "res://data/Heroes/HeroEpithetDataTable.AuraName.translation", "res://data/Heroes/HeroEpithetDataTable.AuraDescription.translation"]
+
+source_file="res://data/Heroes/HeroEpithetDataTable.csv"
+dest_files=["res://data/Heroes/HeroEpithetDataTable.HeroID.translation", "res://data/Heroes/HeroEpithetDataTable.Nickname.translation", "res://data/Heroes/HeroEpithetDataTable.StarType.translation", "res://data/Heroes/HeroEpithetDataTable.AuraID.translation", "res://data/Heroes/HeroEpithetDataTable.AuraName.translation", "res://data/Heroes/HeroEpithetDataTable.AuraDescription.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b7cjuehykrxq3"
+
+[deps]
+
+files=["res://data/Heroes/HeroDialogueDataTable.HeroID.translation", "res://data/Heroes/HeroDialogueDataTable.OnRecruited.translation", "res://data/Heroes/HeroDialogueDataTable.OnMarch.translation", "res://data/Heroes/HeroDialogueDataTable.OnCastSkill.translation", "res://data/Heroes/HeroDialogueDataTable.OnFeast.translation", "res://data/Heroes/HeroDialogueDataTable.OnDefeated.translation"]
+
+source_file="res://data/Heroes/HeroDialogueDataTable.csv"
+dest_files=["res://data/Heroes/HeroDialogueDataTable.HeroID.translation", "res://data/Heroes/HeroDialogueDataTable.OnRecruited.translation", "res://data/Heroes/HeroDialogueDataTable.OnMarch.translation", "res://data/Heroes/HeroDialogueDataTable.OnCastSkill.translation", "res://data/Heroes/HeroDialogueDataTable.OnFeast.translation", "res://data/Heroes/HeroDialogueDataTable.OnDefeated.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
