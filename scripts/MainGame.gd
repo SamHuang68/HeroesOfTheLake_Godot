@@ -117,7 +117,12 @@ func _ready() -> void:
 			top_menu_bar.call("update_status_display")
 		)
 
-	# 9. 綁定外交貿易事件
+	# 9. 綁定外交貿易與沙盤視察事件
+	if diplomacy_modal.has_signal("fortress_inspect_requested"):
+		diplomacy_modal.connect("fortress_inspect_requested", func(fid):
+			map.call("load_fortress_map", fid)
+			camera.position = Vector2(0, 500)
+		)
 	if diplomacy_modal.has_signal("resources_traded"):
 		diplomacy_modal.connect("resources_traded", func(g_delta, f_delta, a_delta):
 			top_menu_bar.set("gold", top_menu_bar.get("gold") + g_delta)
