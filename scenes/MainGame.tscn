@@ -27,6 +27,9 @@ position_smoothing_enabled = true
 [node name="IsometricMap" type="Node2D" parent="World2D"]
 script = ExtResource("2_isomap")
 
+[node name="Decorations" type="Node2D" parent="World2D/IsometricMap"]
+y_sort_enabled = true
+
 [node name="Facilities" type="Node2D" parent="World2D/IsometricMap"]
 y_sort_enabled = true
 
