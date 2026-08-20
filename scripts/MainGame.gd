@@ -17,6 +17,8 @@ const HeroCharacter2DScript = preload("res://scripts/HeroCharacter2D.gd")
 @onready var build_modal: PanelContainer = $CanvasLayer/BuildModal
 @onready var military_modal: PanelContainer = $CanvasLayer/MilitaryModal
 @onready var diplomacy_modal: PanelContainer = $CanvasLayer/DiplomacyModal
+@onready var facility_info_modal: PanelContainer = $CanvasLayer/FacilityInfoModal
+@onready var hero_action_modal: PanelContainer = $CanvasLayer/HeroActionModal
 
 var is_dragging_camera: bool = false
 var last_mouse_pos: Vector2 = Vector2.ZERO
@@ -34,13 +36,48 @@ func _ready() -> void:
 	if top_menu_bar.has_signal("advance_month_clicked"):
 		top_menu_bar.connect("advance_month_clicked", _on_advance_month)
 
-	# 3. 綁定地圖點擊與建造事件
+	# 3. 綁定地圖點擊與設施檢視事件
 	if map.has_signal("tile_clicked"):
 		map.connect("tile_clicked", _on_tile_clicked)
 	if map.has_signal("facility_constructed"):
 		map.connect("facility_constructed", _on_facility_constructed)
+	if map.has_signal("facility_inspected"):
+		map.connect("facility_inspected", func(fac_node):
+			facility_info_modal.call("display_facility", fac_node)
+		)
 
-	# 4. 綁定各子面板事件
+	# 4. 綁定設施升級與好漢指派事件
+	if facility_info_modal.has_signal("facility_upgraded"):
+		facility_info_modal.connect("facility_upgraded", func(_f, g_cost, f_cost):
+			top_menu_bar.set("gold", top_menu_bar.get("gold") - g_cost)
+			top_menu_bar.set("food", top_menu_bar.get("food") - f_cost)
+			top_menu_bar.call("update_status_display")
+		)
+	if facility_info_modal.has_signal("hero_assigned_to_facility"):
+		facility_info_modal.connect("hero_assigned_to_facility", func(fac, h_name):
+			# 同步好漢的工作狀態與動畫
+			for child in characters_container.get_children():
+				if child.get("hero_name") == h_name:
+					var f_type: String = fac.get("facility_type")
+					var job := "打鐵" if f_type == "Smithy" else ("農耕" if f_type == "Farm" else ("操練" if f_type == "Barracks" else "駐館"))
+					child.call("assign_work", job)
+					break
+		)
+
+	# 5. 綁定好漢快捷指令事件
+	if hero_action_modal.has_signal("hero_reward_clicked"):
+		hero_action_modal.connect("hero_reward_clicked", func(hero_inst, g_cost):
+			top_menu_bar.set("gold", top_menu_bar.get("gold") - g_cost)
+			top_menu_bar.call("update_status_display")
+		)
+	if hero_action_modal.has_signal("hero_full_detail_requested"):
+		hero_action_modal.connect("hero_full_detail_requested", func(h_name):
+			var h_data: Dictionary = DataManagerScript.get_hero(h_name)
+			if not h_data.is_empty():
+				hero_modal.call("display_hero", h_data)
+		)
+
+	# 6. 綁定人事名冊事件
 	if personnel_modal.has_signal("hero_inspect_requested"):
 		personnel_modal.connect("hero_inspect_requested", func(h_data):
 			hero_modal.call("display_hero", h_data)
@@ -51,6 +88,7 @@ func _ready() -> void:
 			top_menu_bar.call("update_status_display")
 		)
 
+	# 7. 綁定建造事件
 	if build_modal.has_signal("facility_chosen_to_build"):
 		build_modal.connect("facility_chosen_to_build", func(f_data):
 			var cost_gold: int = f_data.get("cost_gold", 100)
@@ -59,6 +97,7 @@ func _ready() -> void:
 				map.call("start_build_mode", f_data)
 		)
 
+	# 8. 綁定外交事件
 	if diplomacy_modal.has_signal("resources_traded"):
 		diplomacy_modal.connect("resources_traded", func(g_delta, f_delta, a_delta):
 			top_menu_bar.set("gold", top_menu_bar.get("gold") + g_delta)
@@ -67,23 +106,23 @@ func _ready() -> void:
 			top_menu_bar.call("update_status_display")
 		)
 
-	# 5. 傳遞地圖與攝影機參考至縮圖
+	# 9. 傳遞縮圖參考
 	minimap_window.set("map_ref", map)
 	minimap_window.set("camera_ref", camera)
 
-	# 6. 生成初始好漢角色
+	# 10. 生成初始好漢角色
 	spawn_initial_heroes()
 
-	# 7. 置中攝影機至聚義廳 (網格 16, 16)
+	# 11. 置中攝影機至聚義廳 (網格 16, 16)
 	var center_pos: Vector2 = map.call("grid_to_screen", 16, 16)
 	camera.position = center_pos
 
-	# 8. 預設顯示佈局
+	# 12. 初始視窗位置與狀態
 	hero_modal.position = Vector2(20, 80)
-	hero_modal.show()
+	hero_modal.hide()
 
 	fortress_modal.position = Vector2(720, 160)
-	fortress_modal.show()
+	fortress_modal.hide()
 
 	minimap_window.position = Vector2(20, 480)
 	minimap_window.show()
@@ -99,6 +138,12 @@ func _ready() -> void:
 
 	diplomacy_modal.position = Vector2(280, 110)
 	diplomacy_modal.hide()
+
+	facility_info_modal.position = Vector2(420, 150)
+	facility_info_modal.hide()
+
+	hero_action_modal.position = Vector2(440, 180)
+	hero_action_modal.hide()
 
 func spawn_initial_heroes() -> void:
 	var initial_hero_names := ["LinChong", "WuSong", "LuZhishen", "LiJun", "YangZhi", "ShiJin", "HuaRong", "DaiZong"]
@@ -122,10 +167,9 @@ func spawn_initial_heroes() -> void:
 		hero_node.set("current_energy", int(h_data["might"] * 0.5))
 		hero_node.set("portrait_file", h_data["portrait"])
 
-		var hero_dict: Dictionary = h_data
 		if hero_node.has_signal("hero_selected"):
-			hero_node.connect("hero_selected", func(_h):
-				hero_modal.call("display_hero", hero_dict)
+			hero_node.connect("hero_selected", func(h_inst):
+				hero_action_modal.call("display_hero", h_inst)
 			)
 
 		characters_container.add_child(hero_node)
@@ -144,7 +188,8 @@ func _on_menu_item_selected(menu_name: String) -> void:
 		"diplomacy":
 			diplomacy_modal.visible = !diplomacy_modal.visible
 		"faction":
-			hero_modal.visible = !hero_modal.visible
+			var linchong_data: Dictionary = DataManagerScript.get_hero("LinChong")
+			hero_modal.call("display_hero", linchong_data)
 
 func _on_quick_action_triggered(action: String) -> void:
 	match action:
@@ -163,20 +208,23 @@ func _on_quick_action_triggered(action: String) -> void:
 func _on_advance_month() -> void:
 	top_menu_bar.call("advance_time", 30)
 
-	# 依據已建成的設施增產
-	var fac_list: Array = map.get("constructed_facilities")
+	# 依據所有設施與進駐好漢加乘計算月產能
+	var facs_node: Node2D = map.get_node_or_null("Facilities")
 	var extra_gold: int = 0
 	var extra_food: int = 0
 	var extra_arms: int = 0
 
-	for f in fac_list:
-		var fdata: Dictionary = f.get("data", {})
-		var output: int = fdata.get("output", 20)
-		var ftype: String = fdata.get("type", "")
-		match ftype:
-			"Farm", "FishingPond": extra_food += output * 10
-			"Market", "Entertainment", "Tavern": extra_gold += output * 15
-			"Smithy", "Barracks": extra_arms += output * 8
+	if facs_node:
+		for f in facs_node.get_children():
+			var f_type: String = f.get("facility_type")
+			var lvl: int = f.get("level")
+			var assigned: Array = f.get("assigned_heroes")
+			var hero_mult: float = 1.5 if assigned.size() > 0 else 1.0
+
+			match f_type:
+				"Farm": extra_food += int(lvl * 250 * hero_mult)
+				"Market", "Tavern": extra_gold += int(lvl * 300 * hero_mult)
+				"Smithy": extra_arms += int(lvl * 150 * hero_mult)
 
 	top_menu_bar.set("gold", top_menu_bar.get("gold") + extra_gold)
 	top_menu_bar.set("food", top_menu_bar.get("food") + extra_food)
@@ -197,7 +245,6 @@ func _on_tile_clicked(grid_pos: Vector2i, _type: int) -> void:
 			break
 
 func _unhandled_input(event: InputEvent) -> void:
-	# 攝影機拖曳 (中鍵或右鍵)
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_MIDDLE or event.button_index == MOUSE_BUTTON_RIGHT:
 			if event.pressed:

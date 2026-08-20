@@ -1,7 +1,9 @@
 # Copyright (c) 2026 Sam Huang. All Rights Reserved.
-# 《水滸英雄錄：天導108星》- 純 2D 等角 (Isometric 2.5D) 要塞地景地圖與設施建造系統
+# 《水滸英雄錄：天導108星》- 純 2D 等角 (Isometric 2.5D) 要塞地景地圖與設施系統
 class_name IsometricMap
 extends Node2D
+
+const IsometricFacilityScript = preload("res://scripts/IsometricFacility.gd")
 
 ## 2:1 標準等角菱形網格規格
 const TILE_WIDTH: float = 64.0
@@ -21,11 +23,7 @@ enum TileType {
 	ROAD,       ## 碎石寨道 (3)
 	BUILDING,   ## 聚義堂 / 建築基底 (4)
 	PALISADE,   ## 木鹿角防禦工事 (5)
-	WATCHTOWER, ## 哨塔箭樓 (6)
-	TAVERN,     ## 酒館 (7)
-	MARKET,     ## 市場 (8)
-	SMITHY,     ## 鐵匠鋪 (9)
-	BARRACKS    ## 軍營 (10)
+	WATCHTOWER  ## 哨塔箭樓 (6)
 }
 
 ## 儲存地圖網格資料
@@ -36,13 +34,16 @@ var selected_grid: Vector2i = Vector2i(-1, -1)
 ## 營造模式狀態
 var is_in_build_mode: bool = false
 var pending_facility: Dictionary = {}
-var constructed_facilities: Array[Dictionary] = []
+
+@onready var facilities_container: Node2D = $Facilities
 
 signal tile_clicked(grid_pos: Vector2i, tile_type: int)
 signal facility_constructed(facility: Dictionary, grid_pos: Vector2i)
+signal facility_inspected(facility_node: Node2D)
 
 func _ready() -> void:
 	generate_fortress_terrain()
+	spawn_initial_fortress_facilities()
 	queue_redraw()
 
 ## 產生梁山泊要塞初始沙盤地形
@@ -58,10 +59,7 @@ func generate_fortress_terrain() -> void:
 			# 內部農田耕作區
 			elif (x >= 6 and x <= 11 and y >= 6 and y <= 11) or (x >= 20 and x <= 25 and y >= 20 and y <= 25):
 				type = TileType.FARMLAND
-			# 中心要塞聚義廳本營
-			elif x >= 14 and x <= 18 and y >= 14 and y <= 18:
-				type = TileType.BUILDING
-			# 要塞主幹道
+			# 中心要塞主幹道
 			elif x == 16 or y == 16:
 				type = TileType.ROAD
 			# 防禦柵欄木鹿角
@@ -72,6 +70,43 @@ func generate_fortress_terrain() -> void:
 				type = TileType.WATCHTOWER
 				
 			grid_data[pos] = type
+
+## 生成初始要塞設施實體 (忠義堂、兵器坊、聚義酒館、高產農田、先鋒軍營、水泊碼頭)
+func spawn_initial_fortress_facilities() -> void:
+	if not facilities_container:
+		facilities_container = Node2D.new()
+		facilities_container.name = "Facilities"
+		facilities_container.y_sort_enabled = true
+		add_child(facilities_container)
+
+	var initial_facs := [
+		{"id": "main_hall", "type": "MainHall", "name": "忠義堂本營", "grid": Vector2i(16, 16), "lvl": 3, "heroes": ["宋江", "吳用"]},
+		{"id": "smithy_01", "type": "Smithy", "name": "神兵鐵匠坊", "grid": Vector2i(12, 12), "lvl": 2, "heroes": ["湯隆"]},
+		{"id": "tavern_01", "type": "Tavern", "name": "聚義好漢酒館", "grid": Vector2i(18, 14), "lvl": 2, "heroes": ["朱貴"]},
+		{"id": "farm_01", "type": "Farm", "name": "水泊豐饒糧田", "grid": Vector2i(8, 8), "lvl": 2, "heroes": ["陶宗旺"]},
+		{"id": "barracks_01", "type": "Barracks", "name": "馬步軍營", "grid": Vector2i(20, 20), "lvl": 2, "heroes": ["林沖"]},
+		{"id": "shipyard_01", "type": "Shipyard", "name": "梁山水泊船塢", "grid": Vector2i(4, 16), "lvl": 2, "heroes": ["李俊"]}
+	]
+
+	for f in initial_facs:
+		create_facility_node(f)
+
+func create_facility_node(fac_data: Dictionary) -> Node2D:
+	var fac_node: Node2D = IsometricFacilityScript.new()
+	fac_node.set("facility_id", fac_data.get("id", "fac"))
+	fac_node.set("facility_type", fac_data.get("type", "Smithy"))
+	fac_node.set("display_name", fac_data.get("name", "設施"))
+	fac_node.set("grid_coord", fac_data.get("grid", Vector2i(16, 16)))
+	fac_node.set("level", fac_data.get("lvl", 1))
+	fac_node.set("assigned_heroes", fac_data.get("heroes", []))
+
+	if fac_node.has_signal("facility_selected"):
+		fac_node.connect("facility_selected", func(f_inst):
+			facility_inspected.emit(f_inst)
+		)
+
+	facilities_container.add_child(fac_node)
+	return fac_node
 
 ## 網格座標 (GridX, GridY) 轉為 2D 螢幕座標 (ScreenX, ScreenY)
 func grid_to_screen(gx: float, gy: float) -> Vector2:
@@ -96,7 +131,7 @@ func cancel_build_mode() -> void:
 	queue_redraw()
 
 func _draw() -> void:
-	# 依照從上到下 (Isometric Y-Sorting) 順序繪製 2:1 菱形地塊
+	# 依照從上到下 (Isometric Y-Sorting) 順序繪製 2:1 菱形地塊底座
 	for y in range(MAP_SIZE_Y):
 		for x in range(MAP_SIZE_X):
 			var pos := Vector2i(x, y)
@@ -114,7 +149,6 @@ func _draw() -> void:
 	if grid_data.has(selected_grid):
 		draw_tile_highlight(selected_grid, Color(0.2, 0.8, 1.0, 0.5), Color(0.1, 0.9, 1.0, 1.0))
 
-## 繪製單個 2:1 菱形地塊
 func draw_isometric_tile(grid_pos: Vector2i, type: int) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)
 	
@@ -138,43 +172,17 @@ func draw_isometric_tile(grid_pos: Vector2i, type: int) -> void:
 			fill_color = Color(0.68, 0.54, 0.28, 1.0)
 		TileType.ROAD:
 			fill_color = Color(0.55, 0.52, 0.45, 1.0)
-		TileType.BUILDING:
-			fill_color = Color(0.75, 0.32, 0.25, 1.0)
 		TileType.PALISADE:
 			fill_color = Color(0.48, 0.38, 0.22, 1.0)
 		TileType.WATCHTOWER:
 			fill_color = Color(0.60, 0.45, 0.30, 1.0)
-		TileType.TAVERN:
-			fill_color = Color(0.65, 0.40, 0.20, 1.0)
-		TileType.MARKET:
-			fill_color = Color(0.80, 0.65, 0.25, 1.0)
-		TileType.SMITHY:
-			fill_color = Color(0.45, 0.45, 0.50, 1.0)
-		TileType.BARRACKS:
-			fill_color = Color(0.55, 0.25, 0.25, 1.0)
 		_:
 			fill_color = Color(0.4, 0.5, 0.3, 1.0)
 			
 	draw_colored_polygon(points, fill_color)
 	draw_polyline(PackedVector2Array([p_top, p_right, p_bottom, p_left, p_top]), border_color, 1.0)
-	
-	# 繪製 2.5D 特殊立體建築
-	if type == TileType.BUILDING or type == TileType.TAVERN or type == TileType.MARKET or type == TileType.SMITHY or type == TileType.BARRACKS:
-		var roof_col := Color(0.85, 0.2, 0.15, 1.0)
-		if type == TileType.TAVERN: roof_col = Color(0.8, 0.5, 0.2, 1.0)
-		elif type == TileType.MARKET: roof_col = Color(0.9, 0.75, 0.1, 1.0)
-		elif type == TileType.SMITHY: roof_col = Color(0.4, 0.4, 0.45, 1.0)
-		elif type == TileType.BARRACKS: roof_col = Color(0.7, 0.1, 0.1, 1.0)
 
-		var roof_pts := PackedVector2Array([
-			center + Vector2(0, -HALF_H - 22),
-			center + Vector2(HALF_W, -22),
-			center + Vector2(0, HALF_H - 22),
-			center + Vector2(-HALF_W, -22)
-		])
-		draw_colored_polygon(roof_pts, roof_col)
-		draw_polyline(PackedVector2Array([roof_pts[0], roof_pts[1], roof_pts[2], roof_pts[3], roof_pts[0]]), Color(1.0, 0.85, 0.2, 1.0), 1.5)
-	elif type == TileType.WATCHTOWER:
+	if type == TileType.WATCHTOWER:
 		draw_line(center + Vector2(-8, 0), center + Vector2(-8, -28), Color(0.35, 0.22, 0.12, 1.0), 3.0)
 		draw_line(center + Vector2(8, 0), center + Vector2(8, -28), Color(0.35, 0.22, 0.12, 1.0), 3.0)
 		draw_rect(Rect2(center.x - 12, center.y - 34, 24, 8), Color(0.6, 0.2, 0.1, 1.0))
@@ -218,22 +226,18 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func place_facility(grid_pos: Vector2i, fac_data: Dictionary) -> void:
 	var f_type_str: String = fac_data.get("type", "Farm")
-	var new_type: int = TileType.BUILDING
+	var f_name_str: String = fac_data.get("name", "設施")
+	grid_data[grid_pos] = TileType.BUILDING
 
-	match f_type_str:
-		"Farm": new_type = TileType.FARMLAND
-		"Tavern": new_type = TileType.TAVERN
-		"Market": new_type = TileType.MARKET
-		"Smithy": new_type = TileType.SMITHY
-		"Barracks": new_type = TileType.BARRACKS
-		_: new_type = TileType.BUILDING
-
-	grid_data[grid_pos] = new_type
-	var record := {
+	var fac_dict := {
+		"id": "fac_%d_%d" % [grid_pos.x, grid_pos.y],
+		"type": f_type_str,
+		"name": f_name_str,
 		"grid": grid_pos,
-		"data": fac_data,
-		"type": new_type
+		"lvl": 1,
+		"heroes": []
 	}
-	constructed_facilities.append(record)
+
+	create_facility_node(fac_dict)
 	facility_constructed.emit(fac_data, grid_pos)
 	queue_redraw()

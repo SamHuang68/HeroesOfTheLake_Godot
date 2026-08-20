@@ -23,7 +23,7 @@ static func load_heroes_from_csv(path: String) -> void:
 		return
 
 	var header_line := file.get_line()
-	var headers := header_line.split(",")
+	var _headers := header_line.split(",")
 
 	while not file.eof_reached():
 		var line := file.get_line().strip_edges()
@@ -43,7 +43,7 @@ static func load_heroes_from_csv(path: String) -> void:
 		var dex: float = float(cols[8])
 		var intel: float = float(cols[9])
 		var morale: float = float(cols[10]) if cols.size() > 10 else 80.0
-		var aptitude_pri: String = cols[11].strip_edges() if cols.size() > 11 else "Warrior"
+		var pri_apt: String = cols[11].strip_edges() if cols.size() > 11 else "Warrior"
 		var loyalty: int = int(cols[13]) if cols.size() > 13 else 90
 		var portrait_file: String = "portrait_%s.jpg" % hero_id.to_lower()
 		var bio: String = cols[18].strip_edges() if cols.size() > 18 else ""
@@ -63,7 +63,7 @@ static func load_heroes_from_csv(path: String) -> void:
 			"benevolence": int((vit + morale) * 0.45),
 			"courage": int((str_val + morale) * 0.48),
 			"allegiance": -1 if loyalty > 85 else loyalty,
-			"aptitude": aptitude_pri,
+			"aptitude": pri_apt,
 			"portrait": portrait_file,
 			"bio": "【%s · %s %s】\n%s" % [star_type, nickname, display_name, bio],
 			"action": "在梁山泊駐防",

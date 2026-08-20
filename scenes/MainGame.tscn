@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c6f2a7x8y9z01"]
+[gd_scene load_steps=14 format=3 uid="uid://c6f2a7x8y9z01"]
 
 [ext_resource type="Script" path="res://scripts/MainGame.gd" id="1_maingame"]
 [ext_resource type="Script" path="res://scripts/IsometricMap.gd" id="2_isomap"]
@@ -10,6 +10,8 @@
 [ext_resource type="Script" path="res://scripts/BuildModal.gd" id="8_build"]
 [ext_resource type="Script" path="res://scripts/MilitaryModal.gd" id="9_military"]
 [ext_resource type="Script" path="res://scripts/DiplomacyModal.gd" id="10_diplomacy"]
+[ext_resource type="Script" path="res://scripts/FacilityInfoModal.gd" id="11_facinfo"]
+[ext_resource type="Script" path="res://scripts/HeroActionModal.gd" id="12_heroact"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_maingame")
@@ -22,6 +24,9 @@ position_smoothing_enabled = true
 
 [node name="IsometricMap" type="Node2D" parent="World2D"]
 script = ExtResource("2_isomap")
+
+[node name="Facilities" type="Node2D" parent="World2D/IsometricMap"]
+y_sort_enabled = true
 
 [node name="Characters" type="Node2D" parent="World2D/IsometricMap"]
 y_sort_enabled = true
@@ -83,3 +88,17 @@ offset_top = 110.0
 offset_right = 820.0
 offset_bottom = 510.0
 script = ExtResource("10_diplomacy")
+
+[node name="FacilityInfoModal" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 420.0
+offset_top = 150.0
+offset_right = 840.0
+offset_bottom = 510.0
+script = ExtResource("11_facinfo")
+
+[node name="HeroActionModal" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 440.0
+offset_top = 180.0
+offset_right = 820.0
+offset_bottom = 500.0
+script = ExtResource("12_heroact")
