@@ -143,33 +143,25 @@ func _draw() -> void:
 	if is_hovered:
 		draw_circle(Vector2(0, -20), 22.0, Color(1.0, 0.9, 0.2, 0.25))
 
-	# 4. 頭頂懸浮微型數值標籤 (姓名、任務 Badge、體力條 HP/MaxHP)
-	draw_overhead_badge()
+	# 4. 頭頂懸浮微型數值標籤 (Hover-Only: 僅滑鼠懸停時微量提示)
+	if is_hovered:
+		draw_overhead_badge()
 
 ## 繪製具體真實好漢精靈貼圖
 func draw_tangible_hero_sprite() -> void:
-	var bob_y: float = 0.0
-	if current_state == AnimState.WALK:
-		bob_y = sin(anim_frame * PI / 2.0) * 2.5
-	elif current_state == AnimState.WORK:
-		bob_y = sin(anim_timer * 12.0) * 2.0
-	else:
-		bob_y = sin(anim_timer * 3.0) * 1.0
-
 	var tex_size := hero_sprite_texture.get_size()
-	var dest_rect := Rect2(-tex_size.x / 2.0, -tex_size.y + 12 + bob_y, tex_size.x, tex_size.y)
+	var dest_rect := Rect2(-tex_size.x / 2.0, -tex_size.y + 12, tex_size.x, tex_size.y)
 
-	# 依照 4 視向翻轉
+	# 依照 4 視向翻轉 (腳底鎖定地面)
 	if current_dir in [IsoDirection.NW, IsoDirection.SW]:
 		draw_set_transform(Vector2.ZERO, 0, Vector2(-1.0, 1.0))
-		draw_texture(hero_sprite_texture, Vector2(-tex_size.x / 2.0, -tex_size.y + 12 + bob_y))
+		draw_texture(hero_sprite_texture, Vector2(-tex_size.x / 2.0, -tex_size.y + 12))
 		draw_set_transform(Vector2.ZERO, 0, Vector2(1.0, 1.0))
 	else:
 		draw_texture(hero_sprite_texture, dest_rect.position)
 
 func draw_animated_hero_sprite() -> void:
-	var bob_y: float = sin(anim_timer * 3.0) * 0.8
-	draw_circle(Vector2(0, -20 + bob_y), 8.0, Color(0.9, 0.8, 0.6, 1.0))
+	draw_circle(Vector2(0, -20), 8.0, Color(0.9, 0.8, 0.6, 1.0))
 
 ## 繪製頭頂懸浮微型數值標籤
 func draw_overhead_badge() -> void:

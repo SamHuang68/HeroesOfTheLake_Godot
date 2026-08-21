@@ -283,11 +283,11 @@ func grid_to_screen(gx: float, gy: float) -> Vector2:
 	var sy: float = (gx + gy) * HALF_H
 	return Vector2(sx, sy)
 
-## 2D 螢幕座標轉網格
+## 2D 螢幕座標轉網格 (嚴格 2:1 等角逆變換，無偏移)
 func screen_to_grid(screen_pos: Vector2) -> Vector2i:
-	var gx: float = (screen_pos.x / HALF_W + screen_pos.y / HALF_H) / 2.0
-	var gy: float = (screen_pos.y / HALF_H - screen_pos.x / HALF_W) / 2.0
-	return Vector2i(roundi(gx), roundi(gy))
+	var gx: float = floor((screen_pos.x / HALF_W + screen_pos.y / HALF_H + 1.0) / 2.0)
+	var gy: float = floor((screen_pos.y / HALF_H - screen_pos.x / HALF_W + 1.0) / 2.0)
+	return Vector2i(int(gx), int(gy))
 
 func start_build_mode(facility_data: Dictionary) -> void:
 	is_in_build_mode = true

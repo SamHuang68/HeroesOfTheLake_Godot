@@ -220,10 +220,10 @@ static func grid_to_screen(pos: Vector2i) -> Vector2:
 		(pos.x + pos.y) * 16.0
 	)
 
-## 座標換算：2D 螢幕座標轉菱形等角網格
+## 座標換算：2D 螢幕座標轉菱形等角網格 (嚴格 2:1 等角逆變換，無偏移)
 static func screen_to_grid(screen_pos: Vector2) -> Vector2i:
-	var gx = int(round((screen_pos.x / 32.0 + screen_pos.y / 16.0) / 2.0))
-	var gy = int(round((screen_pos.y / 16.0 - screen_pos.x / 32.0) / 2.0))
+	var gx = int(floor((screen_pos.x / 32.0 + screen_pos.y / 16.0 + 1.0) / 2.0))
+	var gy = int(floor((screen_pos.y / 16.0 - screen_pos.x / 32.0 + 1.0) / 2.0))
 	return Vector2i(gx, gy)
 
 func _get_facility_atlas(fac_type: String, level: int) -> Vector2i:

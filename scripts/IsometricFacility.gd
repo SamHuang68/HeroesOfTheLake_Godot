@@ -35,7 +35,9 @@ func load_facility_texture() -> void:
 		"Tavern": "res://assets/sprites/buildings/tavern_2x2.png",
 		"Granary": "res://assets/sprites/buildings/granary_2x2.png",
 		"Barracks": "res://assets/sprites/buildings/barracks_2x2.png",
-		"Shipyard": "res://assets/sprites/buildings/shipyard_2x2.png"
+		"Shipyard": "res://assets/sprites/buildings/shipyard_2x2.png",
+		"Watchtower": "res://assets/sprites/buildings/watchtower_1x1.png",
+		"Palisade": "res://assets/sprites/buildings/palisade_1x1.png"
 	}
 	if tex_map.has(facility_type):
 		var p: String = tex_map[facility_type]
