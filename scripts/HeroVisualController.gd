@@ -191,12 +191,54 @@ func play_skill(skill_type: String) -> void:
 			current_state = AnimState.COMBAT_ATTACK
 		"raze", "破壞":
 			current_state = AnimState.COMBAT_RAZE
-		"morale", "高昂":
-			current_state = AnimState.COMBAT_MORALE_HIGH
-		_:
-			current_state = AnimState.LOCOMOTION_IDLE
-
 	action_state_changed.emit(self, current_state)
+
+## 依據動畫狀態列舉切換狀態
+func set_state(new_state: int) -> void:
+	match new_state:
+		AnimState.WORK_TAVERN: play_facility_work("Tavern")
+		AnimState.WORK_FARM: play_facility_work("Farm")
+		AnimState.WORK_FISH: play_facility_work("Fish")
+		AnimState.WORK_MARKET: play_facility_work("Market")
+		AnimState.WORK_BLACKSMITH: play_facility_work("Smithy")
+		AnimState.WORK_SHIPYARD: play_facility_work("Shipyard")
+		AnimState.WORK_TAOIST: play_facility_work("Daoist")
+		AnimState.WORK_ALCHEMY: play_facility_work("Pharmacy")
+		AnimState.WORK_PLEASURE: play_facility_work("Pleasure")
+		AnimState.WORK_RANCH: play_facility_work("Pasture")
+		AnimState.COMBAT_SEDUCE: play_skill("seduce")
+		AnimState.COMBAT_CAST_SPELL: play_skill("magic")
+		AnimState.COMBAT_ATTACK: play_skill("attack")
+		AnimState.COMBAT_RAZE: play_skill("raze")
+		AnimState.COMBAT_MORALE_HIGH: play_skill("morale")
+		_:
+			current_state = new_state
+			action_state_changed.emit(self, current_state)
+	queue_redraw()
+
+func set_gender(p_is_female: bool) -> void:
+	is_female = p_is_female
+
+func play_action(action_name: String) -> void:
+	match action_name:
+		"Work_Tavern", "tavern", "Tavern": set_state(AnimState.WORK_TAVERN)
+		"Work_Farm", "farm", "Farm": set_state(AnimState.WORK_FARM)
+		"Work_Fish", "fish", "Fish": set_state(AnimState.WORK_FISH)
+		"Work_Market", "market", "Market": set_state(AnimState.WORK_MARKET)
+		"Work_Blacksmith", "blacksmith", "Smithy": set_state(AnimState.WORK_BLACKSMITH)
+		"Work_Shipyard", "shipyard", "Shipyard": set_state(AnimState.WORK_SHIPYARD)
+		"Work_Taoist", "taoist", "Daoist": set_state(AnimState.WORK_TAOIST)
+		"Work_Alchemy", "alchemy", "Pharmacy": set_state(AnimState.WORK_ALCHEMY)
+		"Work_Pleasure", "pleasure", "Pleasure": set_state(AnimState.WORK_PLEASURE)
+		"Work_Ranch", "ranch", "Pasture": set_state(AnimState.WORK_RANCH)
+		"Combat_Seduce", "seduce", "Seduce": set_state(AnimState.COMBAT_SEDUCE)
+		"Combat_CastSpell", "magic", "CastSpell": set_state(AnimState.COMBAT_CAST_SPELL)
+		"Combat_Attack", "attack", "Attack": set_state(AnimState.COMBAT_ATTACK)
+		"Combat_Raze", "raze", "Raze": set_state(AnimState.COMBAT_RAZE)
+		"Combat_MoraleHigh", "morale", "MoraleHigh": set_state(AnimState.COMBAT_MORALE_HIGH)
+		"Locomotion_Walk", "walk", "Walk": set_state(AnimState.LOCOMOTION_WALK)
+		"Locomotion_Run", "run", "Run": set_state(AnimState.LOCOMOTION_RUN)
+		_: set_state(AnimState.LOCOMOTION_IDLE)
 
 func move_to_grid(new_grid: Vector2i) -> void:
 	grid_position = new_grid

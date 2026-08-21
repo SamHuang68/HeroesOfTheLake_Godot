@@ -1,0 +1,2802 @@
+{
+  "000": {
+    "name": "宋江",
+    "portrait": "res://data/native_converted/portraits/kao_000.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "001": {
+    "name": "盧俊義",
+    "portrait": "res://data/native_converted/portraits/kao_001.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "002": {
+    "name": "吳用",
+    "portrait": "res://data/native_converted/portraits/kao_002.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "003": {
+    "name": "公孫勝",
+    "portrait": "res://data/native_converted/portraits/kao_003.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "004": {
+    "name": "關勝",
+    "portrait": "res://data/native_converted/portraits/kao_004.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "005": {
+    "name": "林冲",
+    "portrait": "res://data/native_converted/portraits/kao_005.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "006": {
+    "name": "秦明",
+    "portrait": "res://data/native_converted/portraits/kao_006.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "007": {
+    "name": "呼延灼",
+    "portrait": "res://data/native_converted/portraits/kao_007.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "double_whip"
+  },
+  "008": {
+    "name": "花榮",
+    "portrait": "res://data/native_converted/portraits/kao_008.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "009": {
+    "name": "柴進",
+    "portrait": "res://data/native_converted/portraits/kao_009.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "010": {
+    "name": "李應",
+    "portrait": "res://data/native_converted/portraits/kao_010.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "011": {
+    "name": "朱仝",
+    "portrait": "res://data/native_converted/portraits/kao_011.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "012": {
+    "name": "魯智深",
+    "portrait": "res://data/native_converted/portraits/kao_012.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "013": {
+    "name": "武松",
+    "portrait": "res://data/native_converted/portraits/kao_013.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "double_blade"
+  },
+  "014": {
+    "name": "董平",
+    "portrait": "res://data/native_converted/portraits/kao_014.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "015": {
+    "name": "張清",
+    "portrait": "res://data/native_converted/portraits/kao_015.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "016": {
+    "name": "楊志",
+    "portrait": "res://data/native_converted/portraits/kao_016.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "017": {
+    "name": "徐寧",
+    "portrait": "res://data/native_converted/portraits/kao_017.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "018": {
+    "name": "索超",
+    "portrait": "res://data/native_converted/portraits/kao_018.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "019": {
+    "name": "戴宗",
+    "portrait": "res://data/native_converted/portraits/kao_019.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "ring"
+  },
+  "020": {
+    "name": "劉唐",
+    "portrait": "res://data/native_converted/portraits/kao_020.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "021": {
+    "name": "李逵",
+    "portrait": "res://data/native_converted/portraits/kao_021.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "double_axe"
+  },
+  "022": {
+    "name": "史進",
+    "portrait": "res://data/native_converted/portraits/kao_022.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "023": {
+    "name": "穆弘",
+    "portrait": "res://data/native_converted/portraits/kao_023.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "024": {
+    "name": "雷橫",
+    "portrait": "res://data/native_converted/portraits/kao_024.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "025": {
+    "name": "李俊",
+    "portrait": "res://data/native_converted/portraits/kao_025.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "026": {
+    "name": "李俊",
+    "portrait": "res://data/native_converted/portraits/kao_026.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "027": {
+    "name": "阮小二",
+    "portrait": "res://data/native_converted/portraits/kao_027.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "028": {
+    "name": "張橫",
+    "portrait": "res://data/native_converted/portraits/kao_028.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "oar"
+  },
+  "029": {
+    "name": "阮小五",
+    "portrait": "res://data/native_converted/portraits/kao_029.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "030": {
+    "name": "張順",
+    "portrait": "res://data/native_converted/portraits/kao_030.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "031": {
+    "name": "阮小七",
+    "portrait": "res://data/native_converted/portraits/kao_031.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "032": {
+    "name": "楊雄",
+    "portrait": "res://data/native_converted/portraits/kao_032.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "033": {
+    "name": "石秀",
+    "portrait": "res://data/native_converted/portraits/kao_033.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "034": {
+    "name": "解珍",
+    "portrait": "res://data/native_converted/portraits/kao_034.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "035": {
+    "name": "解寶",
+    "portrait": "res://data/native_converted/portraits/kao_035.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "036": {
+    "name": "燕青",
+    "portrait": "res://data/native_converted/portraits/kao_036.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "052": {
+    "name": "扈三娘",
+    "portrait": "res://data/native_converted/portraits/kao_052.png",
+    "model_id": "19",
+    "gender": "female",
+    "default_weapon": "double_blade"
+  },
+  "100": {
+    "name": "孫二娘",
+    "portrait": "res://data/native_converted/portraits/kao_100.png",
+    "model_id": "07",
+    "gender": "female",
+    "default_weapon": "double_blade"
+  },
+  "101": {
+    "name": "顧大嫂",
+    "portrait": "res://data/native_converted/portraits/kao_101.png",
+    "model_id": "2D",
+    "gender": "female",
+    "default_weapon": "dagger"
+  },
+  "399": {
+    "name": "李師師",
+    "portrait": "res://data/native_converted/portraits/kao_399.png",
+    "model_id": "1F",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "037": {
+    "name": "水滸好漢_037",
+    "portrait": "res://data/native_converted/portraits/kao_037.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "038": {
+    "name": "水滸好漢_038",
+    "portrait": "res://data/native_converted/portraits/kao_038.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "039": {
+    "name": "水滸好漢_039",
+    "portrait": "res://data/native_converted/portraits/kao_039.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "040": {
+    "name": "水滸好漢_040",
+    "portrait": "res://data/native_converted/portraits/kao_040.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "041": {
+    "name": "水滸好漢_041",
+    "portrait": "res://data/native_converted/portraits/kao_041.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "042": {
+    "name": "水滸好漢_042",
+    "portrait": "res://data/native_converted/portraits/kao_042.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "043": {
+    "name": "水滸好漢_043",
+    "portrait": "res://data/native_converted/portraits/kao_043.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "044": {
+    "name": "水滸好漢_044",
+    "portrait": "res://data/native_converted/portraits/kao_044.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "045": {
+    "name": "水滸好漢_045",
+    "portrait": "res://data/native_converted/portraits/kao_045.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "046": {
+    "name": "水滸好漢_046",
+    "portrait": "res://data/native_converted/portraits/kao_046.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "047": {
+    "name": "水滸好漢_047",
+    "portrait": "res://data/native_converted/portraits/kao_047.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "048": {
+    "name": "水滸好漢_048",
+    "portrait": "res://data/native_converted/portraits/kao_048.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "049": {
+    "name": "水滸好漢_049",
+    "portrait": "res://data/native_converted/portraits/kao_049.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "050": {
+    "name": "水滸好漢_050",
+    "portrait": "res://data/native_converted/portraits/kao_050.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "051": {
+    "name": "水滸好漢_051",
+    "portrait": "res://data/native_converted/portraits/kao_051.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "053": {
+    "name": "水滸好漢_053",
+    "portrait": "res://data/native_converted/portraits/kao_053.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "054": {
+    "name": "水滸好漢_054",
+    "portrait": "res://data/native_converted/portraits/kao_054.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "055": {
+    "name": "水滸好漢_055",
+    "portrait": "res://data/native_converted/portraits/kao_055.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "056": {
+    "name": "水滸好漢_056",
+    "portrait": "res://data/native_converted/portraits/kao_056.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "057": {
+    "name": "水滸好漢_057",
+    "portrait": "res://data/native_converted/portraits/kao_057.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "058": {
+    "name": "水滸好漢_058",
+    "portrait": "res://data/native_converted/portraits/kao_058.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "059": {
+    "name": "水滸好漢_059",
+    "portrait": "res://data/native_converted/portraits/kao_059.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "060": {
+    "name": "水滸好漢_060",
+    "portrait": "res://data/native_converted/portraits/kao_060.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "061": {
+    "name": "水滸好漢_061",
+    "portrait": "res://data/native_converted/portraits/kao_061.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "062": {
+    "name": "水滸好漢_062",
+    "portrait": "res://data/native_converted/portraits/kao_062.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "063": {
+    "name": "水滸好漢_063",
+    "portrait": "res://data/native_converted/portraits/kao_063.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "064": {
+    "name": "水滸好漢_064",
+    "portrait": "res://data/native_converted/portraits/kao_064.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "065": {
+    "name": "水滸好漢_065",
+    "portrait": "res://data/native_converted/portraits/kao_065.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "066": {
+    "name": "水滸好漢_066",
+    "portrait": "res://data/native_converted/portraits/kao_066.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "067": {
+    "name": "水滸好漢_067",
+    "portrait": "res://data/native_converted/portraits/kao_067.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "068": {
+    "name": "水滸好漢_068",
+    "portrait": "res://data/native_converted/portraits/kao_068.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "069": {
+    "name": "水滸好漢_069",
+    "portrait": "res://data/native_converted/portraits/kao_069.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "070": {
+    "name": "水滸好漢_070",
+    "portrait": "res://data/native_converted/portraits/kao_070.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "071": {
+    "name": "水滸好漢_071",
+    "portrait": "res://data/native_converted/portraits/kao_071.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "072": {
+    "name": "水滸好漢_072",
+    "portrait": "res://data/native_converted/portraits/kao_072.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "073": {
+    "name": "水滸好漢_073",
+    "portrait": "res://data/native_converted/portraits/kao_073.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "074": {
+    "name": "水滸好漢_074",
+    "portrait": "res://data/native_converted/portraits/kao_074.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "075": {
+    "name": "水滸好漢_075",
+    "portrait": "res://data/native_converted/portraits/kao_075.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "076": {
+    "name": "水滸好漢_076",
+    "portrait": "res://data/native_converted/portraits/kao_076.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "077": {
+    "name": "水滸好漢_077",
+    "portrait": "res://data/native_converted/portraits/kao_077.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "078": {
+    "name": "水滸好漢_078",
+    "portrait": "res://data/native_converted/portraits/kao_078.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "079": {
+    "name": "水滸好漢_079",
+    "portrait": "res://data/native_converted/portraits/kao_079.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "080": {
+    "name": "水滸好漢_080",
+    "portrait": "res://data/native_converted/portraits/kao_080.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "081": {
+    "name": "水滸好漢_081",
+    "portrait": "res://data/native_converted/portraits/kao_081.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "082": {
+    "name": "水滸好漢_082",
+    "portrait": "res://data/native_converted/portraits/kao_082.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "083": {
+    "name": "水滸好漢_083",
+    "portrait": "res://data/native_converted/portraits/kao_083.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "084": {
+    "name": "水滸好漢_084",
+    "portrait": "res://data/native_converted/portraits/kao_084.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "085": {
+    "name": "水滸好漢_085",
+    "portrait": "res://data/native_converted/portraits/kao_085.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "086": {
+    "name": "水滸好漢_086",
+    "portrait": "res://data/native_converted/portraits/kao_086.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "087": {
+    "name": "水滸好漢_087",
+    "portrait": "res://data/native_converted/portraits/kao_087.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "088": {
+    "name": "水滸好漢_088",
+    "portrait": "res://data/native_converted/portraits/kao_088.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "089": {
+    "name": "水滸好漢_089",
+    "portrait": "res://data/native_converted/portraits/kao_089.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "090": {
+    "name": "水滸好漢_090",
+    "portrait": "res://data/native_converted/portraits/kao_090.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "091": {
+    "name": "水滸好漢_091",
+    "portrait": "res://data/native_converted/portraits/kao_091.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "092": {
+    "name": "水滸好漢_092",
+    "portrait": "res://data/native_converted/portraits/kao_092.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "093": {
+    "name": "水滸好漢_093",
+    "portrait": "res://data/native_converted/portraits/kao_093.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "094": {
+    "name": "水滸好漢_094",
+    "portrait": "res://data/native_converted/portraits/kao_094.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "095": {
+    "name": "水滸好漢_095",
+    "portrait": "res://data/native_converted/portraits/kao_095.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "096": {
+    "name": "水滸好漢_096",
+    "portrait": "res://data/native_converted/portraits/kao_096.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "097": {
+    "name": "水滸好漢_097",
+    "portrait": "res://data/native_converted/portraits/kao_097.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "098": {
+    "name": "水滸好漢_098",
+    "portrait": "res://data/native_converted/portraits/kao_098.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "099": {
+    "name": "水滸好漢_099",
+    "portrait": "res://data/native_converted/portraits/kao_099.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "102": {
+    "name": "水滸好漢_102",
+    "portrait": "res://data/native_converted/portraits/kao_102.png",
+    "model_id": "2D",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "103": {
+    "name": "水滸好漢_103",
+    "portrait": "res://data/native_converted/portraits/kao_103.png",
+    "model_id": "2E",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "104": {
+    "name": "水滸好漢_104",
+    "portrait": "res://data/native_converted/portraits/kao_104.png",
+    "model_id": "07",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "105": {
+    "name": "水滸好漢_105",
+    "portrait": "res://data/native_converted/portraits/kao_105.png",
+    "model_id": "0C",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "106": {
+    "name": "水滸好漢_106",
+    "portrait": "res://data/native_converted/portraits/kao_106.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "107": {
+    "name": "水滸好漢_107",
+    "portrait": "res://data/native_converted/portraits/kao_107.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "108": {
+    "name": "水滸好漢_108",
+    "portrait": "res://data/native_converted/portraits/kao_108.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "109": {
+    "name": "水滸好漢_109",
+    "portrait": "res://data/native_converted/portraits/kao_109.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "110": {
+    "name": "水滸好漢_110",
+    "portrait": "res://data/native_converted/portraits/kao_110.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "111": {
+    "name": "水滸好漢_111",
+    "portrait": "res://data/native_converted/portraits/kao_111.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "112": {
+    "name": "水滸好漢_112",
+    "portrait": "res://data/native_converted/portraits/kao_112.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "113": {
+    "name": "水滸好漢_113",
+    "portrait": "res://data/native_converted/portraits/kao_113.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "114": {
+    "name": "水滸好漢_114",
+    "portrait": "res://data/native_converted/portraits/kao_114.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "115": {
+    "name": "水滸好漢_115",
+    "portrait": "res://data/native_converted/portraits/kao_115.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "116": {
+    "name": "水滸好漢_116",
+    "portrait": "res://data/native_converted/portraits/kao_116.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "117": {
+    "name": "水滸好漢_117",
+    "portrait": "res://data/native_converted/portraits/kao_117.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "118": {
+    "name": "水滸好漢_118",
+    "portrait": "res://data/native_converted/portraits/kao_118.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "119": {
+    "name": "水滸好漢_119",
+    "portrait": "res://data/native_converted/portraits/kao_119.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "120": {
+    "name": "水滸好漢_120",
+    "portrait": "res://data/native_converted/portraits/kao_120.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "121": {
+    "name": "水滸好漢_121",
+    "portrait": "res://data/native_converted/portraits/kao_121.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "122": {
+    "name": "水滸好漢_122",
+    "portrait": "res://data/native_converted/portraits/kao_122.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "123": {
+    "name": "水滸好漢_123",
+    "portrait": "res://data/native_converted/portraits/kao_123.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "124": {
+    "name": "水滸好漢_124",
+    "portrait": "res://data/native_converted/portraits/kao_124.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "125": {
+    "name": "水滸好漢_125",
+    "portrait": "res://data/native_converted/portraits/kao_125.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "126": {
+    "name": "水滸好漢_126",
+    "portrait": "res://data/native_converted/portraits/kao_126.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "127": {
+    "name": "水滸好漢_127",
+    "portrait": "res://data/native_converted/portraits/kao_127.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "128": {
+    "name": "水滸好漢_128",
+    "portrait": "res://data/native_converted/portraits/kao_128.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "129": {
+    "name": "水滸好漢_129",
+    "portrait": "res://data/native_converted/portraits/kao_129.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "130": {
+    "name": "水滸好漢_130",
+    "portrait": "res://data/native_converted/portraits/kao_130.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "131": {
+    "name": "水滸好漢_131",
+    "portrait": "res://data/native_converted/portraits/kao_131.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "132": {
+    "name": "水滸好漢_132",
+    "portrait": "res://data/native_converted/portraits/kao_132.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "133": {
+    "name": "水滸好漢_133",
+    "portrait": "res://data/native_converted/portraits/kao_133.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "134": {
+    "name": "水滸好漢_134",
+    "portrait": "res://data/native_converted/portraits/kao_134.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "135": {
+    "name": "水滸好漢_135",
+    "portrait": "res://data/native_converted/portraits/kao_135.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "136": {
+    "name": "水滸好漢_136",
+    "portrait": "res://data/native_converted/portraits/kao_136.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "137": {
+    "name": "水滸好漢_137",
+    "portrait": "res://data/native_converted/portraits/kao_137.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "138": {
+    "name": "水滸好漢_138",
+    "portrait": "res://data/native_converted/portraits/kao_138.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "139": {
+    "name": "水滸好漢_139",
+    "portrait": "res://data/native_converted/portraits/kao_139.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "140": {
+    "name": "水滸好漢_140",
+    "portrait": "res://data/native_converted/portraits/kao_140.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "141": {
+    "name": "水滸好漢_141",
+    "portrait": "res://data/native_converted/portraits/kao_141.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "142": {
+    "name": "水滸好漢_142",
+    "portrait": "res://data/native_converted/portraits/kao_142.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "143": {
+    "name": "水滸好漢_143",
+    "portrait": "res://data/native_converted/portraits/kao_143.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "144": {
+    "name": "水滸好漢_144",
+    "portrait": "res://data/native_converted/portraits/kao_144.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "145": {
+    "name": "水滸好漢_145",
+    "portrait": "res://data/native_converted/portraits/kao_145.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "146": {
+    "name": "水滸好漢_146",
+    "portrait": "res://data/native_converted/portraits/kao_146.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "147": {
+    "name": "水滸好漢_147",
+    "portrait": "res://data/native_converted/portraits/kao_147.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "148": {
+    "name": "水滸好漢_148",
+    "portrait": "res://data/native_converted/portraits/kao_148.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "149": {
+    "name": "水滸好漢_149",
+    "portrait": "res://data/native_converted/portraits/kao_149.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "150": {
+    "name": "水滸好漢_150",
+    "portrait": "res://data/native_converted/portraits/kao_150.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "151": {
+    "name": "水滸好漢_151",
+    "portrait": "res://data/native_converted/portraits/kao_151.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "152": {
+    "name": "水滸好漢_152",
+    "portrait": "res://data/native_converted/portraits/kao_152.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "153": {
+    "name": "水滸好漢_153",
+    "portrait": "res://data/native_converted/portraits/kao_153.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "154": {
+    "name": "水滸好漢_154",
+    "portrait": "res://data/native_converted/portraits/kao_154.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "155": {
+    "name": "水滸好漢_155",
+    "portrait": "res://data/native_converted/portraits/kao_155.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "156": {
+    "name": "水滸好漢_156",
+    "portrait": "res://data/native_converted/portraits/kao_156.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "157": {
+    "name": "水滸好漢_157",
+    "portrait": "res://data/native_converted/portraits/kao_157.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "158": {
+    "name": "水滸好漢_158",
+    "portrait": "res://data/native_converted/portraits/kao_158.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "159": {
+    "name": "水滸好漢_159",
+    "portrait": "res://data/native_converted/portraits/kao_159.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "160": {
+    "name": "水滸好漢_160",
+    "portrait": "res://data/native_converted/portraits/kao_160.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "161": {
+    "name": "水滸好漢_161",
+    "portrait": "res://data/native_converted/portraits/kao_161.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "162": {
+    "name": "水滸好漢_162",
+    "portrait": "res://data/native_converted/portraits/kao_162.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "163": {
+    "name": "水滸好漢_163",
+    "portrait": "res://data/native_converted/portraits/kao_163.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "164": {
+    "name": "水滸好漢_164",
+    "portrait": "res://data/native_converted/portraits/kao_164.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "165": {
+    "name": "水滸好漢_165",
+    "portrait": "res://data/native_converted/portraits/kao_165.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "166": {
+    "name": "水滸好漢_166",
+    "portrait": "res://data/native_converted/portraits/kao_166.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "167": {
+    "name": "水滸好漢_167",
+    "portrait": "res://data/native_converted/portraits/kao_167.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "168": {
+    "name": "水滸好漢_168",
+    "portrait": "res://data/native_converted/portraits/kao_168.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "169": {
+    "name": "水滸好漢_169",
+    "portrait": "res://data/native_converted/portraits/kao_169.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "170": {
+    "name": "水滸好漢_170",
+    "portrait": "res://data/native_converted/portraits/kao_170.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "171": {
+    "name": "水滸好漢_171",
+    "portrait": "res://data/native_converted/portraits/kao_171.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "172": {
+    "name": "水滸好漢_172",
+    "portrait": "res://data/native_converted/portraits/kao_172.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "173": {
+    "name": "水滸好漢_173",
+    "portrait": "res://data/native_converted/portraits/kao_173.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "174": {
+    "name": "水滸好漢_174",
+    "portrait": "res://data/native_converted/portraits/kao_174.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "175": {
+    "name": "水滸好漢_175",
+    "portrait": "res://data/native_converted/portraits/kao_175.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "176": {
+    "name": "水滸好漢_176",
+    "portrait": "res://data/native_converted/portraits/kao_176.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "177": {
+    "name": "水滸好漢_177",
+    "portrait": "res://data/native_converted/portraits/kao_177.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "178": {
+    "name": "水滸好漢_178",
+    "portrait": "res://data/native_converted/portraits/kao_178.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "179": {
+    "name": "水滸好漢_179",
+    "portrait": "res://data/native_converted/portraits/kao_179.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "180": {
+    "name": "水滸好漢_180",
+    "portrait": "res://data/native_converted/portraits/kao_180.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "181": {
+    "name": "水滸好漢_181",
+    "portrait": "res://data/native_converted/portraits/kao_181.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "182": {
+    "name": "水滸好漢_182",
+    "portrait": "res://data/native_converted/portraits/kao_182.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "183": {
+    "name": "水滸好漢_183",
+    "portrait": "res://data/native_converted/portraits/kao_183.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "184": {
+    "name": "水滸好漢_184",
+    "portrait": "res://data/native_converted/portraits/kao_184.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "185": {
+    "name": "水滸好漢_185",
+    "portrait": "res://data/native_converted/portraits/kao_185.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "186": {
+    "name": "水滸好漢_186",
+    "portrait": "res://data/native_converted/portraits/kao_186.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "187": {
+    "name": "水滸好漢_187",
+    "portrait": "res://data/native_converted/portraits/kao_187.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "188": {
+    "name": "水滸好漢_188",
+    "portrait": "res://data/native_converted/portraits/kao_188.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "189": {
+    "name": "水滸好漢_189",
+    "portrait": "res://data/native_converted/portraits/kao_189.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "190": {
+    "name": "水滸好漢_190",
+    "portrait": "res://data/native_converted/portraits/kao_190.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "191": {
+    "name": "水滸好漢_191",
+    "portrait": "res://data/native_converted/portraits/kao_191.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "192": {
+    "name": "水滸好漢_192",
+    "portrait": "res://data/native_converted/portraits/kao_192.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "193": {
+    "name": "水滸好漢_193",
+    "portrait": "res://data/native_converted/portraits/kao_193.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "194": {
+    "name": "水滸好漢_194",
+    "portrait": "res://data/native_converted/portraits/kao_194.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "195": {
+    "name": "水滸好漢_195",
+    "portrait": "res://data/native_converted/portraits/kao_195.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "196": {
+    "name": "水滸好漢_196",
+    "portrait": "res://data/native_converted/portraits/kao_196.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "197": {
+    "name": "水滸好漢_197",
+    "portrait": "res://data/native_converted/portraits/kao_197.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "198": {
+    "name": "水滸好漢_198",
+    "portrait": "res://data/native_converted/portraits/kao_198.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "199": {
+    "name": "水滸好漢_199",
+    "portrait": "res://data/native_converted/portraits/kao_199.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "200": {
+    "name": "水滸好漢_200",
+    "portrait": "res://data/native_converted/portraits/kao_200.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "201": {
+    "name": "水滸好漢_201",
+    "portrait": "res://data/native_converted/portraits/kao_201.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "202": {
+    "name": "水滸好漢_202",
+    "portrait": "res://data/native_converted/portraits/kao_202.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "203": {
+    "name": "水滸好漢_203",
+    "portrait": "res://data/native_converted/portraits/kao_203.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "204": {
+    "name": "水滸好漢_204",
+    "portrait": "res://data/native_converted/portraits/kao_204.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "205": {
+    "name": "水滸好漢_205",
+    "portrait": "res://data/native_converted/portraits/kao_205.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "206": {
+    "name": "水滸好漢_206",
+    "portrait": "res://data/native_converted/portraits/kao_206.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "207": {
+    "name": "水滸好漢_207",
+    "portrait": "res://data/native_converted/portraits/kao_207.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "208": {
+    "name": "水滸好漢_208",
+    "portrait": "res://data/native_converted/portraits/kao_208.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "209": {
+    "name": "水滸好漢_209",
+    "portrait": "res://data/native_converted/portraits/kao_209.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "210": {
+    "name": "水滸好漢_210",
+    "portrait": "res://data/native_converted/portraits/kao_210.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "211": {
+    "name": "水滸好漢_211",
+    "portrait": "res://data/native_converted/portraits/kao_211.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "212": {
+    "name": "水滸好漢_212",
+    "portrait": "res://data/native_converted/portraits/kao_212.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "213": {
+    "name": "水滸好漢_213",
+    "portrait": "res://data/native_converted/portraits/kao_213.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "214": {
+    "name": "水滸好漢_214",
+    "portrait": "res://data/native_converted/portraits/kao_214.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "215": {
+    "name": "水滸好漢_215",
+    "portrait": "res://data/native_converted/portraits/kao_215.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "216": {
+    "name": "水滸好漢_216",
+    "portrait": "res://data/native_converted/portraits/kao_216.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "217": {
+    "name": "水滸好漢_217",
+    "portrait": "res://data/native_converted/portraits/kao_217.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "218": {
+    "name": "水滸好漢_218",
+    "portrait": "res://data/native_converted/portraits/kao_218.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "219": {
+    "name": "水滸好漢_219",
+    "portrait": "res://data/native_converted/portraits/kao_219.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "220": {
+    "name": "水滸好漢_220",
+    "portrait": "res://data/native_converted/portraits/kao_220.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "221": {
+    "name": "水滸好漢_221",
+    "portrait": "res://data/native_converted/portraits/kao_221.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "222": {
+    "name": "水滸好漢_222",
+    "portrait": "res://data/native_converted/portraits/kao_222.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "223": {
+    "name": "水滸好漢_223",
+    "portrait": "res://data/native_converted/portraits/kao_223.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "224": {
+    "name": "水滸好漢_224",
+    "portrait": "res://data/native_converted/portraits/kao_224.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "225": {
+    "name": "水滸好漢_225",
+    "portrait": "res://data/native_converted/portraits/kao_225.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "226": {
+    "name": "水滸好漢_226",
+    "portrait": "res://data/native_converted/portraits/kao_226.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "227": {
+    "name": "水滸好漢_227",
+    "portrait": "res://data/native_converted/portraits/kao_227.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "228": {
+    "name": "水滸好漢_228",
+    "portrait": "res://data/native_converted/portraits/kao_228.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "229": {
+    "name": "水滸好漢_229",
+    "portrait": "res://data/native_converted/portraits/kao_229.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "230": {
+    "name": "水滸好漢_230",
+    "portrait": "res://data/native_converted/portraits/kao_230.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "231": {
+    "name": "水滸好漢_231",
+    "portrait": "res://data/native_converted/portraits/kao_231.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "232": {
+    "name": "水滸好漢_232",
+    "portrait": "res://data/native_converted/portraits/kao_232.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "233": {
+    "name": "水滸好漢_233",
+    "portrait": "res://data/native_converted/portraits/kao_233.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "234": {
+    "name": "水滸好漢_234",
+    "portrait": "res://data/native_converted/portraits/kao_234.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "235": {
+    "name": "水滸好漢_235",
+    "portrait": "res://data/native_converted/portraits/kao_235.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "236": {
+    "name": "水滸好漢_236",
+    "portrait": "res://data/native_converted/portraits/kao_236.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "237": {
+    "name": "水滸好漢_237",
+    "portrait": "res://data/native_converted/portraits/kao_237.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "238": {
+    "name": "水滸好漢_238",
+    "portrait": "res://data/native_converted/portraits/kao_238.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "239": {
+    "name": "水滸好漢_239",
+    "portrait": "res://data/native_converted/portraits/kao_239.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "240": {
+    "name": "水滸好漢_240",
+    "portrait": "res://data/native_converted/portraits/kao_240.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "241": {
+    "name": "水滸好漢_241",
+    "portrait": "res://data/native_converted/portraits/kao_241.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "242": {
+    "name": "水滸好漢_242",
+    "portrait": "res://data/native_converted/portraits/kao_242.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "243": {
+    "name": "水滸好漢_243",
+    "portrait": "res://data/native_converted/portraits/kao_243.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "244": {
+    "name": "水滸好漢_244",
+    "portrait": "res://data/native_converted/portraits/kao_244.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "245": {
+    "name": "水滸好漢_245",
+    "portrait": "res://data/native_converted/portraits/kao_245.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "246": {
+    "name": "水滸好漢_246",
+    "portrait": "res://data/native_converted/portraits/kao_246.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "247": {
+    "name": "水滸好漢_247",
+    "portrait": "res://data/native_converted/portraits/kao_247.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "248": {
+    "name": "水滸好漢_248",
+    "portrait": "res://data/native_converted/portraits/kao_248.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "249": {
+    "name": "水滸好漢_249",
+    "portrait": "res://data/native_converted/portraits/kao_249.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "250": {
+    "name": "水滸好漢_250",
+    "portrait": "res://data/native_converted/portraits/kao_250.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "251": {
+    "name": "水滸好漢_251",
+    "portrait": "res://data/native_converted/portraits/kao_251.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "252": {
+    "name": "水滸好漢_252",
+    "portrait": "res://data/native_converted/portraits/kao_252.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "253": {
+    "name": "水滸好漢_253",
+    "portrait": "res://data/native_converted/portraits/kao_253.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "254": {
+    "name": "水滸好漢_254",
+    "portrait": "res://data/native_converted/portraits/kao_254.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "255": {
+    "name": "水滸好漢_255",
+    "portrait": "res://data/native_converted/portraits/kao_255.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "256": {
+    "name": "水滸好漢_256",
+    "portrait": "res://data/native_converted/portraits/kao_256.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "257": {
+    "name": "水滸好漢_257",
+    "portrait": "res://data/native_converted/portraits/kao_257.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "258": {
+    "name": "水滸好漢_258",
+    "portrait": "res://data/native_converted/portraits/kao_258.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "259": {
+    "name": "水滸好漢_259",
+    "portrait": "res://data/native_converted/portraits/kao_259.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "260": {
+    "name": "水滸好漢_260",
+    "portrait": "res://data/native_converted/portraits/kao_260.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "261": {
+    "name": "水滸好漢_261",
+    "portrait": "res://data/native_converted/portraits/kao_261.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "262": {
+    "name": "水滸好漢_262",
+    "portrait": "res://data/native_converted/portraits/kao_262.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "263": {
+    "name": "水滸好漢_263",
+    "portrait": "res://data/native_converted/portraits/kao_263.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "264": {
+    "name": "水滸好漢_264",
+    "portrait": "res://data/native_converted/portraits/kao_264.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "265": {
+    "name": "水滸好漢_265",
+    "portrait": "res://data/native_converted/portraits/kao_265.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "266": {
+    "name": "水滸好漢_266",
+    "portrait": "res://data/native_converted/portraits/kao_266.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "267": {
+    "name": "水滸好漢_267",
+    "portrait": "res://data/native_converted/portraits/kao_267.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "268": {
+    "name": "水滸好漢_268",
+    "portrait": "res://data/native_converted/portraits/kao_268.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "269": {
+    "name": "水滸好漢_269",
+    "portrait": "res://data/native_converted/portraits/kao_269.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "270": {
+    "name": "水滸好漢_270",
+    "portrait": "res://data/native_converted/portraits/kao_270.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "271": {
+    "name": "水滸好漢_271",
+    "portrait": "res://data/native_converted/portraits/kao_271.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "272": {
+    "name": "水滸好漢_272",
+    "portrait": "res://data/native_converted/portraits/kao_272.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "273": {
+    "name": "水滸好漢_273",
+    "portrait": "res://data/native_converted/portraits/kao_273.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "274": {
+    "name": "水滸好漢_274",
+    "portrait": "res://data/native_converted/portraits/kao_274.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "275": {
+    "name": "水滸好漢_275",
+    "portrait": "res://data/native_converted/portraits/kao_275.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "276": {
+    "name": "水滸好漢_276",
+    "portrait": "res://data/native_converted/portraits/kao_276.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "277": {
+    "name": "水滸好漢_277",
+    "portrait": "res://data/native_converted/portraits/kao_277.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "278": {
+    "name": "水滸好漢_278",
+    "portrait": "res://data/native_converted/portraits/kao_278.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "279": {
+    "name": "水滸好漢_279",
+    "portrait": "res://data/native_converted/portraits/kao_279.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "280": {
+    "name": "水滸好漢_280",
+    "portrait": "res://data/native_converted/portraits/kao_280.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "281": {
+    "name": "水滸好漢_281",
+    "portrait": "res://data/native_converted/portraits/kao_281.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "282": {
+    "name": "水滸好漢_282",
+    "portrait": "res://data/native_converted/portraits/kao_282.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "283": {
+    "name": "水滸好漢_283",
+    "portrait": "res://data/native_converted/portraits/kao_283.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "284": {
+    "name": "水滸好漢_284",
+    "portrait": "res://data/native_converted/portraits/kao_284.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "285": {
+    "name": "水滸好漢_285",
+    "portrait": "res://data/native_converted/portraits/kao_285.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "286": {
+    "name": "水滸好漢_286",
+    "portrait": "res://data/native_converted/portraits/kao_286.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "287": {
+    "name": "水滸好漢_287",
+    "portrait": "res://data/native_converted/portraits/kao_287.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "288": {
+    "name": "水滸好漢_288",
+    "portrait": "res://data/native_converted/portraits/kao_288.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "289": {
+    "name": "水滸好漢_289",
+    "portrait": "res://data/native_converted/portraits/kao_289.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "290": {
+    "name": "水滸好漢_290",
+    "portrait": "res://data/native_converted/portraits/kao_290.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "291": {
+    "name": "水滸好漢_291",
+    "portrait": "res://data/native_converted/portraits/kao_291.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "292": {
+    "name": "水滸好漢_292",
+    "portrait": "res://data/native_converted/portraits/kao_292.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "293": {
+    "name": "水滸好漢_293",
+    "portrait": "res://data/native_converted/portraits/kao_293.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "294": {
+    "name": "水滸好漢_294",
+    "portrait": "res://data/native_converted/portraits/kao_294.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "295": {
+    "name": "水滸好漢_295",
+    "portrait": "res://data/native_converted/portraits/kao_295.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "296": {
+    "name": "水滸好漢_296",
+    "portrait": "res://data/native_converted/portraits/kao_296.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "297": {
+    "name": "水滸好漢_297",
+    "portrait": "res://data/native_converted/portraits/kao_297.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "298": {
+    "name": "水滸好漢_298",
+    "portrait": "res://data/native_converted/portraits/kao_298.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "299": {
+    "name": "水滸好漢_299",
+    "portrait": "res://data/native_converted/portraits/kao_299.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "300": {
+    "name": "水滸好漢_300",
+    "portrait": "res://data/native_converted/portraits/kao_300.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "301": {
+    "name": "水滸好漢_301",
+    "portrait": "res://data/native_converted/portraits/kao_301.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "302": {
+    "name": "水滸好漢_302",
+    "portrait": "res://data/native_converted/portraits/kao_302.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "303": {
+    "name": "水滸好漢_303",
+    "portrait": "res://data/native_converted/portraits/kao_303.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "304": {
+    "name": "水滸好漢_304",
+    "portrait": "res://data/native_converted/portraits/kao_304.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "305": {
+    "name": "水滸好漢_305",
+    "portrait": "res://data/native_converted/portraits/kao_305.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "306": {
+    "name": "水滸好漢_306",
+    "portrait": "res://data/native_converted/portraits/kao_306.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "307": {
+    "name": "水滸好漢_307",
+    "portrait": "res://data/native_converted/portraits/kao_307.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "308": {
+    "name": "水滸好漢_308",
+    "portrait": "res://data/native_converted/portraits/kao_308.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "309": {
+    "name": "水滸好漢_309",
+    "portrait": "res://data/native_converted/portraits/kao_309.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "310": {
+    "name": "水滸好漢_310",
+    "portrait": "res://data/native_converted/portraits/kao_310.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "311": {
+    "name": "水滸好漢_311",
+    "portrait": "res://data/native_converted/portraits/kao_311.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "312": {
+    "name": "水滸好漢_312",
+    "portrait": "res://data/native_converted/portraits/kao_312.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "313": {
+    "name": "水滸好漢_313",
+    "portrait": "res://data/native_converted/portraits/kao_313.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "314": {
+    "name": "水滸好漢_314",
+    "portrait": "res://data/native_converted/portraits/kao_314.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "315": {
+    "name": "水滸好漢_315",
+    "portrait": "res://data/native_converted/portraits/kao_315.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "316": {
+    "name": "水滸好漢_316",
+    "portrait": "res://data/native_converted/portraits/kao_316.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "317": {
+    "name": "水滸好漢_317",
+    "portrait": "res://data/native_converted/portraits/kao_317.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "318": {
+    "name": "水滸好漢_318",
+    "portrait": "res://data/native_converted/portraits/kao_318.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "319": {
+    "name": "水滸好漢_319",
+    "portrait": "res://data/native_converted/portraits/kao_319.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "320": {
+    "name": "水滸好漢_320",
+    "portrait": "res://data/native_converted/portraits/kao_320.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "321": {
+    "name": "水滸好漢_321",
+    "portrait": "res://data/native_converted/portraits/kao_321.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "322": {
+    "name": "水滸好漢_322",
+    "portrait": "res://data/native_converted/portraits/kao_322.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "323": {
+    "name": "水滸好漢_323",
+    "portrait": "res://data/native_converted/portraits/kao_323.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "324": {
+    "name": "水滸好漢_324",
+    "portrait": "res://data/native_converted/portraits/kao_324.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "325": {
+    "name": "水滸好漢_325",
+    "portrait": "res://data/native_converted/portraits/kao_325.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "326": {
+    "name": "水滸好漢_326",
+    "portrait": "res://data/native_converted/portraits/kao_326.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "327": {
+    "name": "水滸好漢_327",
+    "portrait": "res://data/native_converted/portraits/kao_327.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "328": {
+    "name": "水滸好漢_328",
+    "portrait": "res://data/native_converted/portraits/kao_328.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "329": {
+    "name": "水滸好漢_329",
+    "portrait": "res://data/native_converted/portraits/kao_329.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "330": {
+    "name": "水滸好漢_330",
+    "portrait": "res://data/native_converted/portraits/kao_330.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "331": {
+    "name": "水滸好漢_331",
+    "portrait": "res://data/native_converted/portraits/kao_331.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "332": {
+    "name": "水滸好漢_332",
+    "portrait": "res://data/native_converted/portraits/kao_332.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "333": {
+    "name": "水滸好漢_333",
+    "portrait": "res://data/native_converted/portraits/kao_333.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "334": {
+    "name": "水滸好漢_334",
+    "portrait": "res://data/native_converted/portraits/kao_334.png",
+    "model_id": "05",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "335": {
+    "name": "水滸好漢_335",
+    "portrait": "res://data/native_converted/portraits/kao_335.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "336": {
+    "name": "水滸好漢_336",
+    "portrait": "res://data/native_converted/portraits/kao_336.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "337": {
+    "name": "水滸好漢_337",
+    "portrait": "res://data/native_converted/portraits/kao_337.png",
+    "model_id": "09",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "338": {
+    "name": "水滸好漢_338",
+    "portrait": "res://data/native_converted/portraits/kao_338.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "339": {
+    "name": "水滸好漢_339",
+    "portrait": "res://data/native_converted/portraits/kao_339.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "340": {
+    "name": "水滸好漢_340",
+    "portrait": "res://data/native_converted/portraits/kao_340.png",
+    "model_id": "0D",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "341": {
+    "name": "水滸好漢_341",
+    "portrait": "res://data/native_converted/portraits/kao_341.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "342": {
+    "name": "水滸好漢_342",
+    "portrait": "res://data/native_converted/portraits/kao_342.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "343": {
+    "name": "水滸好漢_343",
+    "portrait": "res://data/native_converted/portraits/kao_343.png",
+    "model_id": "10",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "344": {
+    "name": "水滸好漢_344",
+    "portrait": "res://data/native_converted/portraits/kao_344.png",
+    "model_id": "11",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "345": {
+    "name": "水滸好漢_345",
+    "portrait": "res://data/native_converted/portraits/kao_345.png",
+    "model_id": "12",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "346": {
+    "name": "水滸好漢_346",
+    "portrait": "res://data/native_converted/portraits/kao_346.png",
+    "model_id": "13",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "347": {
+    "name": "水滸好漢_347",
+    "portrait": "res://data/native_converted/portraits/kao_347.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "348": {
+    "name": "水滸好漢_348",
+    "portrait": "res://data/native_converted/portraits/kao_348.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "349": {
+    "name": "水滸好漢_349",
+    "portrait": "res://data/native_converted/portraits/kao_349.png",
+    "model_id": "16",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "350": {
+    "name": "水滸好漢_350",
+    "portrait": "res://data/native_converted/portraits/kao_350.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "351": {
+    "name": "水滸好漢_351",
+    "portrait": "res://data/native_converted/portraits/kao_351.png",
+    "model_id": "18",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "352": {
+    "name": "水滸好漢_352",
+    "portrait": "res://data/native_converted/portraits/kao_352.png",
+    "model_id": "1A",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "353": {
+    "name": "水滸好漢_353",
+    "portrait": "res://data/native_converted/portraits/kao_353.png",
+    "model_id": "1B",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "354": {
+    "name": "水滸好漢_354",
+    "portrait": "res://data/native_converted/portraits/kao_354.png",
+    "model_id": "1D",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "355": {
+    "name": "水滸好漢_355",
+    "portrait": "res://data/native_converted/portraits/kao_355.png",
+    "model_id": "1E",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "356": {
+    "name": "水滸好漢_356",
+    "portrait": "res://data/native_converted/portraits/kao_356.png",
+    "model_id": "21",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "357": {
+    "name": "水滸好漢_357",
+    "portrait": "res://data/native_converted/portraits/kao_357.png",
+    "model_id": "22",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "358": {
+    "name": "水滸好漢_358",
+    "portrait": "res://data/native_converted/portraits/kao_358.png",
+    "model_id": "23",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "359": {
+    "name": "水滸好漢_359",
+    "portrait": "res://data/native_converted/portraits/kao_359.png",
+    "model_id": "24",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "360": {
+    "name": "水滸好漢_360",
+    "portrait": "res://data/native_converted/portraits/kao_360.png",
+    "model_id": "25",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "361": {
+    "name": "水滸好漢_361",
+    "portrait": "res://data/native_converted/portraits/kao_361.png",
+    "model_id": "26",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "362": {
+    "name": "水滸好漢_362",
+    "portrait": "res://data/native_converted/portraits/kao_362.png",
+    "model_id": "27",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "363": {
+    "name": "水滸好漢_363",
+    "portrait": "res://data/native_converted/portraits/kao_363.png",
+    "model_id": "28",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "364": {
+    "name": "水滸好漢_364",
+    "portrait": "res://data/native_converted/portraits/kao_364.png",
+    "model_id": "29",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "365": {
+    "name": "水滸好漢_365",
+    "portrait": "res://data/native_converted/portraits/kao_365.png",
+    "model_id": "2A",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "366": {
+    "name": "水滸好漢_366",
+    "portrait": "res://data/native_converted/portraits/kao_366.png",
+    "model_id": "2B",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "367": {
+    "name": "水滸好漢_367",
+    "portrait": "res://data/native_converted/portraits/kao_367.png",
+    "model_id": "2C",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "368": {
+    "name": "水滸好漢_368",
+    "portrait": "res://data/native_converted/portraits/kao_368.png",
+    "model_id": "2F",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "369": {
+    "name": "水滸好漢_369",
+    "portrait": "res://data/native_converted/portraits/kao_369.png",
+    "model_id": "30",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "370": {
+    "name": "水滸好漢_370",
+    "portrait": "res://data/native_converted/portraits/kao_370.png",
+    "model_id": "31",
+    "gender": "male",
+    "default_weapon": "axe"
+  },
+  "371": {
+    "name": "水滸好漢_371",
+    "portrait": "res://data/native_converted/portraits/kao_371.png",
+    "model_id": "32",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "372": {
+    "name": "水滸好漢_372",
+    "portrait": "res://data/native_converted/portraits/kao_372.png",
+    "model_id": "33",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "373": {
+    "name": "水滸好漢_373",
+    "portrait": "res://data/native_converted/portraits/kao_373.png",
+    "model_id": "34",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "374": {
+    "name": "水滸好漢_374",
+    "portrait": "res://data/native_converted/portraits/kao_374.png",
+    "model_id": "35",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "375": {
+    "name": "水滸好漢_375",
+    "portrait": "res://data/native_converted/portraits/kao_375.png",
+    "model_id": "36",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "376": {
+    "name": "水滸好漢_376",
+    "portrait": "res://data/native_converted/portraits/kao_376.png",
+    "model_id": "00",
+    "gender": "male",
+    "default_weapon": "blade"
+  },
+  "377": {
+    "name": "水滸好漢_377",
+    "portrait": "res://data/native_converted/portraits/kao_377.png",
+    "model_id": "01",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "378": {
+    "name": "水滸好漢_378",
+    "portrait": "res://data/native_converted/portraits/kao_378.png",
+    "model_id": "02",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "379": {
+    "name": "水滸好漢_379",
+    "portrait": "res://data/native_converted/portraits/kao_379.png",
+    "model_id": "03",
+    "gender": "male",
+    "default_weapon": "glaive"
+  },
+  "380": {
+    "name": "水滸好漢_380",
+    "portrait": "res://data/native_converted/portraits/kao_380.png",
+    "model_id": "04",
+    "gender": "male",
+    "default_weapon": "mace"
+  },
+  "381": {
+    "name": "水滸好漢_381",
+    "portrait": "res://data/native_converted/portraits/kao_381.png",
+    "model_id": "20",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "382": {
+    "name": "水滸好漢_382",
+    "portrait": "res://data/native_converted/portraits/kao_382.png",
+    "model_id": "06",
+    "gender": "male",
+    "default_weapon": "trident"
+  },
+  "383": {
+    "name": "水滸好漢_383",
+    "portrait": "res://data/native_converted/portraits/kao_383.png",
+    "model_id": "08",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "384": {
+    "name": "水滸好漢_384",
+    "portrait": "res://data/native_converted/portraits/kao_384.png",
+    "model_id": "07",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "385": {
+    "name": "水滸好漢_385",
+    "portrait": "res://data/native_converted/portraits/kao_385.png",
+    "model_id": "0A",
+    "gender": "male",
+    "default_weapon": "sword"
+  },
+  "386": {
+    "name": "水滸好漢_386",
+    "portrait": "res://data/native_converted/portraits/kao_386.png",
+    "model_id": "0B",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "387": {
+    "name": "水滸好漢_387",
+    "portrait": "res://data/native_converted/portraits/kao_387.png",
+    "model_id": "1C",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "388": {
+    "name": "水滸好漢_388",
+    "portrait": "res://data/native_converted/portraits/kao_388.png",
+    "model_id": "0E",
+    "gender": "male",
+    "default_weapon": "fan"
+  },
+  "389": {
+    "name": "水滸好漢_389",
+    "portrait": "res://data/native_converted/portraits/kao_389.png",
+    "model_id": "0F",
+    "gender": "male",
+    "default_weapon": "staff"
+  },
+  "390": {
+    "name": "水滸好漢_390",
+    "portrait": "res://data/native_converted/portraits/kao_390.png",
+    "model_id": "2D",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "391": {
+    "name": "水滸好漢_391",
+    "portrait": "res://data/native_converted/portraits/kao_391.png",
+    "model_id": "2E",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "392": {
+    "name": "水滸好漢_392",
+    "portrait": "res://data/native_converted/portraits/kao_392.png",
+    "model_id": "07",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "393": {
+    "name": "水滸好漢_393",
+    "portrait": "res://data/native_converted/portraits/kao_393.png",
+    "model_id": "0C",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "394": {
+    "name": "水滸好漢_394",
+    "portrait": "res://data/native_converted/portraits/kao_394.png",
+    "model_id": "14",
+    "gender": "male",
+    "default_weapon": "dagger"
+  },
+  "395": {
+    "name": "水滸好漢_395",
+    "portrait": "res://data/native_converted/portraits/kao_395.png",
+    "model_id": "15",
+    "gender": "male",
+    "default_weapon": "bow_spear"
+  },
+  "396": {
+    "name": "水滸好漢_396",
+    "portrait": "res://data/native_converted/portraits/kao_396.png",
+    "model_id": "1F",
+    "gender": "female",
+    "default_weapon": "fan"
+  },
+  "397": {
+    "name": "水滸好漢_397",
+    "portrait": "res://data/native_converted/portraits/kao_397.png",
+    "model_id": "17",
+    "gender": "male",
+    "default_weapon": "spear"
+  },
+  "398": {
+    "name": "水滸好漢_398",
+    "portrait": "res://data/native_converted/portraits/kao_398.png",
+    "model_id": "2D",
+    "gender": "female",
+    "default_weapon": "fan"
+  }
+}
