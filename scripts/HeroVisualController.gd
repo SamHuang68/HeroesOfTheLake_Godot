@@ -145,7 +145,7 @@ func play_facility_work(facility_type: String) -> void:
 		"farmland", "farm", "Farm", "農田", "耕地":
 			current_state = AnimState.WORK_FARM
 			socket_r_item = "hoe"
-		"fishery", "fish", "魚場", "水泊":
+		"fishery", "fish", "Fish", "Work_Fish", "魚場", "水泊":
 			current_state = AnimState.WORK_FISH
 			socket_r_item = "rod"
 		"market", "Market", "市場", "集市":
@@ -191,7 +191,10 @@ func play_skill(skill_type: String) -> void:
 			current_state = AnimState.COMBAT_ATTACK
 		"raze", "破壞":
 			current_state = AnimState.COMBAT_RAZE
-	action_state_changed.emit(self, current_state)
+		"morale", "高昂", "MoraleHigh":
+			current_state = AnimState.COMBAT_MORALE_HIGH
+		_:
+			current_state = AnimState.LOCOMOTION_IDLE
 
 ## 依據動畫狀態列舉切換狀態
 func set_state(new_state: int) -> void:
@@ -277,21 +280,74 @@ func draw_ellipse_shadow() -> void:
 		shadow_pts.append(Vector2(px, py))
 	draw_colored_polygon(shadow_pts, Color(0.0, 0.0, 0.0, 0.40))
 
-func draw_character_body() -> void:
-	var flip_h: bool = (current_dir in [IsoDirection.NW, IsoDirection.SW])
+var _action_sheet_cache: Dictionary = {}
 
-	# 腳底基準錨點固定在 (0, 0)，貼齊菱形網格地面
-	if base_sprite_texture:
+func get_current_action_name() -> String:
+	match current_state:
+		AnimState.LOCOMOTION_WALK: return "Locomotion_Walk"
+		AnimState.LOCOMOTION_RUN: return "Locomotion_Run"
+		AnimState.COMBAT_ATTACK: return "Combat_Attack"
+		AnimState.COMBAT_RAZE: return "Combat_Raze"
+		AnimState.COMBAT_MORALE_HIGH: return "Combat_MoraleHigh"
+		AnimState.COMBAT_CAST_SPELL: return "Combat_CastSpell"
+		AnimState.COMBAT_SEDUCE: return "Combat_Seduce"
+		AnimState.WORK_TAVERN: return "Work_Tavern"
+		AnimState.WORK_FARM: return "Work_Farm"
+		AnimState.WORK_FISH: return "Work_Fish"
+		AnimState.WORK_MARKET: return "Work_Market"
+		AnimState.WORK_BLACKSMITH: return "Work_Blacksmith"
+		AnimState.WORK_SHIPYARD: return "Work_Shipyard"
+		AnimState.WORK_TAOIST: return "Work_Taoist"
+		AnimState.WORK_ALCHEMY: return "Work_Alchemy"
+		AnimState.WORK_PLEASURE: return "Work_Pleasure"
+		AnimState.WORK_RANCH: return "Work_Ranch"
+		_: return "Locomotion_Idle"
+
+func get_action_sheet(action_name: String) -> Texture2D:
+	var path := "res://assets/sprites/animations_8dir/char_%s/%s.png" % [model_id, action_name]
+	if _action_sheet_cache.has(path):
+		return _action_sheet_cache[path]
+	if ResourceLoader.exists(path):
+		var tex = load(path)
+		_action_sheet_cache[path] = tex
+		return tex
+	var fb_path := "res://assets/sprites/animations_8dir/char_00/%s.png" % action_name
+	if ResourceLoader.exists(fb_path):
+		var fb_tex = load(fb_path)
+		_action_sheet_cache[fb_path] = fb_tex
+		return fb_tex
+	return null
+
+func draw_character_body() -> void:
+	var action_name := get_current_action_name()
+	var sheet := get_action_sheet(action_name)
+	
+	# 方向轉換 (IsoDirection -> 0~7 方向索引)
+	# 0:S, 1:SW, 2:W, 3:NW, 4:N, 5:NE, 6:E, 7:SE
+	var dir_idx: int = 1
+	match current_dir:
+		IsoDirection.SW: dir_idx = 1
+		IsoDirection.NW: dir_idx = 3
+		IsoDirection.NE: dir_idx = 5
+		IsoDirection.SE: dir_idx = 7
+
+	# 8 幀動畫影格循環 (每秒 8 幀)
+	var frame_idx: int = int(fmod(action_elapsed * 8.0, 8.0))
+
+	if sheet:
+		var src_rect := Rect2(frame_idx * 64, dir_idx * 64, 64, 64)
+		# 影格錨點 (Pivot) 強制固定於腳底接觸面正中心 (0.5, 0.92)
+		draw_texture_rect_region(sheet, Rect2(Vector2(-32, -59), Vector2(64, 64)), src_rect)
+	elif base_sprite_texture:
+		var flip_h: bool = (current_dir in [IsoDirection.NW, IsoDirection.SW])
 		var tex_w: float = 48.0
 		var tex_h: float = 60.0
-		# 錨點設在底部 (0.5, 0.95)
 		var dest_rect := Rect2(-tex_w / 2.0, -tex_h + 3.0, tex_w, tex_h)
 		if flip_h:
 			dest_rect.position.x += tex_w
 			dest_rect.size.x = -tex_w
 		draw_texture_rect(base_sprite_texture, dest_rect, false)
 	else:
-		# Fallback 膠囊體繪製 (底部著地)
 		var body_col := Color(0.8, 0.3, 0.2) if not is_female else Color(0.9, 0.4, 0.7)
 		draw_circle(Vector2(0, -28), 12.0, body_col)
 
