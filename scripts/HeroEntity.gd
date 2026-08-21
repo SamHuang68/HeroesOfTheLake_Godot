@@ -67,13 +67,16 @@ func init_hero(p_hero_id: String, grid_pos: Vector2i) -> void:
 			"default_weapon": mid_info.get("r_socket", "spear")
 		}
 
-	# 1. 設置 UI 資訊
+	# 1. 設置 UI 資訊 (預設隱藏，僅選取/懸停時顯現)
 	if name_label:
 		name_label.text = hero_info.get("name", hero_id)
+		name_label.visible = false
 	if hp_label:
 		hp_label.text = "100/100"
+		hp_label.visible = false
 	if action_label:
 		action_label.text = "巡邏中"
+		action_label.visible = false
 
 	# 2. 轉換菱形網格座標為 2D 螢幕位置 (TileW=64, TileH=32)
 	position = Vector2(

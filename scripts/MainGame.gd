@@ -217,18 +217,23 @@ const HeroVisualControllerScript = preload("res://scripts/HeroVisualController.g
 const CharacterModelDatabaseScript = preload("res://scripts/CharacterModelDatabase.gd")
 
 func spawn_initial_heroes() -> void:
-	var initial_hero_names := [
-		"LinChong", "WuSong", "LuZhishen", "LiJun", "YangZhi", "ShiJin", "HuaRong", "DaiZong",
-		"HuSanniang", "SunErniang", "LiShishi", "SongJiang"
-	]
-	var grid_offsets: Array[Vector2i] = [
-		Vector2i(16, 16), Vector2i(17, 15), Vector2i(15, 17), Vector2i(14, 14),
-		Vector2i(18, 16), Vector2i(16, 18), Vector2i(15, 15), Vector2i(17, 17),
-		Vector2i(19, 15), Vector2i(14, 16), Vector2i(19, 13), Vector2i(16, 15)
+	var initial_hero_configs := [
+		{"id": "SongJiang", "pos": Vector2i(16, 16), "job": ""},            # 宋江: 聚義忠義堂正殿
+		{"id": "LinChong", "pos": Vector2i(20, 18), "job": "Barracks"},    # 林冲: 先鋒軍營操練
+		{"id": "WuSong", "pos": Vector2i(19, 14), "job": "Tavern"},        # 武松: 水泊酒館豪飲
+		{"id": "LuZhishen", "pos": Vector2i(17, 16), "job": ""},           # 魯智深: 忠義堂外道
+		{"id": "LiJun", "pos": Vector2i(16, 21), "job": "Shipyard"},       # 李俊: 水軍樓船碼頭
+		{"id": "YangZhi", "pos": Vector2i(10, 16), "job": ""},             # 楊志: 西側拒馬哨卡
+		{"id": "ShiJin", "pos": Vector2i(13, 16), "job": ""},              # 史進: 西側青石寨道巡邏
+		{"id": "HuaRong", "pos": Vector2i(16, 10), "job": ""},             # 花榮: 北側箭樓瞭望
+		{"id": "DaiZong", "pos": Vector2i(16, 12), "job": ""},             # 戴宗: 北側神行巡哨
+		{"id": "HuSanniang", "pos": Vector2i(22, 16), "job": ""},          # 扈三娘: 東側哨卡巡查
+		{"id": "SunErniang", "pos": Vector2i(19, 13), "job": "Tavern"},    # 孫二娘: 酒肆迎賓
+		{"id": "LiShishi", "pos": Vector2i(18, 14), "job": ""}             # 李師師: 聚義內閣雅舍
 	]
 
-	for i in range(initial_hero_names.size()):
-		var h_id: String = initial_hero_names[i]
+	for cfg in initial_hero_configs:
+		var h_id: String = cfg["id"]
 		var h_data: Dictionary = DataManagerScript.get_hero(h_id)
 		if h_data.is_empty():
 			continue
@@ -237,9 +242,12 @@ func spawn_initial_heroes() -> void:
 		var hero_node: Node2D = HeroVisualControllerScript.new()
 		hero_node.set("model_id", m_id)
 		hero_node.set("hero_name", h_data["name"])
-		hero_node.set("grid_position", grid_offsets[i])
+		hero_node.set("grid_position", cfg["pos"])
 		hero_node.set("current_stamina", h_data["stamina_curr"])
 		hero_node.set("max_stamina", h_data["stamina_max"])
+
+		if cfg["job"] != "":
+			hero_node.call("play_facility_work", cfg["job"])
 
 		if hero_node.has_signal("character_clicked"):
 			hero_node.connect("character_clicked", func(h_inst):

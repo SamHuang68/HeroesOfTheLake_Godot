@@ -248,11 +248,13 @@ func move_to_grid(new_grid: Vector2i) -> void:
 	is_moving = true
 	current_state = AnimState.LOCOMOTION_WALK
 
+var is_hovered: bool = false
+
 func _draw() -> void:
-	# 1. 橢圓地面陰影 (Root Motion Projection)
+	# 1. 橢圓地面接觸陰影 (Drop Shadow: 貼平地面，透明度 40%，消除漂浮感)
 	draw_ellipse_shadow()
 
-	# 2. 角色身體精靈本體 (含動態姿態變換與 3D 傾斜)
+	# 2. 角色身體精靈本體 (腳底錨點固定於 (0.5, 0.95)，嚴禁 Sine 波垂直浮空)
 	draw_character_body()
 
 	# 3. 動態掛載骨節 (Socket Items: 武器、鋤頭、鐵鎚、酒碗等)
@@ -261,68 +263,37 @@ func _draw() -> void:
 	# 4. 戰鬥與工作特效粒子 (火花、水波、愛心、符咒)
 	draw_action_particles()
 
-	# 5. 頭頂資訊浮動木牌 (Head Socket: 姓名與精力條)
-	draw_head_socket_ui()
+	# 5. 懸浮提示木牌 (Hover-Only: 滑鼠懸停時才顯示精緻古風名牌)
+	if is_hovered:
+		draw_head_socket_ui()
 
 func draw_ellipse_shadow() -> void:
 	var shadow_pts := PackedVector2Array()
-	var breath_scale := 1.0 + sin(action_elapsed * 4.0) * 0.05
+	# 貼地橢圓陰影 (寬 24px, 高 12px, 不透明度 0.40)
 	for i in range(16):
 		var angle := i * TAU / 16.0
-		var px := cos(angle) * 14.0 * breath_scale
-		var py := sin(angle) * 7.0 * breath_scale
+		var px := cos(angle) * 13.0
+		var py := sin(angle) * 6.5
 		shadow_pts.append(Vector2(px, py))
-	draw_colored_polygon(shadow_pts, Color(0.0, 0.0, 0.0, 0.35))
+	draw_colored_polygon(shadow_pts, Color(0.0, 0.0, 0.0, 0.40))
 
 func draw_character_body() -> void:
-	var offset := Vector2.ZERO
 	var flip_h: bool = (current_dir in [IsoDirection.NW, IsoDirection.SW])
 
-	# 依照 18 大動畫狀態計算動態位移與姿態
-	match current_state:
-		AnimState.LOCOMOTION_IDLE:
-			offset.y = sin(action_elapsed * 3.5) * 1.5
-		AnimState.LOCOMOTION_WALK:
-			offset.y = -abs(sin(action_elapsed * 9.0)) * 4.0
-		AnimState.LOCOMOTION_RUN:
-			offset.y = -abs(sin(action_elapsed * 14.0)) * 6.0
-		AnimState.COMBAT_ATTACK:
-			var swing := sin(action_elapsed * 12.0)
-			offset.x = swing * 8.0 if not flip_h else -swing * 8.0
-			offset.y = -abs(swing) * 3.0
-		AnimState.COMBAT_RAZE:
-			var smash := sin(action_elapsed * 10.0)
-			offset.y = smash * 6.0
-		AnimState.COMBAT_MORALE_HIGH:
-			offset.y = -abs(sin(action_elapsed * 8.0)) * 8.0
-		AnimState.COMBAT_CAST_SPELL:
-			offset.y = -6.0 + sin(action_elapsed * 6.0) * 3.0 # 懸浮
-		AnimState.COMBAT_SEDUCE:
-			offset.x = sin(action_elapsed * 5.0) * 4.0
-			offset.y = cos(action_elapsed * 5.0) * 2.0
-		AnimState.WORK_TAVERN:
-			offset.y = sin(action_elapsed * 4.0) * 2.0
-		AnimState.WORK_FARM:
-			var hoe_swing := sin(action_elapsed * 6.0)
-			offset.y = hoe_swing * 4.0
-		AnimState.WORK_BLACKSMITH:
-			var hammer_hit := sin(action_elapsed * 8.0)
-			offset.y = hammer_hit * 5.0
-		_:
-			offset.y = sin(action_elapsed * 3.0) * 1.5
-
+	# 腳底基準錨點固定在 (0, 0)，貼齊菱形網格地面
 	if base_sprite_texture:
 		var tex_w: float = 48.0
 		var tex_h: float = 60.0
-		var dest_rect := Rect2(-tex_w / 2.0 + offset.x, -tex_h + offset.y, tex_w, tex_h)
+		# 錨點設在底部 (0.5, 0.95)
+		var dest_rect := Rect2(-tex_w / 2.0, -tex_h + 3.0, tex_w, tex_h)
 		if flip_h:
 			dest_rect.position.x += tex_w
 			dest_rect.size.x = -tex_w
 		draw_texture_rect(base_sprite_texture, dest_rect, false)
 	else:
-		# Fallback 膠囊體繪製
+		# Fallback 膠囊體繪製 (底部著地)
 		var body_col := Color(0.8, 0.3, 0.2) if not is_female else Color(0.9, 0.4, 0.7)
-		draw_circle(Vector2(0, -32) + offset, 12.0, body_col)
+		draw_circle(Vector2(0, -28), 12.0, body_col)
 
 func draw_socket_items() -> void:
 	var hand_pos := Vector2(16, -26) if current_dir in [IsoDirection.SE, IsoDirection.NE] else Vector2(-16, -26)
@@ -337,12 +308,12 @@ func draw_socket_items() -> void:
 			draw_line(hand_pos + Vector2(-4, 6), hand_pos + Vector2(8, -12), Color(0.5, 0.35, 0.2), 2.5)
 			draw_circle(hand_pos + Vector2(8, -12), 5.0, Color(0.7, 0.7, 0.75))
 		"hoe": # 種田鋤頭
-			var swing_angle := sin(action_elapsed * 6.0) * 0.5
+			var swing_angle := sin(action_elapsed * 6.0) * 0.4
 			var tip := hand_pos + Vector2(10, 10).rotated(swing_angle)
 			draw_line(hand_pos, tip, Color(0.55, 0.38, 0.2), 2.5)
 			draw_line(tip, tip + Vector2(4, 2), Color(0.4, 0.4, 0.45), 3.5)
 		"hammer": # 打鐵鐵鎚
-			var h_angle := sin(action_elapsed * 8.0) * 0.7
+			var h_angle := sin(action_elapsed * 8.0) * 0.5
 			var h_tip := hand_pos + Vector2(12, -8).rotated(h_angle)
 			draw_line(hand_pos, h_tip, Color(0.6, 0.4, 0.2), 2.5)
 			draw_circle(h_tip, 4.0, Color(0.3, 0.3, 0.35))
@@ -355,7 +326,7 @@ func draw_socket_items() -> void:
 		"abacus": # 算盤
 			draw_rect(Rect2(hand_pos.x, hand_pos.y - 4, 10, 8), Color(0.45, 0.3, 0.2), true)
 		"silk": # 色誘絲帕
-			var wave := sin(action_elapsed * 10.0) * 4.0
+			var wave := sin(action_elapsed * 10.0) * 3.0
 			draw_line(hand_pos, hand_pos + Vector2(8 + wave, 6), Color(1.0, 0.6, 0.8, 0.9), 3.0)
 
 func draw_action_particles() -> void:
@@ -375,20 +346,30 @@ func draw_action_particles() -> void:
 			draw_circle(Vector2(14, -20) + Vector2(0, fmod(action_elapsed * 30.0, 15.0)), 1.2, Color(0.9, 0.7, 0.4, 0.8))
 
 func draw_head_socket_ui() -> void:
-	# 1. 復古木牌底色
-	var name_box := Rect2(-24, -72, 48, 14)
-	draw_rect(name_box, Color(0.12, 0.10, 0.08, 0.85), true)
-	draw_rect(name_box, Color(0.9, 0.75, 0.4, 0.9), false, 1.0)
+	# 古典精緻宣紙名牌 (僅 Hover 顯示)
+	var name_box := Rect2(-28, -74, 56, 16)
+	draw_rect(name_box, Color(0.15, 0.12, 0.08, 0.90), true)
+	draw_rect(name_box, Color(0.85, 0.75, 0.35, 0.95), false, 1.0)
 
-	# 2. 綠色精力條
-	var bar_bg := Rect2(-22, -56, 44, 4)
+	# 名字標籤
+	var font = ThemeDB.fallback_font
+	draw_string(font, Vector2(-26, -62), hero_name, HORIZONTAL_ALIGNMENT_CENTER, 52, 10, Color(1.0, 0.95, 0.7, 1.0))
+
+	# 精力條
+	var bar_bg := Rect2(-22, -56, 44, 3)
 	draw_rect(bar_bg, Color(0.2, 0.2, 0.2, 0.8), true)
 	var st_ratio: float = clampf(float(current_stamina) / float(max_stamina), 0.0, 1.0)
-	var bar_fg := Rect2(-22, -56, 44.0 * st_ratio, 4)
+	var bar_fg := Rect2(-22, -56, 44.0 * st_ratio, 3)
 	draw_rect(bar_fg, Color(0.2, 0.85, 0.3, 0.9), true)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+	if event is InputEventMouseMotion:
+		var local_mouse := to_local(event.position)
+		var hover_now: bool = Rect2(-24, -65, 48, 65).has_point(local_mouse)
+		if hover_now != is_hovered:
+			is_hovered = hover_now
+			queue_redraw()
+	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		var local_mouse := to_local(event.position)
 		if Rect2(-24, -65, 48, 65).has_point(local_mouse):
 			character_clicked.emit(self)

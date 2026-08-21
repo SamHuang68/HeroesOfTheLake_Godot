@@ -343,6 +343,7 @@ func draw_textured_ground_tile(grid_pos: Vector2i, type: int) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)
 	var top_left := center - Vector2(HALF_W, HALF_H)
 
+	# 1. 繪製基底材質
 	if tile_textures.has(type):
 		draw_texture(tile_textures[type], top_left)
 	else:
@@ -354,9 +355,43 @@ func draw_textured_ground_tile(grid_pos: Vector2i, type: int) -> void:
 		var fill_color := Color(0.35, 0.60, 0.25, 1.0) if type != TileType.WATER else Color(0.20, 0.45, 0.70, 1.0)
 		draw_colored_polygon(points, fill_color)
 
+	# 2. 水陸過渡與岸邊泥土/碎石 (Coastline Transition & Bank Blending)
 	if type == TileType.WATER:
-		var wave_off := sin(map_anim_timer * 3.0 + grid_pos.x) * 4.0
-		draw_line(center + Vector2(-10 + wave_off, -2), center + Vector2(10 + wave_off, -2), Color(0.7, 0.9, 1.0, 0.4), 1.0)
+		# 動態水面波紋
+		var wave_off := sin(map_anim_timer * 3.0 + grid_pos.x * 0.8) * 3.0
+		draw_line(center + Vector2(-10 + wave_off, -2), center + Vector2(10 + wave_off, -2), Color(0.75, 0.92, 1.0, 0.45), 1.2)
+		draw_line(center + Vector2(-6 - wave_off, 4), center + Vector2(8 - wave_off, 4), Color(0.80, 0.95, 1.0, 0.35), 1.0)
+
+		# 檢驗周圍是否相鄰陸地 (繪製岸邊泥沙與浪花過渡)
+		var neighbors := [
+			Vector2i(grid_pos.x, grid_pos.y - 1),
+			Vector2i(grid_pos.x + 1, grid_pos.y),
+			Vector2i(grid_pos.x, grid_pos.y + 1),
+			Vector2i(grid_pos.x - 1, grid_pos.y)
+		]
+		for n in neighbors:
+			if grid_data.has(n) and grid_data[n] != TileType.WATER:
+				var n_center := grid_to_screen(n.x, n.y)
+				var edge_mid := (center + n_center) / 2.0
+				# 岸邊碎石與泥灘
+				draw_circle(edge_mid, 4.0, Color(0.42, 0.36, 0.26, 0.65))
+				draw_circle(edge_mid + Vector2(2, -1), 2.0, Color(0.85, 0.90, 0.95, 0.70))
+	elif type in [TileType.GRASS, TileType.FOREST_MOSS]:
+		# 3. 平原區自然點綴 (Natural Terrain Scatter: 雜草、碎石、野花)
+		var seed_val: int = (grid_pos.x * 73 + grid_pos.y * 37) % 100
+		if seed_val < 35: # 雜草叢
+			var off_x: float = (seed_val % 7 - 3) * 3.0
+			var off_y: float = (seed_val % 5 - 2) * 2.0
+			var grass_pos := center + Vector2(off_x, off_y)
+			draw_line(grass_pos, grass_pos + Vector2(-2, -5), Color(0.22, 0.48, 0.18, 0.8), 1.2)
+			draw_line(grass_pos, grass_pos + Vector2(2, -6), Color(0.30, 0.55, 0.22, 0.8), 1.2)
+		elif seed_val < 50: # 野花點綴
+			var flow_pos := center + Vector2((seed_val % 9 - 4) * 2.5, (seed_val % 7 - 3) * 2.0)
+			var flower_col := Color(0.95, 0.85, 0.35, 0.85) if seed_val % 2 == 0 else Color(0.92, 0.45, 0.55, 0.85)
+			draw_circle(flow_pos, 1.5, flower_col)
+		elif seed_val < 60: # 碎石
+			var rock_pos := center + Vector2((seed_val % 6 - 3) * 3.0, (seed_val % 4 - 2) * 2.0)
+			draw_circle(rock_pos, 2.0, Color(0.50, 0.48, 0.45, 0.75))
 
 func draw_road_tile(grid_pos: Vector2i) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)
@@ -364,7 +399,13 @@ func draw_road_tile(grid_pos: Vector2i) -> void:
 	if tile_textures.has(TileType.ROAD):
 		draw_texture(tile_textures[TileType.ROAD], top_left)
 	else:
-		draw_circle(center, 2.0, Color(0.5, 0.45, 0.35, 0.8))
+		draw_circle(center, 4.0, Color(0.55, 0.48, 0.36, 0.85))
+
+	# 道路邊緣碎石與自然泥路銜接 (Road Gravel Blending)
+	var seed_r: int = (grid_pos.x * 29 + grid_pos.y * 53) % 10
+	if seed_r < 5:
+		draw_circle(center + Vector2(-6, 2), 1.5, Color(0.45, 0.40, 0.30, 0.6))
+		draw_circle(center + Vector2(7, -3), 1.5, Color(0.45, 0.40, 0.30, 0.6))
 
 func draw_tile_highlight(grid_pos: Vector2i, fill_col: Color, line_col: Color) -> void:
 	var center := grid_to_screen(grid_pos.x, grid_pos.y)

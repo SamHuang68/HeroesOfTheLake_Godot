@@ -117,8 +117,9 @@ func _draw() -> void:
 	if is_operating:
 		draw_prosperity_vfx()
 
-	# 3. 繪製頭頂等級與進駐好漢標籤
-	draw_overhead_badge()
+	# 3. 繪製頭頂等級與進駐好漢標籤 (Hover-Only: 僅滑鼠懸停時微量提示)
+	if is_hovered:
+		draw_overhead_badge()
 
 func draw_procedural_building() -> void:
 	match facility_type:
